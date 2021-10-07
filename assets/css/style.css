@@ -1,8 +1,11 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+	font-family: 'Hammersmith One', sans-serif;
   color: #444444;
 }
 
@@ -17,7 +20,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+	font-family: 'Hammersmith One', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -95,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   transition: 0.3s;
   font-size: 12px;
-  font-family: "Raleway", sans-serif;
+	font-family: 'Hammersmith One', sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -455,7 +458,26 @@ section {
   font-size: 26px;
   color: #3b434a;
   text-transform: uppercase;
+  margin-top: 3px;
 }
+
+.mon_cv {
+	justify-content: left;
+	inline-size: max-content;
+}
+
+#cv_qrcode{
+	margin-left: 4rem;
+	width: 5rem;
+	transition: 1s;
+}
+
+#cv_qrcode:hover{
+	width: 10rem;
+    animation-duration: 1s;
+}
+
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -498,7 +520,7 @@ section {
 .about .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: "Raleway", sans-serif;
+	font-family: 'Hammersmith One', sans-serif;
   font-size: 14px;
   color: #5d6a75;
 }
@@ -534,7 +556,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 700;
-  font-family: "Raleway", sans-serif;
+	font-family: 'Hammersmith One', sans-serif;
   color: #3b434a;
 }
 .about .skills-content .progress .skill .val {
@@ -759,7 +781,7 @@ section {
   border: 2px solid #fff;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #f3a200;
+  color: #003da5;
   border-color: #003da5;
 }
 .portfolio .portfolio-item {
@@ -942,7 +964,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+	font-family: 'Hammersmith One', sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
