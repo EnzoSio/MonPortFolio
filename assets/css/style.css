@@ -328,8 +328,6 @@ h1, h2, h3, h4, h5, h6 {
   #cv{
     text-align: center;
   }
-
-
 }
 
 @-webkit-keyframes up-down {
@@ -468,8 +466,8 @@ section {
 
 .mon_cv {
 	justify-content: left;
+	inline-size: max-content;
 }
-
 
 #cv_qrcode{
 	margin-left: 4rem;
