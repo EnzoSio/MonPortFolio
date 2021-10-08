@@ -1820,19 +1820,4 @@ const srbottom = ScrollReveal({
 
 
 srbottom.reveal('.mon_cv',{});
-
-
-
-//SCROLL PAGE SECTION
-const srleft = ScrollReveal({
-  origin: 'left',
-  distance: '90px',
-  duration:3000,
-  reset:true
-});
-
-srleft.reveal('.section-title',{});
-
-
-
 })()

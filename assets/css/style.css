@@ -1,5 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
 
 /*--------------------------------------------------------------
 # General
@@ -287,12 +289,43 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   padding: 0 15px;
 }
+
+.container_typewriter {
+	margin-top: 20px;
+}
+
+.container_typewriter p {
+  margin: 0 0 10px 0;
+  font-size: 35px;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+}
+
+.container_typewriter p span.typed-text {
+	font-weight: normal;
+	color: #003da5;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+}
+
+.container_typewriter p span.cursor {
+	display: inline-block;
+	background-color: #ccc;
+	width: 3px;
+	animation: blink 1s infinite;
+}
+
+.container_typewriter p span.cursor.typing {
+	animation: none;
+}
+
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-family: "Satisfy", serif;
   color: #fff;
 }
+
 #hero h2 {
   color: #eee;
   margin-bottom: 50px;
