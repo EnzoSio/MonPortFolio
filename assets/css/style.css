@@ -512,6 +512,114 @@ section {
     animation-duration: 1s;
 }
 
+.titre {
+	margin-top: 3px;
+}
+
+.sous-titre {
+	margin-top: 1rem;
+	text-align: justify;
+}
+
+.img-moi {
+	max-width: 100%;
+	height: auto;
+	width: 300px;
+	margin: 20px;
+}
+
+
+.options {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-column-gap: 35px;
+	grid-row-gap: 0px;
+	margin-top: 60px;
+	color: whitesmoke;
+}
+
+.options_titre {
+	margin: 4px;
+	text-align: center;
+}
+
+.sisr,
+.slam {
+	grid-area: 1 / 2 / 2 / 3;
+	background-color:#003da5;
+	border-radius: 15px;
+	padding: 20px;
+	margin-block-end: 20px;
+	height: 35rem;
+}
+
+.txt_just {
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-top: 5px;
+	padding: 20px;
+	text-align: justify;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.sisr_metiers li::before {
+	display: inline-block;
+	position: relative;
+	width: 1em;
+	height: 1em;
+	top: 0.2rem;
+	margin-right: 0.4rem;
+	content: "";
+	background-image: url(../assets/img/puces_sisr.png);
+	background-size: contain;
+	font-size: 20px;
+}
+
+.slam_metiers li::before {
+	display: inline-block;
+	position: relative;
+	width: 1em;
+	height: 1em;
+	top: 0.2rem;
+	margin-right: 0.4rem;
+	content: "";
+	background-image: url(../assets/img/puces_slam.png);
+	background-size: contain;
+	font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 992px){
+  .img-moi {
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      border-radius: 20px;
+      margin-bottom: 25px;
+  }
+  .options {
+		display: table-row;
+		margin-top: 20px;
+		width: 32px;
+		font-size: 13px;
+	}
+  .col-lg-4 {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
 .about .content ul {
   list-style: none;
   padding: 0;
