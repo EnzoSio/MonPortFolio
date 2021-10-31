@@ -170,6 +170,51 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.checkbox-label {
+	background-color: #07080921;
+	width: 50px;
+	height: 26px;
+	border-radius: 50px;
+	position:sticky;
+	padding: 5px;
+	cursor: pointer;
+  display: inline-flex;
+  margin-left: 10px;
+  justify-content: space-between;
+	align-items: center;
+	left: 90%;
+}
+
+.fa-moon {
+	color: #138496;
+}
+
+.fa-sun {
+	color: #003da5;
+}
+
+.checkbox-label .ball {
+	background-color: #fff;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+	transform: translateX(24px);
+}
+
+
 /**
 * Mobile Navigation 
 */
@@ -841,8 +886,9 @@ ul {
   border-radius: 20px;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #003da5;
+  color: #FFF;
   border-color: #003da5;
+  background: #003da5;
 }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -889,7 +935,7 @@ ul {
   transition: 0.3s;
 }
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #ffc041;
+  color: #41c3ff;
 }
 .portfolio .portfolio-item .portfolio-info .details-link {
   right: 10px;
@@ -988,7 +1034,7 @@ ul {
 }
 
 .portfolio-modal .modal-content h2 {
-	font-size: 3rem;
+	font-size: 1.8rem;
 	line-height: 3rem;
 }
 
