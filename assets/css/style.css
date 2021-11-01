@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 	left: 2px;
 	top: 2px;
 	border-radius: 50%;
-	transition: transform 0.2s linear;
+	transition: transform 0.3s linear;
 }
 
 .checkbox:checked+.checkbox-label .ball {
@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #545b61;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -302,6 +302,13 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+
+/* .navbar-mobile ul li .themes {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 10px;
+} */
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -664,7 +671,6 @@ ul {
   .options {
 		display: table-row;
 		margin-top: 20px;
-		width: 32px;
 		font-size: 13px;
 	}
   .col-lg-4 {

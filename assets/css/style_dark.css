@@ -2,4 +2,35 @@
 
 body.dark {
 	background: #292C35;
+  color: white;
 }
+
+body.dark #header.header-scrolled {
+  height: 60px;
+  background: #292c35;
+}
+
+body.dark .section-title h2,
+body.dark h3.titre,
+body.dark h3.resume-title,
+body.dark .resume .resume-item h4{ 
+   color:white;
+}
+
+body.dark .resume .resume-item h5, 
+body.dark .portfolio #portfolio-flters{
+    background: #5f6264; 
+}
+
+body.dark .portfolio #portfolio-flters li{
+  color:white;
+}
+
+body.dark .portfolio #portfolio-flters li{
+  border: 2px solid #5f6264;
+}
+body.dark .section-title span{
+  color:#5f6264;
+}
+
+
