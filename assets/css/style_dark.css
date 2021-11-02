@@ -16,12 +16,18 @@ body.dark h3.resume-title,
 body.dark .resume .resume-item h4,
 body.dark .portfolio #portfolio-flters li,
 body.dark a.nav-link.scrollto.active,
+body.dark .navbar-mobile a.nav-link.scrollto,
 body.dark a{
   color:white;
 }
 
+
+
+body.dark .back-to-top,
 body.dark .resume .resume-item h5, 
-body.dark .portfolio #portfolio-flters{
+body.dark .portfolio #portfolio-flters,
+body.dark .sisr, 
+body.dark .slam {
     background: #5f6264; 
 }
 
@@ -32,18 +38,18 @@ body.dark .portfolio #portfolio-flters li{
 }
 body.dark .section-title span,
 body.dark a:hover{ 
-  color:#5f6264;
+  color:#363636;
 }
 
+body.dark .navbar-mobile ul {
+  background: #292c35;
+}
 
 
 body.dark .img-moi {
   border-color: #5f6264;
 }
 
-body.dark .sisr, 
-body.dark .slam {
-  background-color: #5f6264;
-}
+
 
  

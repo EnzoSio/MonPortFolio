@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fa-moon {
-	color: #138496;
+	color: #5f6264;
 }
 
 .fa-sun {
@@ -352,6 +352,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 35px;
   font-family: 'Dosis', sans-serif;
   color: #fff;
+  text-align: center;
 }
 
 .container_typewriter p span.typed-text {
