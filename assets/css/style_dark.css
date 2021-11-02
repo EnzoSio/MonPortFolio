@@ -13,8 +13,11 @@ body.dark #header.header-scrolled {
 body.dark .section-title h2,
 body.dark h3.titre,
 body.dark h3.resume-title,
-body.dark .resume .resume-item h4{ 
-   color:white;
+body.dark .resume .resume-item h4,
+body.dark .portfolio #portfolio-flters li,
+body.dark a.nav-link.scrollto.active,
+body.dark a{
+  color:white;
 }
 
 body.dark .resume .resume-item h5, 
@@ -22,15 +25,25 @@ body.dark .portfolio #portfolio-flters{
     background: #5f6264; 
 }
 
-body.dark .portfolio #portfolio-flters li{
-  color:white;
-}
+
 
 body.dark .portfolio #portfolio-flters li{
   border: 2px solid #5f6264;
 }
-body.dark .section-title span{
+body.dark .section-title span,
+body.dark a:hover{ 
   color:#5f6264;
 }
 
 
+
+body.dark .img-moi {
+  border-color: #5f6264;
+}
+
+body.dark .sisr, 
+body.dark .slam {
+  background-color: #5f6264;
+}
+
+ 
