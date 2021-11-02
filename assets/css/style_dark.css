@@ -21,6 +21,11 @@ body.dark a{
   color:white;
 }
 
+body.dark span.typed-text{
+  color:#5f6264;
+}
+
+
 
 
 body.dark .back-to-top,
