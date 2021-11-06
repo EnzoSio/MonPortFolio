@@ -2,6 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #003da5;
+  border-radius: 10px;
+}
+
+
 
 /*--------------------------------------------------------------
 # General
@@ -17,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: #ffc85a;
+  color: #5894fb;
   text-decoration: none;
 }
 
@@ -832,6 +846,10 @@ ul {
   border: 2px solid #82909c;
 }
 
+.section-title p{
+  color: #003da5;
+  font-size: 17px;
+}
 /*--------------------------------------------------------------
 # My Services
 --------------------------------------------------------------*/
@@ -1152,21 +1170,23 @@ ul {
 	padding: 5px 10px;
 	margin-top: 20px;
 	text-decoration: none;
-	color: #003da5;
-	border: 2px solid #003da5;
+  color: #003da5;
+  border: 2px solid #003da5;
+  border-radius:20px;
+  background: #ffffff;
 	transition: 0.3s;
 	font-family: 'Hammersmith One', sans-serif;
 }
 
+
+
 .container_carte_veille .carte .couverture.couverture1 button:hover {
 	color: #fff;
-	background: #003da5
-;
+	background: #003da5;
 }
 
 .container_carte_veille .carte .couverture.couverture2 {
-	background: #003da5
-;
+	background: #003da5;
 	transition: 0.3s;
 	border-radius: 20px;
 }
@@ -1418,6 +1438,37 @@ ul {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  background: whitesmoke;
+  padding: 15px 0;
+  text-align: center;
+}
+.clients img {
+  width: 50%;
+  filter: grayscale(100);
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+}
+.clients img:hover {
+  filter: none;
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .clients img {
+    width: 40%;
+  }
+}
+@media (max-width: 575px) {
+  .clients img {
+    width: 50%;
   }
 }
 

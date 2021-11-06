@@ -1,6 +1,7 @@
 /* Thème sombre */
 
-body.dark {
+body.dark,
+body.dark .modal-content{
 	background: #292C35;
   color: white;
 }
@@ -11,33 +12,105 @@ body.dark #header.header-scrolled {
 }
 
 body.dark .section-title h2,
+body.dark .section-mini-title h2,
 body.dark h3.titre,
 body.dark h3.resume-title,
 body.dark .resume .resume-item h4,
-body.dark .portfolio #portfolio-flters li,
 body.dark a.nav-link.scrollto.active,
 body.dark .navbar-mobile a.nav-link.scrollto,
 body.dark a{
   color:white;
 }
 
-body.dark span.typed-text{
-  color:#5f6264;
+body.dark .portfolio #portfolio-flters{
+  background: none;
+}
+
+body.dark .portfolio #portfolio-flters li{
+  background:#5f6264;
+}
+
+
+
+body.dark .container_carte_veille .carte .couverture.couverture2{
+  background:#5f6264;
+}
+
+body.dark .container_carte_veille .carte:hover .couverture.couverture2{
+  border: 2px solid #5f6264;
+}
+
+body.dark .container_carte_veille .carte:hover .couverture.couverture2 h2{
+  color: #FFF;
+}
+
+
+body.dark .container_carte_veille .carte .couverture.couverture1 {
+  background:#292C35;
+  color:white
+}
+
+body.dark .container_carte_veille .carte .couverture.couverture1 button {
+  color: #fff;
+  border: 2px solid #5f6264;
+  background: #5f6264;
+}
+
+body.dark .container_carte_veille .carte .couverture.couverture1 button:hover {
+	color: #292C35;
+	background: #5f6264;
+}
+
+body.dark .portfolio-modal .close-modal{
+  background-image: url(../img/cancel_sombre.svg);
+}
+
+body.dark .btn-primary{
+  color: #fff;
+  background: #5f6264;
+}
+
+body.dark .btn-check:focus+.btn-primary, .btn-primary:focus{
+  border-color: #5f6264;
+  box-shadow: none;
 }
 
 
 
 
+
+
+body.dark span.typed-text{
+  color:#5f6264;
+}
+
+body.dark ::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+
+
+
+body.dark .certif_container,
 body.dark .back-to-top,
 body.dark .resume .resume-item h5, 
-body.dark .portfolio #portfolio-flters,
 body.dark .sisr, 
 body.dark .slam {
     background: #5f6264; 
 }
 
+  
 
-
+body.dark .btn-primary:active:focus{
+  box-shadow: 0 0 0 0.25rem rgb(95 98 100);
+}
+body.dark .btn-primary{
+  background: #5f6264;
+  border-color: #5f6264;
+}
+body.dark::-webkit-scrollbar-thumb{
+  background: #5f6264;
+}
 body.dark .portfolio #portfolio-flters li{
   border: 2px solid #5f6264;
 }
@@ -45,12 +118,9 @@ body.dark .section-title span,
 body.dark a:hover{ 
   color:#363636;
 }
-
 body.dark .navbar-mobile ul {
   background: #292c35;
 }
-
-
 body.dark .img-moi {
   border-color: #5f6264;
 }

@@ -4,7 +4,7 @@ checkbox.addEventListener("change", () => {
     document.getElementById("cv").href="docs/CVEnzodark.pdf";
 
   }
-  else if(document.body.classList.toggle("dark")==false){
+  else if(document.body.classList.toggle!=("dark")){
     document.getElementById("cv").href="docs/CVEnzo.pdf";
   }
 })
