@@ -957,7 +957,7 @@ ul {
   transition: 0.3s;
 }
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #41c3ff;
+  color: #003da5;
 }
 .portfolio .portfolio-item .portfolio-info .details-link {
   right: 10px;
