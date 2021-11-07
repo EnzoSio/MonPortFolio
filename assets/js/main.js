@@ -115,8 +115,8 @@
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    this.classList.toggle('bi-menu-down')
+    this.classList.toggle('bi-x-circle')
   })
 
   /**
@@ -140,8 +140,8 @@
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        navbarToggle.classList.toggle('bi-menu-down')
+        navbarToggle.classList.toggle('bi-x-circle')
       }
       scrollto(this.hash)
     }
