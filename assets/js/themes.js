@@ -1,6 +1,6 @@
 const checkbox = document.getElementById("checkbox")
 checkbox.addEventListener("change", () => {
-  if(document.body.classList.toggle("dark") != null){
+  if(document.body.classList.toggle("dark")){
     document.getElementById("cv").href="docs/CVEnzodark.pdf";
 
   }
