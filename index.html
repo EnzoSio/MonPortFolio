@@ -24,6 +24,9 @@
       <link href="./assets/css/aos.css" rel="stylesheet">
    </head>
    <body>
+      <div class="loader_bg">
+         <div class="loader"></div>
+     </div>
       <!-- ======= Header ======= -->
       <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
          <nav id="navbar" class="navbar">
@@ -33,6 +36,7 @@
                <li><a class="nav-link scrollto" href="#resume">Parcours</a></li>
                <li><a class="nav-link scrollto " href="#projets">Projets</a></li>
                <li><a class="nav-link scrollto" href="#veille">Veille</a></li>
+               <li><a class="nav-link scrollto" href="#loisirs">Loisirs</a></li>
                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                <li><div class="themes">
                      <input type="checkbox" class="checkbox" id="checkbox">
@@ -320,7 +324,7 @@
 
 
          <!-- SECTION INTÉRÊT -->
-         <section id="intérêt" class="intérêt">
+         <section id="loisirs" class="loisirs">
             <div class="container">
             <div data-aos="zoom-in"  data-aos-delay= "500">
                <div class="section-title">
@@ -360,14 +364,14 @@
               <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                <div class="card service-wrapper rounded border-0 shadow p-4">
                    <div class="icon text-center text-custom h1 shadow rounded bg-white">
-                       <span class="uim-svg" style=""><i class="fas fa-desktop"></i></span>
+                       <span class="uim-svg" style=""><i class="fas fa-globe"></i></span>
                    </div>
                    <div class="content mt-4">
                        <h5 class="title">Le Web</h5>
                        <p class="text-muted mt-3 mb-0">Ma conception de sites, d’applications, de logiciels et de programmes informatiques.</p>
                    </div>
                    <div class="big-icon h1 text-custom">
-                       <span class="uim-svg" style=""><i class="fas fa-desktop"></i></span>
+                       <span class="uim-svg" style=""><i class="fas fa-globe"></i></span>
                    </div>
                </div>
            </div><!--end col-->
@@ -802,6 +806,12 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
       <script>
          AOS.init();
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+          setTimeout(function(){
+              $('.loader_bg').fadeToggle();
+          }, 1800);
       </script>
    </body>
 </html>
