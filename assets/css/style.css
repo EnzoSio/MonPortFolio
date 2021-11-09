@@ -1250,6 +1250,90 @@ ul {
 /*--------------------------------------------------------------
 # Zone Centre D'intérêt
 --------------------------------------------------------------*/
+@-webkit-keyframes mover {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+	100% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px)
+	}
+}
+
+@keyframes mover {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+	100% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px)
+	}
+}
+
+.service-wrapper {
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease
+}
+
+.service-wrapper .icon {
+	width: 60px;
+	height: 60px;
+	line-height: 45px;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+  display: contents;
+}
+
+.service-wrapper .content .title {
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	font-weight: 500;
+  text-align: center;
+}
+
+.service-wrapper .big-icon {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	opacity: .05;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease
+}
+
+.service-wrapper:hover {
+	-webkit-box-shadow:0 50px 35px rgba(47, 60, 78, .15)!important;
+	box-shadow: 0 20px 35px rgba(47, 60, 78, .15)!important;
+	background: #fff;
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+	border-color: transparent!important;
+  border-radius:20px;
+}
+
+.service-wrapper:hover .icon {
+	background: #0062ff!important;
+	color: #fff!important
+}
+
+.service-wrapper:hover .big-icon {
+	z-index: -1;
+	opacity: .1;
+	font-size: 160px
+}
+
+.text-custom {
+	color: #0062ff!important
+}
+
+.uim-svg {
+	display: inline-block;
+	height: 1em;
+	vertical-align: -.125em;
+	font-size: inherit;
+	fill: var(--uim-color, currentColor)
+}
 
 
 
