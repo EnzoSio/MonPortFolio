@@ -377,7 +377,7 @@ button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled) {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 ::-moz-focus-inner {
@@ -2935,7 +2935,7 @@ textarea.form-control-lg {
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  cursor: pointer;
+  /* cursor: pointer; */
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;

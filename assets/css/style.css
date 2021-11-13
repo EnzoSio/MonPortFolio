@@ -73,11 +73,14 @@
 body {
 	font-family: 'Hammersmith One', sans-serif;
   color: #444444;
+  cursor:url(../img/cursor.svg),auto;
 }
 
 a {
   color: #003da5;
   text-decoration: none;
+  cursor:url(../img/cursor_hover.svg),auto;
+
 }
 
 a:hover {
@@ -168,6 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
+  cursor:url(../img/cursor_hover.svg),auto;
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
@@ -248,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 50px;
 	position:sticky;
 	padding: 5px;
-	cursor: pointer;
+  cursor:url(../img/cursor_hover.svg),auto;
   display: inline-flex;
   margin-left: 10px;
   justify-content: space-between;
@@ -905,8 +909,8 @@ ul {
 --------------------------------------------------------------*/
 
 .btn:not(:disabled):not(.disabled) {
-  cursor: pointer;
   margin-top: 45px;
+  cursor:url(../img/cursor_hover.svg),auto;
 }
 .btn-primary {
   margin-left: 30px;
@@ -1155,7 +1159,7 @@ ul {
 	transform: scale(1.3);
 	transition: 0.3s;
 	animation: 0.2s;
-	cursor: pointer;
+  cursor:url(../img/cursor_hover.svg),auto;
 }
 
 
@@ -1214,7 +1218,6 @@ ul {
 .container_carte_veille .carte .couverture.couverture1 p {
 	font-size: 12px;
 }
-
 .container_carte_veille .carte .couverture.couverture1 button {
 	display: inline-block;
 	padding: 5px 10px;
@@ -1226,6 +1229,8 @@ ul {
   background: #ffffff;
 	transition: 0.3s;
 	font-family: 'Hammersmith One', sans-serif;
+  cursor:url(../img/cursor_hover.svg),auto;
+
 }
 
 
