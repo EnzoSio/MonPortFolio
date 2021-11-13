@@ -1,16 +1,15 @@
 /* Thème sombre */
 
 body.dark,
-body.dark .modal-content{
+body.dark .modal-content {
 	background: #292C35;
-  color: white;
-  cursor: url(../img/cursor_black.svg), auto;
-
+	color: white;
+	cursor: url(../img/cursor_black.svg), auto;
 }
 
 body.dark #header.header-scrolled {
-  height: 60px;
-  background: #292c35;
+	height: 60px;
+	background: #292c35;
 }
 
 body.dark .section-title h2,
@@ -20,53 +19,50 @@ body.dark h3.resume-title,
 body.dark .resume .resume-item h4,
 body.dark a.nav-link.scrollto.active,
 body.dark .navbar-mobile a.nav-link.scrollto,
-body.dark a{
-  color:white;
+body.dark a {
+	color: white;
 }
 
-body.dark a, 
+body.dark a,
 body.dark .navbar a,
-body.dark .navbar a:focus, 
+body.dark .navbar a:focus,
 body.dark .checkbox-label,
 body.dark .btn:not(:disabled):not(.disabled),
 body.dark .portfolio-modal .close-modal:hover,
 body.dark .container_carte_veille .carte .couverture.couverture1 button,
-body.dark .contact .php-email-form button[type=submit]{
+body.dark .contact .php-email-form button[type=submit] {
 	cursor: url(../img/cursor_hover_black.svg), auto;
 }
 
-body.dark .portfolio #portfolio-flters{
-  background: none;
+body.dark .portfolio #portfolio-flters {
+	background: none;
 }
 
-body.dark .portfolio #portfolio-flters li{
-  background:#5f6264;
+body.dark .portfolio #portfolio-flters li {
+	background: #5f6264;
 }
 
-
-
-body.dark .container_carte_veille .carte .couverture.couverture2{
-  background:#5f6264;
+body.dark .container_carte_veille .carte .couverture.couverture2 {
+	background: #5f6264;
 }
 
-body.dark .container_carte_veille .carte:hover .couverture.couverture2{
-  border: 2px solid #5f6264;
+body.dark .container_carte_veille .carte:hover .couverture.couverture2 {
+	border: 2px solid #5f6264;
 }
 
-body.dark .container_carte_veille .carte:hover .couverture.couverture2 h2{
-  color: #FFF;
+body.dark .container_carte_veille .carte:hover .couverture.couverture2 h2 {
+	color: #FFF;
 }
-
 
 body.dark .container_carte_veille .carte .couverture.couverture1 {
-  background:#292C35;
-  color:white
+	background: #292C35;
+	color: white
 }
 
 body.dark .container_carte_veille .carte .couverture.couverture1 button {
-  color: #fff;
-  border: 2px solid #5f6264;
-  background: #5f6264;
+	color: #fff;
+	border: 2px solid #5f6264;
+	background: #5f6264;
 }
 
 body.dark .container_carte_veille .carte .couverture.couverture1 button:hover {
@@ -74,70 +70,81 @@ body.dark .container_carte_veille .carte .couverture.couverture1 button:hover {
 	background: #5f6264;
 }
 
-body.dark .portfolio-modal .close-modal{
-  background-image: url(../img/cancel_sombre.svg);
+body.dark .portfolio-modal .close-modal {
+	background-image: url(../img/cancel_sombre.svg);
 }
 
-body.dark .btn-primary{
-  color: #fff;
-  background: #5f6264;
+body.dark .btn-primary {
+	color: #fff;
+	background: #5f6264;
 }
 
-body.dark .btn-check:focus+.btn-primary, .btn-primary:focus{
-  border-color: #5f6264;
-  box-shadow: none;
+body.dark .btn-check:focus+.btn-primary,
+.btn-primary:focus {
+	border-color: #5f6264;
+	box-shadow: none;
 }
 
-
-
-
-
-
-body.dark span.typed-text{
-  color:#5f6264;
+body.dark span.typed-text {
+	color: #5f6264;
 }
 
 body.dark ::-webkit-scrollbar-track {
-  background: #FFF;
+	background: #FFF;
 }
-
-
-
 
 body.dark .certif_container,
 body.dark .back-to-top,
-body.dark .resume .resume-item h5, 
-body.dark .sisr, 
+body.dark .resume .resume-item h5,
+body.dark .sisr,
 body.dark .slam {
-    background: #5f6264; 
+	background: #5f6264;
 }
 
-  
+body.dark .btn-primary:active:focus {
+	box-shadow: 0 0 0 0.25rem rgb(95 98 100);
+}
 
-body.dark .btn-primary:active:focus{
-  box-shadow: 0 0 0 0.25rem rgb(95 98 100);
+body.dark .btn-primary {
+	background: #5f6264;
+	border-color: #5f6264;
 }
-body.dark .btn-primary{
-  background: #5f6264;
-  border-color: #5f6264;
+
+body.dark::-webkit-scrollbar-thumb {
+	background: #5f6264;
 }
-body.dark::-webkit-scrollbar-thumb{
-  background: #5f6264;
+
+body.dark .portfolio #portfolio-flters li {
+	border: 2px solid #5f6264;
 }
-body.dark .portfolio #portfolio-flters li{
-  border: 2px solid #5f6264;
-}
+
 body.dark .section-title span,
-body.dark a:hover{ 
-  color:#363636;
+body.dark a:hover {
+	color: #363636;
 }
+
 body.dark .navbar-mobile ul {
-  background: #292c35;
+	background: #292c35;
 }
+
 body.dark .img-moi {
-  border-color: #5f6264;
+	border-color: #5f6264;
 }
 
+body.dark .service-wrapper {
+	background: #5f6264;
+}
 
+body.dark .service-wrapper:hover {
+	-webkit-box-shadow: 0 50px 35px rgba(47, 60, 78, .15)!important;
+	box-shadow: 0 15px 35px rgb(255, 255, 255)!important;
+	background: #5f6264;
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+	border-color: transparent;
+	border-radius: 20px;
+}
 
- 
+body.dark .text-custom {
+	color: #fff!important
+}
