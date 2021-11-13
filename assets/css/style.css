@@ -35,38 +35,44 @@
 }
 
 .loader {
-	display: inline-block;
-	width: 80px;
-	height: 80px;
+	border: 0 soild transparent;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
 	position: absolute;
 	top: calc(50vh - 75px);
 	left: calc(50vw - 75px);
 }
 
+.loader:before,
 .loader:after {
-	content: " ";
-	display: block;
+	content: '';
+	border: 1em solid #003da5;
 	border-radius: 50%;
-	width: 0;
-	height: 0;
-	margin: 8px;
-	box-sizing: border-box;
-	border: 32px solid #003da5;
-	border-color: #003da5 transparent #003da5 transparent;
-	animation: loader 1.2s infinite;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: loader 3s linear infinite;
+	opacity: 0;
+}
+
+.loader:before {
+	animation-delay: 1s;
 }
 
 @keyframes loader {
 	0% {
-		transform: rotate(0);
-		animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		transform: scale(0);
+		opacity: 0;
 	}
 	50% {
-		transform: rotate(900deg);
-		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		opacity: 1;
 	}
 	100% {
-		transform: rotate(1800deg);
+		transform: scale(1);
+		opacity: 0;
 	}
 }
 
@@ -81,7 +87,6 @@ body {
 	cursor: url(../img/cursor.svg), auto;
 }
 
-
 a {
 	color: #003da5;
 	text-decoration: none;
@@ -93,14 +98,14 @@ a:hover {
 	text-decoration: none;
 }
 
-a, 
+a,
 .navbar a,
-.navbar a:focus, 
+.navbar a:focus,
 .checkbox-label,
 .btn:not(:disabled):not(.disabled),
 .portfolio-modal .close-modal:hover,
 .container_carte_veille .carte .couverture.couverture1 button,
-.contact .php-email-form button[type=submit]{
+.contact .php-email-form button[type=submit] {
 	cursor: url(../img/cursor_hover.svg), auto;
 }
 
