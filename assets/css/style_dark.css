@@ -4,6 +4,8 @@ body.dark,
 body.dark .modal-content{
 	background: #292C35;
   color: white;
+  cursor: url(../img/cursor_black.svg), auto;
+
 }
 
 body.dark #header.header-scrolled {
@@ -20,6 +22,17 @@ body.dark a.nav-link.scrollto.active,
 body.dark .navbar-mobile a.nav-link.scrollto,
 body.dark a{
   color:white;
+}
+
+body.dark a, 
+body.dark .navbar a,
+body.dark .navbar a:focus, 
+body.dark .checkbox-label,
+body.dark .btn:not(:disabled):not(.disabled),
+body.dark .portfolio-modal .close-modal:hover,
+body.dark .container_carte_veille .carte .couverture.couverture1 button,
+body.dark .contact .php-email-form button[type=submit]{
+	cursor: url(../img/cursor_hover_black.svg), auto;
 }
 
 body.dark .portfolio #portfolio-flters{

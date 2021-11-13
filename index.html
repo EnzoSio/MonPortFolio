@@ -19,16 +19,17 @@
       <!-- Template Main CSS File -->
       <link href="assets/css/style.css" rel="stylesheet">
       <link href="assets/css/style_dark.css" rel="stylesheet">
-
       <!-- AOS -->
       <link href="./assets/css/aos.css" rel="stylesheet">
    </head>
    <body>
+      <!-- LOADER -->
       <div class="loader_bg">
          <div class="loader"></div>
-     </div>
-      <!-- ======= Header ======= -->
+      </div>
+      <!-- HEADER -->
       <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+         <!-- MENU DE NAVIGATION -->
          <nav id="navbar" class="navbar">
             <ul>
                <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
@@ -38,21 +39,21 @@
                <li><a class="nav-link scrollto" href="#veille">Veille</a></li>
                <li><a class="nav-link scrollto" href="#loisirs">Loisirs</a></li>
                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-               <li><div class="themes">
+               <li>
+                  <div class="themes">
                      <input type="checkbox" class="checkbox" id="checkbox">
                      <label for="checkbox" class="checkbox-label"> <i class="fas fa-moon" alt="mode sombre"></i> <i
-                           class="fas fa-sun" alt="mode clair"></i> <span class="ball"></span>
+                        class="fas fa-sun" alt="mode clair"></i> <span class="ball"></span>
                      </label>
                   </div>
                </li>
             </ul>
             <i class="bi bi-menu-down  mobile-nav-toggle"></i>
-
          </nav>
-         <!-- .navbar -->
+         <!-- FIN DU MENU -->
       </header>
-      <!-- End Header -->
-      <!-- ======= Hero Section ======= -->
+      <!-- FIN HEADER -->
+      <!-- SECTION ACCUEIL -->
       <section id="hero">
          <div class="hero-container">
             <div class="container_typewriter">
@@ -65,9 +66,9 @@
             <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
          </div>
       </section>
-      <!-- End Hero -->
+      <!-- FIN SECTION ACCUEIL -->
       <main id="main">
-         <!-- ======= About Me Section ======= -->
+         <!-- SECTION A PROPOS -->
          <section id="about" class="about">
             <div class="container">
             <div data-aos="zoom-in"  data-aos-delay= "500">
@@ -151,10 +152,9 @@
                   <li>Technicien d’études informatiques</li>
                </ul>
             </div>
-            <!-- End .content-->
          </section>
-         <!-- End About Me Section -->
-         <!-- ======= My Resume Section ======= -->
+         <!-- FIN SECTION A PROPOS  -->
+         <!-- ======= SECTION PARCOURS ======= -->
          <section id="resume" class="resume">
             <div class="container">
                <div data-aos="zoom-in" data-aos-delay= "500">
@@ -217,8 +217,8 @@
                </div>
             </div>
          </section>
-         <!-- End My Resume Section -->
-         <!-- ======= My Portfolio Section ======= -->
+         <!-- FIN SECTION PARCOURS -->
+         <!-- SECTION PROJETS -->
          <section id="projets" class="portfolio">
             <div class="container">
                <div data-aos="zoom-in"  data-aos-delay= "500">
@@ -230,15 +230,15 @@
                </div>
                <div class="row" data-aos="fade-up">
                   <div class="col-lg-12 d-flex justify-content-center">
-                    <ul id="portfolio-flters">
-                     <li data-filter="*" class="filter-active">Tout Afficher</li>
-                     <li data-filter=".filter-sv">Site Vitrine</li>
-                     <li data-filter=".filter-sm">Site Marchand</li>
-                     <li data-filter=".filter-aj">Application Java</li>
-                     <li data-filter=".filter-aw">Application Web</li>
-                    </ul>
+                     <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">Tout Afficher</li>
+                        <li data-filter=".filter-sv">Site Vitrine</li>
+                        <li data-filter=".filter-sm">Site Marchand</li>
+                        <li data-filter=".filter-aj">Application Java</li>
+                        <li data-filter=".filter-aw">Application Web</li>
+                     </ul>
                   </div>
-                </div>
+               </div>
                <div class="row portfolio-container">
                   <!-- SITE VITRINE N°1 -->
                   <div class="col-lg-4 col-md-6 portfolio-item filter-sv">
@@ -289,11 +289,9 @@
                         <a href="portfolio-details-GsbMat.html" class="details-link" title="More Details"><i class="fas fa-door-open"></i></a>
                      </div>
                   </div>
-                  
                </div>
             </div>
          </section>
-         <!-- End My Portfolio Section -->
          <!-- ======= SECTION VEILLE ======= -->
          <section id="veille" class="veille">
             <div class="container">
@@ -321,8 +319,6 @@
             </div>
          </section>
          <!-- FIN SECTION VEILLE -->
-
-
          <!-- SECTION INTÉRÊT -->
          <section id="loisirs" class="loisirs">
             <div class="container">
@@ -333,59 +329,55 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                   <div class="card service-wrapper rounded border-0 shadow p-4">
-                       <div class="icon text-center text-custom h1 shadow rounded bg-white">
-                           <span class="uim-svg" style=""><i class="fas fa-drum"></i></span>
-                       </div>
-                       <div class="content mt-4">
-                           <h5 class="title">La Batterie</h5>
-                           <p class="text-muted mt-3 mb-0">J'adore la batterie et j'en joue depuis l'âge mes 7 ans</p>
-                       </div>
-                       <div class="big-icon h1 text-custom">
-                           <span class="uim-svg" style=""><i class="fas fa-drum"></i></span>
-                       </div>
-                   </div>
-               </div><!--end col-->
+               <!-- Batterie -->
                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                   <div class="card service-wrapper rounded border-0 shadow p-4">
-                      <div class="icon text-center text-custom h1 shadow rounded bg-white">
-                          <span class="uim-svg" style=""><i class="fas fa-book-reader"></i></span>
-                      </div>
-                      <div class="content mt-4">
-                          <h5 class="title">La Lecture</h5>
-                          <p class="text-muted mt-3 mb-0">La lecture est pour moi un moment de détente et bénéfique pour mes connaissances</p>
-                      </div>
-                      <div class="big-icon h1 text-custom">
-                          <span class="uim-svg" style=""><i class="fas fa-book-reader"></i></span>
-                      </div>
+                     <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                        <span class="uim-svg" style=""><i class="fas fa-drum"></i></span>
+                     </div>
+                     <div class="content mt-4">
+                        <h5 class="title">La Batterie</h5>
+                        <p class="text-muted mt-3 mb-0">J'adore la batterie et j'en joue depuis l'âge mes 7 ans</p>
+                     </div>
+                     <div class="big-icon h1 text-custom">
+                        <span class="uim-svg" style=""><i class="fas fa-drum"></i></span>
+                     </div>
                   </div>
-              </div><!--end col-->
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-               <div class="card service-wrapper rounded border-0 shadow p-4">
-                   <div class="icon text-center text-custom h1 shadow rounded bg-white">
-                       <span class="uim-svg" style=""><i class="fas fa-globe"></i></span>
-                   </div>
-                   <div class="content mt-4">
-                       <h5 class="title">Le Web</h5>
-                       <p class="text-muted mt-3 mb-0">La conception de sites, d’applications, de logiciels et de programmes informatiques.</p>
-                   </div>
-                   <div class="big-icon h1 text-custom">
-                       <span class="uim-svg" style=""><i class="fas fa-globe"></i></span>
-                   </div>
                </div>
-           </div><!--end col-->
+               <!-- Lecture -->
+               <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                  <div class="card service-wrapper rounded border-0 shadow p-4">
+                     <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                        <span class="uim-svg" style=""><i class="fas fa-book-reader"></i></span>
+                     </div>
+                     <div class="content mt-4">
+                        <h5 class="title">La Lecture</h5>
+                        <p class="text-muted mt-3 mb-0">La lecture est pour moi un moment de détente et bénéfique pour mes connaissances</p>
+                     </div>
+                     <div class="big-icon h1 text-custom">
+                        <span class="uim-svg" style=""><i class="fas fa-book-reader"></i></span>
+                     </div>
+                  </div>
+               </div>
+               <!-- Developpement Web -->
+               <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                  <div class="card service-wrapper rounded border-0 shadow p-4">
+                     <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                        <span class="uim-svg" style=""><i class="fas fa-globe"></i></span>
+                     </div>
+                     <div class="content mt-4">
+                        <h5 class="title">Le Web</h5>
+                        <p class="text-muted mt-3 mb-0">La conception de sites, d’applications, de logiciels et de programmes informatiques.</p>
+                     </div>
+                     <div class="big-icon h1 text-custom">
+                        <span class="uim-svg" style=""><i class="fas fa-globe"></i></span>
+                     </div>
+                  </div>
+               </div>
             </div>
          </section>
          <!-- FIN SECTION INTÉRÊT -->
-
-
-
-
-
-
-
-         <!-- =======  Zone Certificat ======= -->
+         <!-- =======  ZONE CERTIFICAT ======= -->
          <div class="text-center">
             <div class="section-mini-title">
                <h2>Mes certificats</h2>
@@ -423,7 +415,7 @@
                </div>
             </div>
          </div>
-         <!-- ======= Contact Me Section ======= -->
+         <!-- ======= SECTION CONTACT ======= -->
          <section id="contact" class="contact">
             <div class="container">
                <div data-aos="zoom-in"  data-aos-delay= "500">
@@ -441,7 +433,6 @@
                               <div class="social-links">
                                  <a href="https://github.com/enzosio" class="github"><i class="bi bi-github"></i></a>
                                  <a href="https://www.linkedin.com/in/enzo-aime-291ba11b9/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-
                               </div>
                            </div>
                         </div>
@@ -488,52 +479,53 @@
                </div>
             </div>
          </section>
-         <!-- End Contact Me Section -->
+         <!-- FIN SECTION CONTACT -->
       </main>
-      <!-- End #main -->
-      <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container justify-content-center">
-        <div class="row">
-          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/img/logos/html.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
-            <img src="assets/img/logos/css.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
-            <img src="assets/img/logos/js.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
-            <img src="assets/img/logos/mysql.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
-            <img src="assets/img/logos/git.png" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section><!-- End Clients Section -->
-     <!-- ======= Footer ======= -->
-  <footer id="footer">
-   <div class="container">
-      <h3>Enzo AIME</h3>
-      <p>La révolution informatique fait gagner un temps fou aux hommes, mais ils le passent avec leur ordinateur !</p>
-      <div class="social-links">
-         <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-         <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-         <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-         <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-         <a href="#" class="github"><i class="bi bi-github"></i></a>
-         <a href="#" class="codepen"><i class="fab fa-codepen"></i></a>
-      </div>
-      <div class="copyright">
-         &copy; 
-         Copyright 2021 © <strong><span>Enzo</span></strong>
-      </div>
-   </div>
-   </footer><!-- End Footer -->
-      <!-- Modal Veille-->
+      <!-- ======= OUTILS ET LANGAGES ======= -->
+      <section id="clients" class="clients">
+         <div class="container justify-content-center">
+            <div class="row">
+               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                  <img src="assets/img/logos/html.png" class="img-fluid" alt="">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                  <img src="assets/img/logos/css.png" class="img-fluid" alt="">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+                  <img src="assets/img/logos/js.png" class="img-fluid" alt="">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+                  <img src="assets/img/logos/mysql.png" class="img-fluid" alt="">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+                  <img src="assets/img/logos/git.png" class="img-fluid" alt="">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FIN OUTILS -->
+      <!-- ======= FOOTER ======= -->
+      <footer id="footer">
+         <div class="container">
+            <h3>Enzo AIME</h3>
+            <p>La révolution informatique fait gagner un temps fou aux hommes, mais ils le passent avec leur ordinateur !</p>
+            <div class="social-links">
+               <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+               <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+               <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+               <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+               <a href="#" class="github"><i class="bi bi-github"></i></a>
+               <a href="#" class="codepen"><i class="fab fa-codepen"></i></a>
+            </div>
+            <div class="copyright">
+               &copy; 
+               Copyright 2021 © <strong><span>Enzo</span></strong>
+            </div>
+         </div>
+      </footer>
+      <!-- FIN FOOTER -->
+      <!--  MODAL VEILLE -->
       <div class="portfolio-modal modal fade" id="veilletechnologique" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
@@ -638,7 +630,7 @@
             </div>
          </div>
       </div>
-      <!-- Modal RFID-->
+      <!-- MODAL RFID-->
       <div class="portfolio-modal modal fade" id="rfid" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
@@ -673,7 +665,7 @@
             </div>
          </div>
       </div>
-      <!-- Modal IOT-->
+      <!-- MODAL IOT-->
       <div class="portfolio-modal modal fade" id="iot" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
@@ -709,7 +701,7 @@
             </div>
          </div>
       </div>
-      <!-- Modal IOT-->
+      <!-- MODAL IOT-->
       <div class="portfolio-modal modal fade" id="arduino" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
@@ -747,7 +739,7 @@
             </div>
          </div>
       </div>
-      <!-- Modal IOT-->
+      <!-- MODAL IOT-->
       <div class="portfolio-modal modal fade" id="esp32" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
@@ -810,9 +802,9 @@
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script>
-          setTimeout(function(){
-              $('.loader_bg').fadeToggle();
-          }, 1800);
+         setTimeout(function(){
+             $('.loader_bg').fadeToggle();
+         }, 1800);
       </script>
    </body>
 </html>
