@@ -93,6 +93,10 @@ body.dark ::-webkit-scrollbar-track {
 	background: #FFF;
 }
 
+body.dark ::-webkit-scrollbar-thumb{
+	background: #5f6264;
+}
+
 body.dark .certif_container,
 body.dark .back-to-top,
 body.dark .resume .resume-item h5,
@@ -145,6 +149,46 @@ body.dark .service-wrapper:hover {
 	border-radius: 20px;
 }
 
+body.dark .section-title p {
+	color: #fff!important;
+	font-size: 17px;
+}
+
 body.dark .text-custom {
 	color: #fff!important
+}
+
+body.dark .contact .php-email-form button[type=submit]{
+	background:#5f6264 ;
+}
+
+body.dark .clients{
+	background:#292c35 ;
+}
+
+body.dark #footer .social-links a {
+	background: #5f6264;
+}
+body.dark #footer .social-links a:hover{
+	background:#292c35 ;
+}
+
+body.dark .contact .social-links a:hover{
+	border-color: #5f6264;
+    background: #5f6264;
+}
+
+body.dark .portfolio .portfolio-item .portfolio-info .details-link:hover,
+body.dark .portfolio .portfolio-item .portfolio-info .preview-link:hover{
+	color:#5f6264; 
+}
+
+body.dark .breadcrumbs{
+	background-color:#292c35;
+}
+
+body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet{
+	color: #fff;
+	background: #fff;
+	border: 1px solid #5f6264
 }
