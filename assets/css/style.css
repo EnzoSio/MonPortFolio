@@ -1000,9 +1000,10 @@ ul {
 .resume .resume-item {
 	padding: 0 0 20px 20px;
 	margin-top: -2px;
-	border-left: 2px solid #82909c;
+	border-left: 2px solid #003da5;
 	position: relative;
 }
+
 
 .resume .resume-item h4 {
 	line-height: 18px;
@@ -1043,7 +1044,7 @@ ul {
 	left: -9px;
 	top: 0;
 	background: #fff;
-	border: 2px solid #82909c;
+	border: 2px solid #003da5;
 }
 
 .section-title p {
@@ -1896,6 +1897,9 @@ ul {
 	background: #003da5;
 	color: #fff;
 	text-decoration: none;
+	box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
+    -webkit-transform: translateY(-7px);
+	transform: translateY(-7px);
 }
 
 #footer .copyright {

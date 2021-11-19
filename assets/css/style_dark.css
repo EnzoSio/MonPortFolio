@@ -168,6 +168,7 @@ body.dark .clients{
 
 body.dark #footer .social-links a {
 	background: #5f6264;
+	color:#fff;
 }
 body.dark #footer .social-links a:hover{
 	background:#292c35 ;
