@@ -1610,6 +1610,22 @@ ul {
 	margin-top: 10px;
 }
 
+li a{
+	transition: 0.5s;
+	color:#444444;
+
+}
+
+li a:hover{
+	transition: 0.5s;	
+	font-weight: bolder;
+	animation: .3s;
+	font-size: 18px;
+	color:#641597;
+}
+
+
+
 .portfolio-details .portfolio-description {
 	padding-top: 30px;
 	padding-left: 5px;
