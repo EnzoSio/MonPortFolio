@@ -90,8 +90,6 @@
 	}
 }
 
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -766,12 +764,12 @@ section {
 
 #cv_qrcode {
 	margin-left: 4rem;
-	width: 5rem;
+	width: 9rem;
 	transition: 1s;
 }
 
 #cv_qrcode:hover {
-	width: 10rem;
+	width: 14rem;
 	animation-duration: 1s;
 }
 
