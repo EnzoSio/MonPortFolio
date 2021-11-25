@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@font-face {
+	font-family: "Christmas";
+	src: url("./alaskannights-font/Alaskannights-z81l.ttf");
+}
 
 /*--------------------------------------------------------------
 # ScrollBar
@@ -221,7 +225,7 @@ h6 {
 	white-space: nowrap;
 	transition: 0.3s;
 	font-size: 16px;
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: "Christmas";
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -631,6 +635,10 @@ section {
 	color: #3b434a;
 	position: relative;
 	z-index: 2;
+}
+
+.section-title span, h2 {
+	font-family: "Christmas";
 }
 
 .section-mini-title h2 {
