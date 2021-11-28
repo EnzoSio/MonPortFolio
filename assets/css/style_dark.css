@@ -193,3 +193,11 @@ body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swipe
 	background: #fff;
 	border: 1px solid #5f6264
 }
+
+body.dark .resume .resume-item{
+    border-left: 2px solid #5f6264;
+}
+
+.resume .resume-item::before{
+	border: 2px solid #5f6264;
+}

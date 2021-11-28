@@ -1819,5 +1819,13 @@ const srbottom = ScrollReveal({
 });
 
 
-srbottom.reveal('.mon_cv',{});
-})()
+srbottom.reveal('.mon_cv',{});})()
+
+function Echap (){
+	document.onkeydown = function(evt) {
+		evt = evt || window.event;
+		if (evt.keyCode == 27) {
+			window.location.href='index.html#projets';		}
+	}
+}
+;

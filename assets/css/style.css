@@ -335,7 +335,7 @@ h6 {
 	color: #5f6264;
 }
 
-.fa-sun {
+.fa-snowflake {
 	color: #003da5;
 }
 
@@ -635,7 +635,8 @@ section {
 	z-index: 2;
 }
 
-.section-title span, h2 {
+.section-title span,
+.section-title h2 {
 	font-family: "Christmas";
 }
 
@@ -860,8 +861,8 @@ ul {
 	.img-moi {
 		margin-left: auto;
 		margin-right: auto;
-		height: 195px;
-		width: 200px;
+		height: 295px;
+		width: 300px;
 		border-radius: 50%;
 		margin-bottom: 25px;
 	}
@@ -1448,7 +1449,7 @@ ul {
 
 .certif_container {
 	background: rgb(0, 61, 165);
-	padding: 40px;
+	padding: 60px;
 	margin: 20px;
 	display: flex;
 	justify-content: center;
@@ -1616,13 +1617,16 @@ ul {
 	margin-top: 10px;
 }
 
-li a{
+/*--------------------------------------------------------------
+# Collaboration
+--------------------------------------------------------------*/
+
+li #collabJeremy{
 	transition: 0.5s;
 	color:#444444;
-
 }
 
-li a:hover{
+li #collabJeremy:hover{
 	transition: 0.5s;	
 	font-weight: bolder;
 	animation: .3s;
@@ -1630,7 +1634,31 @@ li a:hover{
 	color:#641597;
 }
 
+li #collabYohann{
+	transition: 0.5s;
+	color:#444444;
+}
 
+li #collabYohann:hover{
+	transition: 0.5s;	
+	font-weight: bolder;
+	animation: .3s;
+	font-size: 18px;
+	color:#ff4757;
+}
+
+li #collabAlan{
+	transition: 0.5s;
+	color:#444444;
+}
+
+li #collabAlan:hover{
+	transition: 0.5s;	
+	font-weight: bolder;
+	animation: .3s;
+	font-size: 18px;
+	color:#e02f6b;
+}
 
 .portfolio-details .portfolio-description {
 	padding-top: 30px;
