@@ -190,7 +190,7 @@ body.dark .breadcrumbs{
 
 body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet{
 	color: #fff;
-	background: #fff;
+	background: rgb(245, 102, 102);
 	border: 1px solid #5f6264
 }
 
@@ -198,12 +198,12 @@ body.dark .resume .resume-item{
     border-left: 2px solid #5f6264;
 }
 
-.resume .resume-item::before{
+body.dark .resume .resume-item::before{
 	border: 2px solid #5f6264;
 }
 
-.spinner:before,
-.spinner:after{
+body.dark .spinner:before,
+body.dark .spinner:after{
 	background-image: url(../img/loader_sombre.svg);
 
 }
