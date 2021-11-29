@@ -124,7 +124,7 @@ body.dark .portfolio #portfolio-flters li {
 
 body.dark .section-title span,
 body.dark a:hover {
-	color: #363636;
+	color: #5e6163;
 }
 
 body.dark .navbar-mobile ul {
@@ -200,4 +200,10 @@ body.dark .resume .resume-item{
 
 .resume .resume-item::before{
 	border: 2px solid #5f6264;
+}
+
+.spinner:before,
+.spinner:after{
+	background-image: url(../img/loader_sombre.svg);
+
 }
