@@ -117,6 +117,7 @@ a,
 .checkbox-label,
 .btn:not(:disabled):not(.disabled),
 .portfolio-modal .close-modal:hover,
+.portfolio #portfolio-flters li:hover,
 .container_carte_veille .carte .couverture.couverture1 button,
 .contact .php-email-form button[type=submit] {
 	cursor: url(../img/cursor_hover.svg), auto;
@@ -1244,7 +1245,7 @@ ul {
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
-	transition: opacity ease-in-out 0.25s;
+	transition: opacity ease-in-out 0.15s;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
