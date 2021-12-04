@@ -228,6 +228,13 @@ span {
   font-weight: 900;
 }
 
+.impression {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  border-radius: 50%;
+}
+
 @media print {
   @page {
     size: A4;

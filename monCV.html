@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>MonCV</title>
   <link rel="stylesheet" href="./assets/css/cv.css">
-  
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -20,6 +20,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://npmcdn.com/vue/dist/vue.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/@proyecto26/animatable-component@1.1.10/dist/animatable-component/animatable-component.esm.js"></script>
@@ -178,7 +179,7 @@
           <animatable-component autoplay animation="fade-in-right" easing="ease-in-out" duration="1200">
             <div class="row bullet">
               <div class="col-auto pt-2">
-                <i class="bi bi-circle-fill"></i>
+                <i class="fas fa-user"></i>
               </div>
               <div class="col">
                 <p class="title">Profil personnel</p>
@@ -187,8 +188,8 @@
           </animatable-component>
           <animatable-component autoplay animation="fade-in-right" easing="ease-in-out" duration="1200">
             <div class="row record bullet">
-              <div class="col-auto">
-                <i class="bi bi-record-circle"></i>
+              <div class="col-auto pt-2">
+                <i class="fas fa-chevron-circle-right"></i>              
               </div>
               <div class="col">
                 <p style="white-space: pre-line;">{{ profilPersonnel }}</p>
@@ -196,17 +197,18 @@
             </div>
           </animatable-component>
           <div class="row mt-5">
-            <div class="col-auto bullet pt-2">
-              <i class="bi bi-circle-fill"></i>
+            <div class="col-auto bullet pt-3">
+              <i class="fas fa-briefcase"></i>
             </div>
             <div class="col">
               <p class="title">Expériences Professionnelles</p>
             </div>
           </div>
-          <div class="row record mb-4 bullet" v-for="employment in employmentHistory">
+          <div class="row record mt-4 bullet" v-for="employment in employmentHistory">
             <div class="col-auto">
-              <i class="bi bi-record-circle"></i>
+              <i class="fas fa-chevron-circle-right"></i>            
             </div>
+            
             <div class="col">
               <p class="text-uppercase fw-bold position-relative">
                 {{ employment.jobTitle }}
@@ -221,16 +223,16 @@
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-auto bullet pt-2">
-              <i class="bi bi-circle-fill"></i>
+            <div class="col-auto bullet pt-3">
+              <i class="fas fa-gamepad"></i>
             </div>
             <div class="col">
               <p class="title">Intérêts et Loisirs</p>
             </div>
           </div>
-          <div class="row record mb-4 bullet" v-for="loisirs in loisirs">
+          <div class="row record mt-4 bullet" v-for="loisirs in loisirs">
             <div class="col-auto">
-              <i class="bi bi-record-circle"></i>
+              <i class="fas fa-chevron-circle-right"></i>
             </div>
             <div class="col">
               <p class="mb-0" v-for="loisirs in loisirs.liste">
@@ -261,7 +263,7 @@
   </section>
   <div class="btn-group-fab d-print-none">
     <div>
-      <button onclick="javascript:window.print()" type="button" class="btn btn-main btn-primary" title="Print">
+      <button onclick="javascript:window.print()" class="impression" title="Print">
         <i class="bi bi-printer fs-3"></i>
       </button>
     </div>

@@ -27,7 +27,7 @@ ul {
 }
 
 li::marker {
-  color: black;
+  color: #fff;
 }
 
 p {
@@ -231,6 +231,13 @@ span {
 
 .pb-2 a:hover{
   color: #5F6264;
+}
+
+.impression {
+  color: #fff;
+  background-color: #5F6264;
+  border-color: #5F6264;
+  border-radius: 50%;
 }
 
 @media print {
