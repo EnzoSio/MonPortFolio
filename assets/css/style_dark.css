@@ -34,10 +34,13 @@ body.dark .contact .php-email-form button[type=submit] {
 	cursor: url(../img/cursor_hover_black.svg), auto;
 }
 
+
+
+body.dark .stage #stage-flters,
 body.dark .portfolio #portfolio-flters {
 	background: none;
 }
-
+body.dark .stage #stage-flters li,
 body.dark .portfolio #portfolio-flters li {
 	background: #5f6264;
 }
@@ -118,6 +121,7 @@ body.dark::-webkit-scrollbar-thumb {
 	background: #5f6264;
 }
 
+body.dark .stage #stage-flters li,
 body.dark .portfolio #portfolio-flters li {
 	border: 2px solid #5f6264;
 }

@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+* {
+  font-family: Raleway;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  outline: none !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+.container-fluid {
+  padding: 0 10% !important;
+}
+
+ul {
+  list-style: circle;
+}
+
+li::marker {
+  color: black;
+}
+
+p {
+  font-size: 2.48262rem;
+  letter-spacing: 0.115103rem;
+  color: #003da5;
+  word-break: break-all;
+  justify-content: center;
+}
+
+.headLine {
+  width: 0.225693rem;
+  top: 0px;
+  left: 1rem;
+  height: 11.9617rem;
+  background-color: #003da5;
+}
+
+.header {
+  padding-top: 17.8297rem;
+  padding-bottom: 10rem;
+  direction: ltr;
+  margin-bottom: 3rem;
+}
+
+.firstName {
+  font-weight: lighter;
+  text-transform: uppercase;
+  word-break: break-all;
+  color: #003da5;
+  font-size: 6.65793rem;
+  line-height: 1.68;
+  letter-spacing: 3.89546rem;
+  margin-bottom: 1.12846rem;
+  direction: ltr;
+}
+
+.lastName {
+  font-weight: bold;
+  font-size: 9.02771rem;
+  text-transform: uppercase;
+  word-break: break-all;
+  padding-right: 5.64232rem;
+  color: #003da5;
+  line-height: 1.09;
+  letter-spacing: 4.15952rem;
+  direction: ltr;
+}
+
+.jobTitle {
+  padding-right: 0px;
+  margin-top: 4.51385rem;
+  color: #003da5;
+}
+.jobTitle span {
+  padding-left: 1rem;
+  letter-spacing: 0.710932rem;
+  text-transform: uppercase;
+  word-break: break-all;
+  direction: ltr;
+  color: #003da5;
+  font-size: 3.04685rem;
+}
+
+.photo {
+  width: 27.2rem;
+  height: 27.2rem;
+  border-radius: 50%;
+  border: 6px solid;
+  border-color: #003da5;
+  background-color: #003da5;
+}
+
+.middleLine {
+  width: 0.225693rem;
+  bottom: 3.1597rem;
+  left: 1rem;
+  height: 5.64232rem;
+  background-color: #003da5;
+}
+
+
+
+
+
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  background-color: #003da5;
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+
+
+a p {
+  word-break: break-all;
+  color: #003da5;
+}
+
+.list-item {
+  padding-top: 2.03123rem;
+  padding-bottom: 2.03123rem;
+  margin-right: 1rem;
+}
+.list-item:not(:last-child) {
+  border-bottom: 0.225693rem solid #003da5;
+}
+
+.title {
+  width: 100%;
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 4.5rem;
+  border-bottom: 1px solid #003da5;
+  padding-top: 0rem;
+  padding-bottom: 3.8rem;
+  color: #003da5;
+  letter-spacing: 1.01562rem;
+  margin-bottom: 1.8rem;
+}
+
+.personal-details .title {
+  padding-top: 4rem;
+}
+
+.bullet {
+  position: relative;
+}
+.bullet i {
+  font-size: 2.6rem;
+  color: #003da5;
+}
+.bullet:before {
+  content: "";
+  position: absolute;
+  left: 1.9rem;
+  width: 0.3rem;
+  height: 70%;
+  background-color: #003da5;
+  margin-top: 4.2rem;
+}
+
+.record {
+  padding-top: 2rem;
+}
+.record p {
+  width: 100%;
+  font-size: 2.7rem;
+  line-height: 1.33;
+  color: #494E5F;
+  word-break: break-word;
+  display: block;
+}
+
+li {
+  font-family: Raleway;
+  line-height: 1.33;
+  font-size: 2.8806rem;
+  color: #003da5;
+}
+
+span {
+  color: #494E5F;
+  font-size: 2.28048rem;
+  line-height: 1.2;
+  letter-spacing: 0.5rem;
+}
+
+.btn-group-fab {
+  position: fixed;
+  width: 50px;
+  height: auto;
+  right: 20px;
+  bottom: 20px;
+}
+
+.btn-group-fab div {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.btn-group-fab .btn {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 4px;
+  width: 40px;
+  height: 40px;
+  margin: 4px auto;
+}
+
+.pb-2 a{
+  color: #003da5;
+  font-weight: 900;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0mm !important;
+  }
+  html {
+    font-size: 24%;
+  }
+  .photo {
+    width: 40.2rem;
+    height: 40.2rem;
+  }
+
+  #qrcode{
+    width: 40rem;
+  }
+
+  .header {
+    padding-top: 12rem;
+    padding-bottom: 9rem;
+  }
+
+  ul li {
+    margin-left: 1rem;
+  }
+}
