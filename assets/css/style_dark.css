@@ -103,10 +103,10 @@ body.dark ::-webkit-scrollbar-thumb{
 body.dark .certif_container,
 body.dark .back-to-top,
 body.dark .resume .resume-item h5,
-body.dark .sisr,
-body.dark .slam {
+body.dark .carte--current {
 	background: #5f6264;
 }
+
 
 body.dark .btn-primary:active:focus {
 	box-shadow: 0 0 0 0.25rem rgb(95 98 100);
@@ -137,6 +137,7 @@ body.dark .navbar-mobile ul {
 
 body.dark .img-moi {
 	border-color: #5f6264;
+	background-color: #5f6264;
 }
 
 body.dark .service-wrapper {

@@ -23,9 +23,13 @@ if (hours > 18 || hours < 8 ) // entre 8h et 18 heures
   document.getElementById("checkbox")
   document.body.classList.toggle("dark")
   document.getElementById("cv_qrcode").src="./docs/cv_qrcode_sombre.png";
+  document.getElementById("cv").href="./monCV_sombre.html";
+
 }
 else {
   document.getElementById("checkbox")
   document.body.classList.toggle!=("dark")
   document.getElementById("cv_qrcode").src="./docs/cv_qrcode.png";
+  document.getElementById("cv").href="./monCV.html";
+
 }
