@@ -2020,6 +2020,17 @@ li #collabAlan:hover{
 	}
 }
 
+@media (max-width: 329px) {
+	.cartes {
+		position: relative;
+		list-style-type: none;
+		padding: 0;
+		max-width: 35em;
+		font-size: 8px;
+		margin: 10% 15% 0;
+
+	}
+}
 
 /*--------------------------------------------------------------
 # Footer
