@@ -2001,6 +2001,7 @@ li #collabAlan:hover{
 		list-style-type: none;
 		padding: 0;
 		max-width: 40em;
+		font-size: 14px;
 		margin: 10% 15% 0;
 	}
 }
@@ -2014,6 +2015,7 @@ li #collabAlan:hover{
 		list-style-type: none;
 		padding: 0;
 		max-width: 35em;
+		font-size: 11px;
 		margin: 10% 15% 0;
 	}
 }
