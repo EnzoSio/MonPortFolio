@@ -103,7 +103,7 @@ body.dark ::-webkit-scrollbar-thumb{
 body.dark .certif_container,
 body.dark .back-to-top,
 body.dark .resume .resume-item h5,
-body.dark .carte--current {
+body.dark .option--current {
 	background: #5f6264;
 }
 
