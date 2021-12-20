@@ -3,18 +3,18 @@ $.fn.commentcartes = function(){
     return this.each(function(){
   
       var $this = $(this),
-          $cartes = $this.find('.carte'),
+          $cartes = $this.find('.option'),
           $current = $cartes.filter('.carte--current'),
           $next;
   
       $cartes.on('click',function(){
         if ( !$current.is(this) ) {
-          $cartes.removeClass('carte--current carte--out carte--next');
-          $current.addClass('carte--out');
-          $current = $(this).addClass('carte--current');
+          $cartes.removeClass('option--current option--out option--next');
+          $current.addClass('option--out');
+          $current = $(this).addClass('option--current');
           $next = $current.next();
           $next = $next.length ? $next : $cartes.first();
-          $next.addClass('carte--next');
+          $next.addClass('option--next');
         }
       });
   
@@ -29,4 +29,4 @@ $.fn.commentcartes = function(){
   
   };
   
-  $('.cartes').commentcartes();
+  $('.cartes-options').commentcartes();

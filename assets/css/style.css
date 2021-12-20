@@ -790,19 +790,19 @@ section {
 	border-color: #003da5;
 	background-color: #003da5;
 }
-.cartes {
+.cartes-options {
 	position: relative;
 	list-style-type: none;
 	padding: 0;
 	max-width: 45em;
 	margin: 10% 15% 0;
   }
-  .carte {
+  .option {
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 2;
-	background: #ccc;
+	background: #003da5;
 	border-radius: 30px;
 	padding: 40px;
 	box-shadow: 0 0 40px #000;
@@ -815,21 +815,21 @@ section {
 		-ms-user-select: none;
 			user-select: none;
   }
-  .carte :last-child {
+  .option :last-child {
 	margin-bottom: 0;
   }
-  .carte--next {
+  .option--next {
 	z-index: 5;
 	transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
   }
-  .carte--out {
-	-webkit-animation: carte-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
-			animation: carte-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+  .option--out {
+	-webkit-animation: option-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+			animation: option-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
 	transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
 	z-index: 1;
 	background: #bbb;
   }
-  @-webkit-keyframes carte-out {
+  @-webkit-keyframes option-out {
 	0% {
 	  z-index: 20;
 	  transform: translateY(0px) rotate(-4deg);
@@ -844,7 +844,7 @@ section {
 	  transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
 	}
   }
-  @keyframes carte-out {
+  @keyframes option-out {
 	0% {
 	  z-index: 20;
 	  transform: translateY(0px) rotate(-4deg);
@@ -859,7 +859,7 @@ section {
 	  transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
 	}
   }
-  .carte--current {
+  .option--current {
 	cursor: auto;
 	-webkit-user-select: auto;
 	   -moz-user-select: auto;
@@ -868,7 +868,8 @@ section {
 	position: relative;
 	z-index: 10;
 	opacity: 1;
-	background: #EEE;
+	background: #003da5;
+	color: #FFF;
 	transform: rotate(-1deg) translateX(0%) scale(1);
   }
   
@@ -882,7 +883,7 @@ section {
 		margin-bottom: 25px;
 	}
 
-	.cartes {
+	.cartes-options {
 		position: relative;
 		list-style-type: none;
 		padding: 0;
