@@ -28,6 +28,9 @@
    <body>
       <!-- LOADER -->
       <div class="loader_bg">
+         <div class="circle">
+            
+         </div>
          <div class="spinner"></div>
       </div>
       <!-- HEADER -->
@@ -243,34 +246,50 @@
                   </div>
                </div>
                <div class="row stage-container">
-                  <!-- SITE VITRINE N°1 -->
                   <div class="col-lg-4 col-md-6 stage-item filter-lo">
-                     <div class="stage-img"><img src="assets/img/stages/Louvre.jpg" class="img-fluid" alt="">
+                     <div class="stage-wrap">
+                        <img src="assets/img/stages/Louvre.jpg" class="img-fluid" alt="">                       
+                        <div class="stage-info">
+                         <h4>Louvre</h4>
+                         <p>Stage n°1</p>
+                       </div>
+                       <div class="stage-links">
+                         <a href="assets/img/stages/Louvre.jpg" data-gallery="stageGallery" class="stage-lightbox" title="App 1"><i class="fas fa-search-plus"></i></i></a>
+                         <a href="stage-details.html" title="More Details"><i class="fas fa-door-open"></i></a>
+                       </div>
                      </div>
-                     <div class="stage-info">
-                        <h4>Louvre</h4>
-                        <p>Stage n°1</p>
-                        <a href="assets/img/stages/Louvre.jpg" data-gallery="stageGallery"
-                           class="stage-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="stage-details-Louvre.html" class="details-link" title="More Details">
-                        <i class="fas fa-door-open"></i></a>
+                   </div>
+           
+                   <div class="col-lg-4 col-md-6 stage-item filter-th">
+                     <div class="stage-wrap">
+                       <img src="assets/img/stages/Thales.png" class="img-fluid" alt="">
+                       <div class="stage-info">
+                         <h4>Thalès</h4>
+                         <p>Stage n°2</p>
+                       </div>
+                       <div class="stage-links">
+                        <a href="assets/img/stages/Thales.png" data-gallery="stageGallery" class="stage-lightbox" title="App 1"><i class="fas fa-search-plus"></i></i></a>
+                        <a href="stage-details.html" title="More Details"><i class="fas fa-door-open"></i></a>
+                      </div>
                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 stage-item filter-th">
-                     <div class="stage-img"><img src="assets/img/stages/Thales.png" class="img-fluid" alt="">
+                   </div>
+           
+                   <div class="col-lg-4 col-md-6 stage-item filter-app">
+                     <div class="stage-wrap">
+                       <img src="assets/img/stage/stage-3.jpg" class="img-fluid" alt="">
+                       <div class="stage-info">
+                         <h4>App 2</h4>
+                         <p>App</p>
+                       </div>
+                       <div class="stage-links">
+                         <a href="assets/img/stage/stage-3.jpg" data-gallery="stageGallery" class="stage-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                         <a href="stage-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                       </div>
                      </div>
-                     <div class="stage-info">
-                        <h4>Thalès</h4>
-                        <p>Stage n°2</p>
-                        <a href="assets/img/stages/Thales.png" data-gallery="stageGallery"
-                           class="stage-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="stage-details-Devialet.html" class="details-link" title="More Details">
-                        <i class="fas fa-door-open"></i></a>
-                     </div>
-                  </div>
+                   </div>
+                 </div>
                </div>
-            </div>
-         </section>
+             </section><!-- End stage Section -->
          <!-- SECTION PROJETS -->
          <section id="projets" class="portfolio">
             <div class="container">
@@ -496,67 +515,34 @@
                      <h2>Contactez Moi</h2>
                   </div>
                </div>
-               <div class="row">
-                  <div class="col-lg-6">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <div class="info-box">
-                              <h3>Réseaux Sociaux</h3>
-                              <div class="social-links">
-                                 <a href="https://github.com/enzosio" class="github"><i class="bi bi-github"></i></a>
-                                 <a href="https://www.linkedin.com/in/enzo-aime-291ba11b9/" class="linkedin"><i
-                                    class="bi bi-linkedin"></i></a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="info-box mt-4">
-                              <h3>Email Me</h3>
-                              <p>enzo.aimebtssio1@gmail.com</p>
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="info-box mt-4">
-                              <h3>Envoyez-moi un message</h3>
-                              <div class="social-links">
-                                 <a href="" class="messenger"><i class="bi bi-messenger"></i></a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+               <div class="row mt-2">
+
+          
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
                   </div>
-                  <div class="col-lg-6">
-                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                           <div class="col-md-6 form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom"
-                                 required>
-                           </div>
-                           <div class="col-md-6 form-group mt-3 mt-md-0">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email"
-                                 required>
-                           </div>
-                        </div>
-                        <div class="form-group mt-3">
-                           <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet"
-                              required>
-                        </div>
-                        <div class="form-group mt-3">
-                           <textarea class="form-control" name="message" rows="6" placeholder="Ecrivez votre message"
-                              required></textarea>
-                        </div>
-                        <div class="my-3">
-                           <div class="loading">Chargement</div>
-                           <div class="error-message"></div>
-                           <div class="sent-message">Votre message à bien été envoyé ! Merci</div>
-                        </div>
-                        <div class="text-center"><button type="submit">Envoyer un Message</button></div>
-                     </form>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                   </div>
-               </div>
-            </div>
-         </section>
-         <!-- FIN SECTION CONTACT -->
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+          
+              </div>
+            </section><!-- FIN SECTION CONTACT -->
       </main>
       <!-- ======= OUTILS ET LANGAGES ======= -->
       <section id="clients" class="clients">
