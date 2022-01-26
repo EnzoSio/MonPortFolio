@@ -264,6 +264,12 @@
     selector: '.stage-lightbox'
   });
 
+  /**
+   * Initiate Stages lighbox
+   */
+   const certifLightbox = GLightbox({
+    selector: '.certif-lightbox'
+  });
 
   /**
    *  details slider

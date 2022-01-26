@@ -2584,10 +2584,17 @@
 
         if (isNode(element)) {
           var gallery = element.getAttribute('data-gallery');
+          var certif = element.getAttribute('data-certif');
+
 
           if (gallery) {
             this.fullElementsList = this.elements;
             this.elements = this.getGalleryElements(this.elements, gallery);
+          }
+
+          if (certif) {
+            this.fullElementsList = this.elements;
+            this.elements = this.getGalleryElements(this.elements, certif);
           }
 
           if (isNil(index)) {
@@ -3231,6 +3238,8 @@
           slideInfo.instance = slide;
           slideInfo.slideConfig = elData;
           slideInfo.gallery = el.getAttribute('data-gallery');
+          slideInfo.gallery = el.getAttribute('data-certif');
+
           list.push(slideInfo);
         });
 
