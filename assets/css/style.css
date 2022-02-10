@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
+@font-face {
+	font-family: "univiapro";
+	src: url(fonts/UniviaPro-Medium.otf);
+}
+
 /*--------------------------------------------------------------
 # ScrollBar
 --------------------------------------------------------------*/
@@ -70,7 +75,7 @@
 --------------------------------------------------------------*/
 
 body {
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'univiapro', sans-serif;
 	color: #444444;
 	cursor: url(../img/cursor.svg), auto;
 }
@@ -104,7 +109,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'univiapro', sans-serif;
 }
 
 
@@ -199,7 +204,7 @@ h6 {
 	white-space: nowrap;
 	transition: 0.3s;
 	font-size: 16px;
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'univiapro', sans-serif;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -607,7 +612,7 @@ section {
 
 .section-title span,
 .section-title h2 {
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'univiapro', sans-serif;
 }
 
 .section-mini-title h2 {
@@ -804,6 +809,10 @@ section {
 	background: #bbb;
 }
 
+.option--out:hover{
+	cursor: url(../img/cursor_hover.svg), auto;
+}
+
 @-webkit-keyframes option-out {
 	0% {
 		z-index: 20;
@@ -848,6 +857,10 @@ section {
 	background: #003da5;
 	color: #FFF;
 	transform: rotate(-1deg) translateX(0%) scale(1);
+}
+
+.option--current:hover{
+	cursor: url(../img/cursor.svg), auto;
 }
 
 @media screen and (max-width: 992px) {
@@ -921,7 +934,7 @@ section {
 .about .content .count-box p {
 	padding: 15px 0 0 0;
 	margin: 0 0 0 50px;
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'univiapro', sans-serif;
 	font-size: 14px;
 	color: #5d6a75;
 }
@@ -963,7 +976,7 @@ section {
 	text-transform: uppercase;
 	display: block;
 	font-weight: 700;
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'univiapro', sans-serif;
 	color: #3b434a;
 }
 
@@ -1066,6 +1079,7 @@ section {
 	background: #003da5;
 	border-color: #003da5;
 	transition: 0.3s;
+	font-family: 'univiapro', sans-serif;
 }
 
 .btn-primary:hover {
@@ -1522,7 +1536,7 @@ section {
 }
 
 button.btn.btn-primary.btn-xl.text-uppercase {
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'univiapro', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1592,7 +1606,7 @@ button.btn.btn-primary.btn-xl.text-uppercase {
 	border-radius: 20px;
 	background: #ffffff;
 	transition: 0.3s;
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'univiapro', sans-serif;
 }
 
 .container_carte_veille .carte .couverture.couverture1 button:hover {
@@ -2248,7 +2262,7 @@ li #collabAlan:hover {
 	border-radius: 0;
 	box-shadow: none;
 	font-size: 14px;
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'univiapro', sans-serif;
 }
 
 .contact .php-email-form input::focus,
@@ -2271,7 +2285,7 @@ li #collabAlan:hover {
 	color: #fff;
 	transition: 0.4s;
 	border-radius: 5px;
-	font-family: 'Hammersmith One';
+	font-family: 'univiapro';
 }
 
 .contact .php-email-form button[type=submit]:hover {
