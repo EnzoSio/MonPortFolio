@@ -2338,6 +2338,8 @@ li #collabAlan:hover {
 	transform: scale(1.2);
 }
 
+
+
 @media (max-width: 768px) {
 	.clients img {
 		width: 40%;
@@ -2377,23 +2379,67 @@ li #collabAlan:hover {
 	}
 }
 
+.tooltip{
+	padding: .7rem 1.7rem;
+	background-color: #003da5;
+	color: #fff;
+	font-size: 10px;
+	font-family: "univiapro";
+	letter-spacing: 1px;
+	border-radius: 5px;
+	margin-top: 15px;
+	opacity: 0;
+    position: absolute;
+	transition:all 155ms ease-in-out;
+	z-index: 1;
+	text-align: justify;
+  }
+
+
+  .tooltip::before{
+	content:"";
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid #003da5;
+	position:absolute;
+	top: -15px;
+	left: 47%;
+	transform:translateX(-50%);
+  }
+  
+  .logos{
+	padding: 2rem 3rem;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 3rem;
+	border-radius:10px;
+  }
+  .logos:hover~.tooltip{
+	opacity: 1;
+	
+  }
+  
+
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
 #footer {
+	z-index: -1;
 	background: url("../img/footer-bg.jpg") top center no-repeat;
 	background-size: cover;
 	color: #fff;
 	font-size: 14px;
 	text-align: center;
 	padding: 80px 0;
-	position: relative;
 }
 
 #footer::before {
-	content: "";
+	z-index: -1;
+
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -2403,14 +2449,14 @@ li #collabAlan:hover {
 }
 
 #footer .container {
-	position: relative;
+	position: inherit;
+	
 }
 
 #footer h3 {
 	font-size: 36px;
 	font-weight: 700;
 	color: #fff;
-	position: relative;
 	/* font-family: "Satisfy", serif; */
 	padding: 0;
 	margin: 0 0 15px 0;
@@ -2421,6 +2467,7 @@ li #collabAlan:hover {
 	font-style: italic;
 	padding: 0;
 	margin: 0 0 40px 0;
+	z-index: -1;
 }
 
 #footer .social-links {

@@ -252,3 +252,15 @@ body.dark .blog-slider__button {
 	text-align: center;
 	letter-spacing: 1px;
 }
+
+body.dark .loader_bg {
+	background: #292c35;
+}
+
+body.dark .spinner {
+	background-image: url(../img/book-solid-white.svg);
+}
+
+body.dark .fa-snowflake{
+	color:#fff;
+}
