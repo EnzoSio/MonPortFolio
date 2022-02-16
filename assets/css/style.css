@@ -1660,7 +1660,7 @@ button.btn.btn-primary.btn-xl.text-uppercase {
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 @media screen and (max-width: 992px) {
