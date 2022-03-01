@@ -125,6 +125,7 @@ h6 {
 	bottom: 15px;
 	z-index: 996;
 	background: #003da5;
+	color: #FFF;
 	width: 40px;
 	height: 40px;
 	border-radius: 30px;
@@ -312,11 +313,11 @@ h6 {
 }
 
 .fa-moon {
-	color: #5f6264;
+	color: #ffffff;
 }
 
-.fa-snowflake {
-	color: #003da5;
+.fa-sun {
+	color: #fffb00;
 }
 
 .checkbox-label .ball {
@@ -1660,6 +1661,7 @@ button.btn.btn-primary.btn-xl.text-uppercase {
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
+  margin-bottom: 55px;
 }
 
 @media screen and (max-width: 992px) {
