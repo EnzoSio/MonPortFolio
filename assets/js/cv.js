@@ -33,6 +33,10 @@ const resume = {
     {
       label: 'LinkedIn',
       link: 'https://www.linkedin.com/in/enzo-aime-291ba11b9'
+    },
+    {
+      label: 'CodePen',
+      link: 'https://codepen.io/enzo-aime91'
     }
   ],
   skills: [
@@ -55,6 +59,15 @@ const resume = {
   je suis actuellement en BTS SIO, dans l'option SLAM (Solutions Logicielles et Applications Métiers). Mon projet professionnel est de devenir Webmaster / Web développeur, après mes 2 ans d'études en BTS SIO, je compte ensuite faire une licence professionnelle.`,
 
   employmentHistory: [
+    {
+      jobTitle: 'Thalès',
+      startDate: 'Janvier 2022',
+      endDate: 'Février 2022',
+      city: '2 av Gay Lussac, 78990 ELANCOURT',
+      achievements: [
+        'Développement d\'une application Android, permettant la gestion de stock'
+      ]
+    },
     {
       jobTitle: 'Thalès',
       startDate: 'Mai 2021',

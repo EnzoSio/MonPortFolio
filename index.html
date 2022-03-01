@@ -43,7 +43,7 @@
                <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
                <li><a class="nav-link scrollto" href="#about">A propos</a></li>
                <li><a class="nav-link scrollto" href="#resume">Parcours</a></li>
-               <li><a class="nav-link scrollto" href="#stage">Stages</a></li>
+               <li><a class="nav-link scrollto" href="#stages">Stages</a></li>
                <li><a class="nav-link scrollto " href="#projets">Projets</a></li>
                <li><a class="nav-link scrollto" href="#veille">Veille</a></li>
                <li><a class="nav-link scrollto" href="#loisirs">Loisirs</a></li>
@@ -52,7 +52,7 @@
                   <div class="themes">
                      <input type="checkbox" class="checkbox" id="checkbox">
                      <label for="checkbox" class="checkbox-label"> <i class="fas fa-moon" alt="mode sombre"></i>
-                     <i class="fas fa-snowflake" alt="mode clair"></i> <span class="ball"></span>
+                        <i class="fas fa-sun"></i> <span class="ball"></span>
                      </label>
                   </div>
                </li>
@@ -229,7 +229,7 @@
          </section>
          <!-- FIN SECTION PARCOURS -->
          <!-- SECTION PROJETS -->
-         <section id="stage" class="stage">
+         <section id="stages" class="stage">
             <div class="container">
                <div data-aos="zoom-in" data-aos-delay="500">
                   <div class="section-title">
@@ -242,25 +242,13 @@
                   <div class="col-lg-12 d-flex justify-content-center">
                      <ul id="stage-flters">
                         <li data-filter="*" class="filter-active">Tout Afficher</li>
+                                                <li data-filter=".filter-th">Thalès</li>
+
                         <li data-filter=".filter-lo">Louvre</li>
-                        <li data-filter=".filter-th">Thalès</li>
                      </ul>
                   </div>
                </div>
                <div class="row stage-container">
-                  <div class="col-lg-4 col-md-6 stage-item filter-lo">
-                     <div class="stage-wrap">
-                        <img src="assets/img/stages/Louvre.jpg" class="img-fluid" alt="">                       
-                        <div class="stage-info">
-                           <h4>Louvre</h4>
-                           <p>Stage n°1</p>
-                        </div>
-                        <div class="stage-links">
-                           <a href="assets/img/stages/Louvre.jpg" data-gallery="stageGallery" class="stage-lightbox" title="App 1"><i class="fas fa-search-plus"></i></i></a>
-                           <a href="stage-details.html" title="More Details"><i class="fas fa-door-open"></i></a>
-                        </div>
-                     </div>
-                  </div>
                   <div class="col-lg-4 col-md-6 stage-item filter-th">
                      <div class="stage-wrap">
                         <img src="assets/img/stages/Thales.png" class="img-fluid" alt="">
@@ -270,10 +258,24 @@
                         </div>
                         <div class="stage-links">
                            <a href="assets/img/stages/Thales.png" data-gallery="stageGallery" class="stage-lightbox" title="App 1"><i class="fas fa-search-plus"></i></i></a>
-                           <a href="stage-details.html" title="More Details"><i class="fas fa-door-open"></i></a>
+                           <a href="stage-details-Thales.html" title="More Details"><i class="fas fa-door-open"></i></a>
                         </div>
                      </div>
                   </div>
+                  <div class="col-lg-4 col-md-6 stage-item filter-lo">
+                     <div class="stage-wrap">
+                        <img src="assets/img/stages/Louvre.jpg" class="img-fluid" alt="">                       
+                        <div class="stage-info">
+                           <h4>Louvre</h4>
+                           <p>Stage n°1</p>
+                        </div>
+                        <div class="stage-links">
+                           <a href="assets/img/stages/Louvre.jpg" data-gallery="stageGallery" class="stage-lightbox" title="App 1"><i class="fas fa-search-plus"></i></i></a>
+                           <a href="stage-details-Louvre.html" title="More Details"><i class="fas fa-door-open"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                 
                   <div class="col-lg-4 col-md-6 stage-item filter-app">
                      <div class="stage-wrap">
                         <img src="assets/img/stage/stage-3.jpg" class="img-fluid" alt="">
@@ -313,29 +315,31 @@
                   </div>
                </div>
                <div class="row portfolio-container">
-                  <!-- SITE VITRINE N°1 -->
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-sv">
-                     <div class="portfolio-img"><img src="assets/img/portfolio/Devialet.JPG" class="img-fluid" alt="">
+                 
+                  
+                 
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-aj">
+                     <div class="portfolio-img">
+                        <img src="assets/img/portfolio/GsbMateriel.jpg" class="img-fluid" alt="">
                      </div>
                      <div class="portfolio-info">
-                        <h4>Devialet</h4>
-                        <p>Web</p>
-                        <a href="assets/img/portfolio/Devialet.JPG" data-gallery="portfolioGallery"
+                        <h4>GSB Matériel</h4>
+                        <p>Application Java</p>
+                        <a href="assets/img/portfolio/GsbMateriel.jpg" data-gallery="portfolioGallery"
                            class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-Devialet.html" class="details-link" title="More Details">
-                        <i class="fas fa-door-open"></i></a>
+                        <a href="portfolio-details-GsbMat.html" class="details-link" title="More Details"><i
+                           class="fas fa-door-open"></i></a>
                      </div>
                   </div>
-                  <!-- SITE MARCHAND -->
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-sm">
-                     <div class="portfolio-img"><img src="assets/img/portfolio/SiteMarchand.JPG" class="img-fluid" alt="">
-                     </div>
+                   <!-- APPLICATION JAVA -->
+                   <div class="col-lg-4 col-md-6 portfolio-item filter-aj">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/raSio.jpg" class="img-fluid" alt=""></div>
                      <div class="portfolio-info">
-                        <h4>Site Marchand</h4>
-                        <p>Web</p>
-                        <a href="assets/img/portfolio/SiteMarchand.JPG" data-gallery="portfolioGallery"
+                        <h4>RaSIO</h4>
+                        <p>Application Java</p>
+                        <a href="assets/img/portfolio/.JPG" data-gallery="portfolioGallery"
                            class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-SiteMarchand.html" class="details-link" title="More Details"><i
+                        <a href="portfolio-details-raSio.html" class="details-link" title="More Details"><i
                            class="fas fa-door-open"></i></a>
                      </div>
                   </div>
@@ -351,29 +355,30 @@
                            class="fas fa-door-open"></i></a>
                      </div>
                   </div>
-                  <!-- APPLICATION JAVA -->
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-aj">
-                     <div class="portfolio-img"><img src="assets/img/portfolio/raSio.jpg" class="img-fluid" alt=""></div>
+                   <!-- SITE MARCHAND -->
+                   <div class="col-lg-4 col-md-6 portfolio-item filter-sm">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/SiteMarchand.JPG" class="img-fluid" alt="">
+                     </div>
                      <div class="portfolio-info">
-                        <h4>RaSIO</h4>
-                        <p>Application Java</p>
-                        <a href="assets/img/portfolio/.JPG" data-gallery="portfolioGallery"
+                        <h4>Site Marchand</h4>
+                        <p>Web</p>
+                        <a href="assets/img/portfolio/SiteMarchand.JPG" data-gallery="portfolioGallery"
                            class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-raSio.html" class="details-link" title="More Details"><i
+                        <a href="portfolio-details-SiteMarchand.html" class="details-link" title="More Details"><i
                            class="fas fa-door-open"></i></a>
                      </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-aj">
-                     <div class="portfolio-img">
-                        <img src="assets/img/portfolio/GsbMateriel.jpg" class="img-fluid" alt="">
+                  <!-- SITE VITRINE N°1 -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-sv">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/Devialet.JPG" class="img-fluid" alt="">
                      </div>
                      <div class="portfolio-info">
-                        <h4>GSB Matériel</h4>
-                        <p>Application Java</p>
-                        <a href="assets/img/portfolio/GsbMateriel.jpg" data-gallery="portfolioGallery"
+                        <h4>Devialet</h4>
+                        <p>Web</p>
+                        <a href="assets/img/portfolio/Devialet.JPG" data-gallery="portfolioGallery"
                            class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-GsbMat.html" class="details-link" title="More Details"><i
-                           class="fas fa-door-open"></i></a>
+                        <a href="portfolio-details-Devialet.html" class="details-link" title="More Details">
+                        <i class="fas fa-door-open"></i></a>
                      </div>
                   </div>
                </div>
@@ -505,8 +510,8 @@
                      <img src="./assets/img/certificat/cert_SQL.jpg" alt="">
                   </div>
                   <div class="blog-slider__content">
-                     <span class="blog-slider__code">23 Août 2021</span>
                      <div class="blog-slider__title">SQL</div>
+                     <span class="blog-slider__code">23 Août 2021</span>
                      <div class="blog-slider__text">Ce cours couvre un large éventail de sujets liés au langage SQL, tels que l'extraction, la mise à jour et le filtrage de données, les fonctions et les sous-requêtes, la création et la mise à jour de tables, et bien d'autres encore !</div>
                      <a href="assets/img/certificat/cert_SQL.jpg" data-gallery="portfolioGallery"
                      class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  </div>
@@ -516,8 +521,8 @@
                      <img src="./assets/img/certificat/cert_JAVA.jpg">
                   </div>
                   <div class="blog-slider__content">
-                     <span class="blog-slider__code">26 December 2019</span>
                      <div class="blog-slider__title">JAVA</div>
+                     <span class="blog-slider__code">26 December 2019</span>
                      <div class="blog-slider__text">Grâce à ce cours interactif de Java, j'ai appris la programmation Java orientée objet.</div>
                      <a href="assets/img/certificat/cert_JAVA.jpg" data-gallery="portfolioGallery"
                      class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  </div>
@@ -527,8 +532,8 @@
                      <img src="./assets/img/certificat/cert_PHP.jpg">
                   </div>
                   <div class="blog-slider__content">
-                     <span class="blog-slider__code">26 December 2019</span>
                      <div class="blog-slider__title">PHP</div>
+                     <span class="blog-slider__code">26 December 2019</span>
                      <div class="blog-slider__text">Ce cours m'a permis de comprendre comment fonctionne les pages web dynamiques, mais aussi de développer des sites web et de générer du contenu dynamique. </div>
                      <a href="assets/img/certificat/cert_PHP.jpg" data-gallery="portfolioGallery"
                      class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  </div>
@@ -538,8 +543,8 @@
                      <img src="./assets/img/certificat/cert_PYTHON.jpg">
                   </div>
                   <div class="blog-slider__content">
-                     <span class="blog-slider__code">26 December 2019</span>
                      <div class="blog-slider__title">PYTHON</div>
+                     <span class="blog-slider__code">26 December 2019</span>
                      <div class="blog-slider__text">Dans ce cours, j'ai découvert les concepts de base de Python, ainsi que la construction de projets réels et la résolution différents défis de codage. </div>
                      <a href="assets/img/certificat/cert_PYTHON.jpg" data-gallery="portfolioGallery"
                      class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  </div>
@@ -892,8 +897,8 @@
             </div>
          </div>
       </div>
-      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-         class="bi bi-arrow-up-short"></i></a>
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-home" aria-hidden="true"></i>
+      </a>
       <!-- Vendor JS Files -->
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

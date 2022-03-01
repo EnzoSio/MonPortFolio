@@ -2144,6 +2144,35 @@ li #collabAlan:hover {
 	padding: 0;
 }
 
+/*--------------------------------------------------------------
+# Section Site Officiel
+--------------------------------------------------------------*/
+#louvre, #thales  {
+	transition: 0.5s;
+	color: #444444;
+	margin-left: 10px;
+}
+
+#louvre:hover {
+	transition: 0.5s;
+	font-weight: bolder;
+	animation: .3s;
+	font-size: 18px;
+	color: #008573;
+}
+
+
+
+#thales:hover {
+	transition: 0.5s;
+	font-weight: bolder;
+	animation: .3s;
+	font-size: 18px;
+	color: #0c0d29;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Section Contactez-moi
