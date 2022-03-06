@@ -8,6 +8,7 @@ checkbox.addEventListener("change", () => {
   else if(document.body.classList.toggle!=("dark")){
     document.getElementById("cv").href="./monCV.html";
     document.getElementById("cv_qrcode").src="./docs/cv_qrcode.png";
+    
   }
 })
 

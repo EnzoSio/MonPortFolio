@@ -757,14 +757,16 @@ section {
 }
 
 .img-moi {
-	height: 295px;
-	width: 300px;
+	height: 310px;
+    width: 310px;
 	margin: 20px;
 	border-radius: 50%;
-	border: 0.6rem solid;
-	border-color: #003da5;
+	border: 0.2rem solid;
+	color: #003da5;
+	box-shadow: 0 5px 50px 0 #003da5, 0 0 0 7px #003da5;
 	background-color: #003da5;
 }
+
 
 .cartes-options {
 	position: relative;

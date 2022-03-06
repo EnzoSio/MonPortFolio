@@ -136,8 +136,9 @@ body.dark .navbar-mobile ul {
 }
 
 body.dark .img-moi {
-	border-color: #5f6264;
+	box-shadow: 0 5px 50px 0 #5f6264, 0 0 0 7px #5f6264;
 	background-color: #5f6264;
+	color: #5f6264;
 }
 
 body.dark .service-wrapper {
@@ -229,21 +230,7 @@ body.dark .blog-slider__text {
 /*--------------------------------------------------------------
 # Projets PortFolio et Slider
 --------------------------------------------------------------*/
-
-.portfolio-details {
-	padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-	width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-	margin-top: 20px;
-	position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
 	width: 12px;
 	height: 12px;
 	background-color: #fff;
@@ -264,27 +251,17 @@ body.dark .blog-slider__pagination .swiper-pagination-bullet-active {
 
 
 
-.portfolio-details .portfolio-info {
+body.dark .portfolio-details .portfolio-info {
 	padding: 30px;
 	box-shadow: 0px 0 30px rgba(59, 67, 74, 0.08);
 }
 
-.portfolio-details .portfolio-info h3 {
+body.dark .portfolio-details .portfolio-info h3 {
 	font-size: 22px;
 	font-weight: 700;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-	list-style: none;
-	padding: 0;
-	font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-	margin-top: 10px;
 }
 
 
@@ -322,3 +299,16 @@ body.dark .spinner {
 body.dark .fa-snowflake{
 	color:#fff;
 }
+
+
+body.dark .profile-card__img {
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	z-index: 4;
+	box-shadow: 0 5px 50px 0 #5f6264, 0 0 0 7px #414344;
+}
+
