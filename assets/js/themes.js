@@ -23,6 +23,7 @@ if (hours > 18 || hours < 8 ) // entre 8h et 18 heures
   document.getElementById("cv_qrcode").src="./docs/cv_qrcode_sombre.png";
   document.getElementById("cv").href="./monCV_sombre.html";
   document.getElementById("hero").style.backgroundImage = "url('assets/img/hero-bg-light.jpg')";
+
 }
 else {
   document.getElementById("checkbox")

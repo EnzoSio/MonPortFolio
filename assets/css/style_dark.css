@@ -312,3 +312,6 @@ body.dark .profile-card__img {
 	box-shadow: 0 5px 50px 0 #5f6264, 0 0 0 7px #414344;
 }
 
+body.dark .postcard {
+	color: #ffffff;
+}

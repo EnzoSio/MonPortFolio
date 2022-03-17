@@ -767,104 +767,200 @@ section {
 	background-color: #003da5;
 }
 
-
-.cartes-options {
+/* Cartes Options */
+.postcard {
+	flex-wrap: wrap;
+	display: flex;
+	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+	border-radius: 10px;
+	margin: 0 0 2rem 0;
+	overflow: hidden;
 	position: relative;
-	list-style-type: none;
-	padding: 0;
-	max-width: 45em;
-	margin: 10% 15% 0;
+	color: rgb(0, 0, 0)
 }
 
-.option {
+.postcard.dark {
+	background-color: #18151f
+}
+
+.postcard a {
+	color: inherit
+}
+
+.postcard .h1,
+.postcard h1 {
+	margin-bottom: .5rem;
+	font-weight: 500;
+	line-height: 1.2
+}
+
+.postcard .small {
+	font-size: 80%
+}
+
+.postcard .postcard__title {
+	font-size: 1.75rem
+}
+
+.postcard .postcard__img {
+	max-height: 180px;
+	width: 100%;
+	object-fit: cover;
+	position: relative
+}
+
+.postcard .postcard__img_link {
+	display: contents
+}
+
+.postcard .postcard__bar {
+	width: 50px;
+	height: 10px;
+	margin: 10px 0;
+	border-radius: 5px;
+	background-color: #424242;
+	transition: width .2s ease
+}
+
+.postcard .postcard__text {
+	padding: 1.5rem;
+	position: relative;
+	display: flex;
+	flex-direction: column
+}
+
+.postcard .postcard__preview-txt {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: justify;
+	height: 100%
+}
+
+.postcard .postcard__tagbox {
+	display: flex;
+	flex-flow: row wrap;
+	font-size: 14px;
+	margin: 20px 0 0 0;
+	padding: 0;
+	justify-content: center
+}
+
+.postcard .postcard__tagbox .tag__item {
+	display: inline-block;
+	background: rgba(83, 83, 83, .4);
+	border-radius: 3px;
+	padding: 2.5px 10px;
+	margin: 0 5px 5px 0;
+	cursor: default;
+	user-select: none;
+	transition: background-color .3s
+}
+
+.postcard .postcard__tagbox .tag__item:hover {
+	background: rgba(83, 83, 83, .8)
+}
+
+.postcard:before {
+	content: "";
 	position: absolute;
 	top: 0;
+	right: 0;
+	bottom: 0;
 	left: 0;
-	z-index: 2;
-	background: #003da5;
-	border-radius: 30px;
-	padding: 40px;
-	box-shadow: 0 0 40px #000;
-	transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
-	transform-origin: 0 0;
-	transition: transform 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8) 0.1s, background 0.4s linear;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.option :last-child {
-	margin-bottom: 0;
-}
-
-.option--next {
-	z-index: 5;
-	transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
-}
-
-.option--out {
-	-webkit-animation: option-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
-	animation: option-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
-	transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
-	z-index: 1;
-	background: #bbb;
-}
-
-.option--out:hover{
-	cursor: url(../img/cursor_hover.svg), auto;
-}
-
-@-webkit-keyframes option-out {
-	0% {
-		z-index: 20;
-		transform: translateY(0px) rotate(-4deg);
-	}
-	50% {
-		transform: translateY(-120%) rotate(-5deg) translateX(-40px);
-	}
-	80% {
-		z-index: 1;
-	}
-	100% {
-		transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
-	}
-}
-
-@keyframes option-out {
-	0% {
-		z-index: 20;
-		transform: translateY(0px) rotate(-4deg);
-	}
-	50% {
-		transform: translateY(-120%) rotate(-5deg) translateX(-40px);
-	}
-	80% {
-		z-index: 1;
-	}
-	100% {
-		transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
-	}
-}
-
-.option--current {
-	cursor: auto;
-	-webkit-user-select: auto;
-	-moz-user-select: auto;
-	-ms-user-select: auto;
-	user-select: auto;
-	position: relative;
-	z-index: 10;
+	background-image: linear-gradient(-70deg, #424242, transparent 50%);
 	opacity: 1;
-	background: #003da5;
-	color: #FFF;
-	transform: rotate(-1deg) translateX(0%) scale(1);
+	border-radius: 10px
 }
 
-.option--current:hover{
-	cursor: url(../img/cursor.svg), auto;
+.postcard:hover .postcard__bar {
+	width: 100px
 }
+
+@media screen and (min-width:769px) {
+	.postcard {
+		flex-wrap: inherit
+	}
+	.postcard .postcard__title {
+		font-size: 2rem
+	}
+	.postcard .postcard__tagbox {
+		justify-content: start
+	}
+	.postcard .postcard__img {
+		max-width: 300px;
+		max-height: 100%;
+		transition: transform .3s ease
+	}
+	.postcard .postcard__text {
+		padding: 3rem;
+		width: 100%
+	}
+	.postcard:hover .postcard__img {
+		transform: scale(1.1)
+	}
+	.postcard:nth-child(2n+1) {
+		flex-direction: row
+	}
+	.postcard:nth-child(2n+0) {
+		flex-direction: row-reverse
+	}
+	.postcard:nth-child(2n+1) .postcard__text::before {
+		left: -16px!important;
+		transform: rotate(4deg)
+	}
+	.postcard:nth-child(2n+0) .postcard__text::before {
+		right: -12px!important;
+		transform: rotate(-4deg)
+	}
+}
+
+@media screen and (min-width:1024px) {
+	.postcard__text {
+		padding: 2rem 3.5rem
+	}
+	.postcard__text:before {
+		content: "";
+		position: absolute;
+		display: block;
+		top: -20%;
+		height: 130%;
+		width: 55px
+	}
+	.postcard.dark .postcard__text:before {
+		background: #18151f
+	}
+}
+
+.postcard .postcard__tagbox .blue.play:hover {
+	background: #0076bd
+}
+
+.blue .postcard__title:hover {
+	color: #0076bd
+}
+
+.blue .postcard__bar {
+	background-color: #0076bd
+}
+
+.blue::before {
+	background-image: linear-gradient(-30deg, rgba(0, 118, 189, .1), transparent 50%)
+}
+
+.blue:nth-child(2n)::before {
+	background-image: linear-gradient(30deg, rgba(0, 118, 189, .1), transparent 50%)
+}
+
+@media screen and (min-width:769px) {
+	.blue::before {
+		background-image: linear-gradient(-80deg, rgba(0, 118, 189, .1), transparent 50%)
+	}
+	.blue:nth-child(2n)::before {
+		background-image: linear-gradient(80deg, rgba(0, 118, 189, .1), transparent 50%)
+	}
+}
+
+
 
 @media screen and (max-width: 992px) {
 	.img-moi {
@@ -874,13 +970,6 @@ section {
 		width: 300px;
 		border-radius: 50%;
 		margin-bottom: 25px;
-	}
-	.cartes-options {
-		position: relative;
-		list-style-type: none;
-		padding: 0;
-		max-width: 40em;
-		margin: 10% 15% 0;
 	}
 	.col-lg-4 {
 		text-align: center;
@@ -1540,6 +1629,10 @@ section {
 
 button.btn.btn-primary.btn-xl.text-uppercase {
 	font-family: 'univiapro', sans-serif;
+}
+
+lottie-player {
+	margin-top:-100px;
 }
 
 /*--------------------------------------------------------------

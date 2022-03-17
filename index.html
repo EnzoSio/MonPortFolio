@@ -10,6 +10,7 @@
       <link rel="shortcut icon" id="logo_page" href="assets/img/book-solid.svg">
       <!-- Font Awesome icons (free version)-->
       <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <!-- Google Fonts -->
       <link
          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
@@ -124,40 +125,60 @@
                   <img src="assets/img/moi_circle.jpg" class="img-moi" alt="Enzo">
                </div>
             </div>
-            <ul class="cartes-options">
-               <li class="option">
-                  <h1><i class="fas fa-laptop-code"></i> Option SLAM</h1>
-                  <p>L’option Solutions logicielles et applications métiers forme des spécialistes
-                     des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications,
-                     développement, intégration au sein de la société).
-                     Cette filière leur permettra d'accéder aux différents métiers tels que :
-                  </p>
-                  <ul>
-                     <li>Développeur d’applications informatiques</li>
-                     <li>Développeur informatique</li>
-                     <li>Analyste d’applications ou d’études</li>
-                     <li>Programmeur analyste</li>
-                     <li>Programmeur d’applications</li>
-                     <li>Responsable des services applicatifs</li>
-                     <li>Technicien d’études informatiques</li>
-                  </ul>
-               </li>
-               <li class="option">
-                  <h1><i class="fas fa-ethernet"></i> Option SISR</h1>
-                  <p>L’option Solution d’infrastructure, systèmes et réseaux forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité). En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance.
-                     Cette filière leur permettra d'accéder aux différents métiers tels que :
-                  </p>
-                  <ul>
-                     <li>Technicien d’infrastructure</li>
-                     <li>Technicien de production</li>
-                     <li>Technicien micro et réseaux</li>
-                     <li>Informaticien support et déploiement</li>
-                     <li>Pilote d’exploitation</li>
-                     <li>Support systèmes et réseaux</li>
-                     <li>Administrateur systèmes et réseaux</li>
-                  </ul>
-               </li>
-            </ul>
+            <!-- SECTION A PROPOS -->
+            <section id="about" class="about">
+               <div class="container">
+                  <div class="text-center">
+                     <div class="section-mini-title">
+                        <h2>Les Options</h2>
+                     </div>
+                  </div>
+            <div class="container py-1">
+               <article class="postcard light blue">
+                  <a class="postcard__img_link" href="#">
+                     <img class="postcard__img" src="assets/img/slam.jpg" alt="Image Title" />
+                  </a>
+                  <div class="postcard__text">
+                     <h1 class="postcard__title blue"><a href="#">Option SLAM</a></h1>
+                     <div class="postcard__bar"></div>
+                     <div class="postcard__preview-txt">L’option Solutions logicielles et applications métiers forme des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications,
+                     développement, intégration au sein de la société). Cette filière leur permettra d'accéder aux différents métiers tels que :</div>
+                     <ul>
+                        <li>Développeur d’applications informatiques</li>
+                        <li>Développeur informatique</li>
+                        <li>Analyste d’applications ou d’études</li>
+                        <li>Programmeur analyste</li>
+                        <li>Programmeur d’applications</li>
+                        <li>Responsable des services applicatifs</li>
+                        <li>Technicien d’études informatiques</li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
+            <div class="container py-2">
+               <div class="h1 text-center text-dark" id="pageHeaderTitle"></div>
+               <article class="postcard light blue">
+                  <a class="postcard__img_link" href="#">
+                     <img class="postcard__img" src="assets/img/sisr1.jpg" alt="Image Title" />
+                  </a>
+                  <div class="postcard__text t-dark">
+                     <h1 class="postcard__title blue"><a href="#">Option SISR</a></h1>
+                     <div class="postcard__bar"></div>
+                     <div class="postcard__preview-txt">L’option Solution d’infrastructure, systèmes et réseaux forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité). En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance. Cette filière leur permettra d'accéder aux différents métiers tels que :</div>
+                     <ul>
+                        <li>Technicien d’infrastructure</li>
+                        <li>Technicien de production</li>
+                        <li>Technicien micro et réseaux</li>
+                        <li>Informaticien support et déploiement</li>
+                        <li>Pilote d’exploitation</li>
+                        <li>Support systèmes et réseaux</li>
+                        <li>Administrateur systèmes et réseaux</li>
+                     </ul>
+                     
+                  </div>
+               </article>
+            </div>
+
          </section>
          <!-- FIN SECTION A PROPOS  -->
          <!-- ======= SECTION PARCOURS ======= -->
@@ -402,22 +423,25 @@
                   <h2>Veille</h2>
                </div>
             </div>
-            <h3 class="titre">Qu'est-ce que la veille technologique ?</h3>
-            <p class="texte">La veille technologique consiste à s'informer en continu sur les nouveautés du secteur
-               informatique, les inventions des concurrents ainsi que les nouvelles technologies et ce dans le but
-               d'être
-               le meilleur dans son domaine.
-            </p>
-            <h3 class="titre">Outils utilisés pour ma veille</h3>
-            <p class="texte">Afin de construire ma veille technologique efficacement, j'ai mis en place des alertes sur
-               google et Talkwaker et d'autres sites similaires afin que chaque mois et semaine, je sois au courant des
-               dernières actualités portant sur le sujet de la RFID.
-            </p>
-            <h3 class="titre">Thème de veille</h3>
-            <p class="texte">Ma veille Technologique porte sur le thème de la technologie RFID</p>
-            <div class="text-center">
-               <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" href="#veilletechnologique"
-                  type="submit">Concernant ma veille</button>
+            <div class="row">
+                  <h3 class="titre">Qu'est-ce que la veille technologique ?</h3>
+                  <p class="texte">La veille technologique consiste à s'informer en continu sur les nouveautés du secteur
+                     informatique, les inventions des concurrents ainsi que les nouvelles technologies et ce dans le but
+                     d'être
+                     le meilleur dans son domaine.
+                  </p>
+                  <h3 class="titre">Outils utilisés pour ma veille</h3>
+                  <p class="texte">Afin de construire ma veille technologique efficacement, j'ai mis en place des alertes sur
+                     google et Talkwaker et d'autres sites similaires afin que chaque mois et semaine, je sois au courant des
+                     dernières actualités portant sur le sujet de la RFID.
+                  </p>
+                  <h3 class="titre">Thème de veille</h3>
+                  <p class="texte">Ma veille Technologique porte sur le thème de la technologie RFID</p>
+               </div>
+               <div class="text-center">
+                  <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" href="#veilletechnologique"
+                     type="submit">Concernant ma veille</button>
+               </div>
             </div>
          </section>
          <!-- FIN SECTION VEILLE -->
@@ -533,7 +557,7 @@
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">JAVA</div>
-                     <span class="blog-slider__code">26 December 2019</span>
+                     <span class="blog-slider__code">23 Septembre 2021</span>
                      <div class="blog-slider__text">Grâce à ce cours interactif de Java, j'ai appris la programmation Java orientée objet.</div>
                      <a href="assets/img/certificat/cert_JAVA.jpg" data-gallery="portfolioGallery"
                         class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
@@ -545,7 +569,7 @@
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">PHP</div>
-                     <span class="blog-slider__code">26 December 2019</span>
+                     <span class="blog-slider__code">24 Septembre 2021</span>
                      <div class="blog-slider__text">Ce cours m'a permis de comprendre comment fonctionne les pages web dynamiques, mais aussi de développer des sites web et de générer du contenu dynamique. </div>
                      <a href="assets/img/certificat/cert_PHP.jpg" data-gallery="portfolioGallery"
                         class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
@@ -557,50 +581,27 @@
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">PYTHON</div>
-                     <span class="blog-slider__code">26 December 2019</span>
+                     <span class="blog-slider__code">28 Septembre 2021</span>
                      <div class="blog-slider__text">Dans ce cours, j'ai découvert les concepts de base de Python, ainsi que la construction de projets réels et la résolution différents défis de codage. </div>
                      <a href="assets/img/certificat/cert_PYTHON.jpg" data-gallery="portfolioGallery"
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                  </div>
+               </div>
+               <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                     <img src="./assets/img/certificat/cert_JS.jpg">
+                  </div>
+                  <div class="blog-slider__content">
+                     <div class="blog-slider__title">JavaScript</div>
+                     <span class="blog-slider__code">9 Mars 2022</span>
+                     <div class="blog-slider__text"></div>
+                     <a href="assets/img/certificat/cert_JS.jpg" data-gallery="portfolioGallery"
                         class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
                   </div>
                </div>
                <div class="blog-slider__pagination"></div>
             </div>
          </div>
-         <!-- ======= SECTION CONTACT ======= -->
-         <!-- <section id="contact" class="contact">
-            <div class="container">
-            <div data-aos="zoom-in" data-aos-delay="500">
-               <div class="section-title">
-                  <span>Contactez Moi</span>
-                  <h2>Contactez Moi</h2>
-               </div>
-            </div>
-            <div class="row mt-2">
-               <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-                  <div class="row">
-                     <div class="col-md-6 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                     </div>
-                     <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                     </div>
-                  </div>
-                  <div class="form-group mt-3">
-                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                  </div>
-                  <div class="form-group mt-3">
-                     <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                  </div>
-                  <div class="my-3">
-                     <div class="loading">Loading</div>
-                     <div class="error-message"></div>
-                     <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-                  <div class="text-center"><button type="submit">Send Message</button></div>
-               </form>
-            </div>
-            </section> -->
-         <!-- FIN SECTION CONTACT -->
       </main>
       <!-- ======= OUTILS ET LANGAGES ======= -->
       <section id="clients" class="clients">
@@ -651,7 +652,7 @@
             </div>
             <div class="copyright">
                &copy;
-               Copyright 2021 © <strong><span>Enzo</span></strong>
+               Copyright 2022 © <strong><span>Enzo</span></strong>
             </div>
          </div>
       </footer>
