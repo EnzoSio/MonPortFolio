@@ -5,7 +5,7 @@ const resume = {
   prenom: 'ENZO AIME',
   deuxPrenom: 'Raphael',
   jobTitle: 'Etudiant en BTS SIO',
-  photo: 'https://enzosio.github.io/MonPortFolioV2/assets/img/moi3.png',
+  photo: 'assets/img/moi_circle.jpg',
   city: 'Evry',
   postalCode: '',
   country: 'France',
