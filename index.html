@@ -6,7 +6,7 @@
       <title>MonPortFolio</title>
       <meta content="" name="description">
       <meta content="" name="keywords">
-      <meta name="theme-color" content="#003da5"
+      <meta name="theme-color" content="#003da5">
       <link rel="shortcut icon" id="logo_page" href="assets/img/book-solid.svg">
       <!-- Font Awesome icons (free version)-->
       <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
@@ -67,19 +67,15 @@
       <section id="hero">
          <div class="hero-container">
             <div class="container_typewriter">
-               <p>Bienvenue <span class="typed-text"></span>
-                  <span class="cursor">
-                  &nbsp;
-                  </span>
-               </p>
-            </div>
+               <p class="line-1 anim-typewriter">Bienvenue sur mon Portfolio</p>
+               </div>
             <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
          </div>
       </section>
       <!-- FIN SECTION ACCUEIL -->
       <main id="main">
          <!-- SECTION A PROPOS -->
-         <section id="about" class="about">
+         <section id="about" class="about" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="400">
             <div class="container">
             <div data-aos="zoom-in" data-aos-delay="500">
                <div class="section-title">
@@ -89,9 +85,8 @@
             </div>
             <div class="row">
                <div class="col-lg-8 pt-4 pt-lg-0 content">
-                  <p class="texte">Bonjour, je me présente, je m'appelle Enzo AIME</b>, j'ai 19 ans, actuellement en deuxième année de
-                     BTS
-                     SIO</b>(Services Informatiques aux Organisations), Option SLAM (Solutions Logicielles et
+                  <p class="texte">Salut ! Je m’appelle Enzo AIME, j'ai 19 ans, actuellement en deuxième année de
+                     <b>BTS SIO (Services Informatiques aux Organisations)</b>, Option SLAM (Solutions Logicielles et
                      Application
                      Métier) l'option spécialisée pour le développement, au <b>lycée Parc des Loges</b> à Evry (91000).
                   </p>
@@ -125,17 +120,15 @@
                   <img src="assets/img/moi_circle.jpg" class="img-moi" alt="Enzo">
                </div>
             </div>
-            <!-- SECTION A PROPOS -->
-            <section id="about" class="about">
-               <div class="container">
-                  <div class="text-center">
-                     <div class="section-mini-title">
-                        <h2>Les Options</h2>
-                     </div>
+          
+               <div class="text-center">
+                  <div class="section-mini-title">
+                     <h2>Les Options</h2>
                   </div>
-            <div class="container py-1">
+               </div>
+            <div class="container py-1" data-aos="fade-right">
                <article class="postcard light blue">
-                  <a class="postcard__img_link" href="#">
+                  <a class="postcard__img_link">
                      <img class="postcard__img" src="assets/img/slam.jpg" alt="Image Title" />
                   </a>
                   <div class="postcard__text">
@@ -155,10 +148,10 @@
                   </div>
                </article>
             </div>
-            <div class="container py-2">
+            <div class="container py-2" data-aos="fade-left">
                <div class="h1 text-center text-dark" id="pageHeaderTitle"></div>
                <article class="postcard light blue">
-                  <a class="postcard__img_link" href="#">
+                  <a class="postcard__img_link">
                      <img class="postcard__img" src="assets/img/sisr.jpg" alt="Image Title" />
                   </a>
                   <div class="postcard__text t-dark">
@@ -174,11 +167,9 @@
                         <li>Support systèmes et réseaux</li>
                         <li>Administrateur systèmes et réseaux</li>
                      </ul>
-                     
                   </div>
                </article>
             </div>
-
          </section>
          <!-- FIN SECTION A PROPOS  -->
          <!-- ======= SECTION PARCOURS ======= -->
@@ -191,7 +182,7 @@
                   </div>
                </div>
                <div class="row">
-                  <div class="col-lg-6" data-aos="fade-down" data-aos-delay="500" data-aos-duration="400">
+                  <div class="col-lg-6">
                      <h3 class="resume-title">Expériences Professionnelles</h3>
                      <div class="resume-item">
                         <h4>| Stage en entreprise</h4>
@@ -220,7 +211,7 @@
                         </p>
                      </div>
                   </div>
-                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500" data-aos-duration="400">
+                  <div class="col-lg-6">
                      <h3 class="resume-title">Formations</h3>
                      <div class="resume-item pb-0">
                         <h4>| Lycée Parc des Loges</h4>
@@ -522,7 +513,6 @@
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">HTML</div>
                      <span class="blog-slider__code">22 Août 2021</span>
-                     <div class="blog-slider__text">Ce cours m'a appris à concevoir une page Web en utilisant le langage HTML. Des série d'exercices pratiques m'ont permis de m'entraîner tout en écrivant du vrai code HTML.</div>
                      <a href="assets/img/certificat/cert_HTML.jpg" data-certif="portfolioGallery"
                         class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
@@ -534,7 +524,6 @@
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">CSS</div>
                      <span class="blog-slider__code">23 Août 2021</span>
-                     <div class="blog-slider__text">Ce cours de CSS m'a permis d'apprendre à contrôler le style et la mise en page des sites Web, grâce également à la mise en place d'une série d'exercices.</div>
                      <a href="assets/img/certificat/cert_CSS.jpg" data-gallery="portfolioGallery"
                         class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
                   </div>
@@ -546,7 +535,6 @@
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">SQL</div>
                      <span class="blog-slider__code">23 Août 2021</span>
-                     <div class="blog-slider__text">Ce cours couvre un large éventail de sujets liés au langage SQL, tels que l'extraction, la mise à jour et le filtrage de données, les fonctions et les sous-requêtes, la création et la mise à jour de tables, et bien d'autres encore !</div>
                      <a href="assets/img/certificat/cert_SQL.jpg" data-gallery="portfolioGallery"
                         class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
                   </div>
@@ -558,7 +546,6 @@
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">JAVA</div>
                      <span class="blog-slider__code">23 Septembre 2021</span>
-                     <div class="blog-slider__text">Grâce à ce cours interactif de Java, j'ai appris la programmation Java orientée objet.</div>
                      <a href="assets/img/certificat/cert_JAVA.jpg" data-gallery="portfolioGallery"
                         class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
                   </div>
@@ -570,7 +557,6 @@
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">PHP</div>
                      <span class="blog-slider__code">24 Septembre 2021</span>
-                     <div class="blog-slider__text">Ce cours m'a permis de comprendre comment fonctionne les pages web dynamiques, mais aussi de développer des sites web et de générer du contenu dynamique. </div>
                      <a href="assets/img/certificat/cert_PHP.jpg" data-gallery="portfolioGallery"
                         class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
                   </div>
@@ -582,7 +568,6 @@
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">PYTHON</div>
                      <span class="blog-slider__code">28 Septembre 2021</span>
-                     <div class="blog-slider__text">Dans ce cours, j'ai découvert les concepts de base de Python, ainsi que la construction de projets réels et la résolution différents défis de codage. </div>
                      <a href="assets/img/certificat/cert_PYTHON.jpg" data-gallery="portfolioGallery"
                         class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
                   </div>
@@ -594,8 +579,42 @@
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">JavaScript</div>
                      <span class="blog-slider__code">9 Mars 2022</span>
-                     <div class="blog-slider__text"></div>
                      <a href="assets/img/certificat/cert_JS.jpg" data-gallery="portfolioGallery"
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                  </div>
+               </div>
+               <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                     <img src="./assets/img/certificat/cert_WDF.jpg">
+                  </div>
+                  <div class="blog-slider__content">
+                     <div class="blog-slider__title">Web Developpement Fundamentals Courses</div>
+                     <span class="blog-slider__code">16 Mars 2022</span>
+                     <a href="assets/img/certificat/cert_WDF.jpg" data-gallery="portfolioGallery"
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                  </div>
+               </div>
+               <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                     <img src="./assets/img/certificat/IntroCyb.jpg">
+                  </div>
+                  <div class="blog-slider__content">
+                     <div class="blog-slider__title">Cybersécurité Niv1</div>
+                     <span class="blog-slider__code">15 Décembre 2021</span>
+                     <div class="blog-slider__text"></div>
+                     <a href="assets/img/certificat/IntroCyb.jpg" data-gallery="portfolioGallery"
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                  </div>
+               </div>
+               <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                     <img src="./assets/img/certificat/CybEss.jpg">
+                  </div>
+                  <div class="blog-slider__content">
+                     <div class="blog-slider__title">Cybersécurité Niv2</div>
+                     <span class="blog-slider__code">8 Mars 2022</span>
+                     <div class="blog-slider__text"></div>
+                     <a href="assets/img/certificat/CybEss.jpg" data-gallery="portfolioGallery"
                         class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
                   </div>
                </div>
@@ -674,7 +693,7 @@
                            </p>
                            <!-- Mise en place des cartes des différents -->
                            <div id="wrapper">
-                              <div class="content">
+                              <div class="contenu">
                                  <!-- Tab links -->
                                  <div class="tabs">
                                     <button class="tablinks active" data-veille="RFID"><p data-title="RFID">RFID</p></button>

@@ -52,7 +52,7 @@ const resume = {
   ],
   langues: ['Français', 'Anglais', 'Espagnol'],
 
-  portfolio: ['https://enzosio.github.io/MonPortFolioV2/'],
+  portfolio: ['https://enzosio.github.io/MonPortFolio/'],
 
 
   profilPersonnel: `Je suis diplomé d'un BAC ES (Économique et Social), 

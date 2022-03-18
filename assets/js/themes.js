@@ -4,11 +4,12 @@ checkbox.addEventListener("change", () => {
   if(document.body.classList.toggle("dark")){
     document.getElementById("cv").href="./monCV_sombre.html";
     document.getElementById("cv_qrcode").src="./docs/cv_qrcode_sombre.png";
+
   }
   else if(document.body.classList.toggle!=("dark")){
     document.getElementById("cv").href="./monCV.html";
     document.getElementById("cv_qrcode").src="./docs/cv_qrcode.png";
-    
+    document.getElementById("hero").style.backgroundImage = "url('assets/img/hero-bg.jpg')";
   }
 })
 

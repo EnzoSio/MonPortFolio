@@ -2,14 +2,13 @@
 
 body.dark,
 body.dark .modal-content {
-	background: #292C35;
+	background: #121212;
 	color: white;
-	cursor: url(../img/cursor_black.svg), auto;
 }
 
 body.dark #header.header-scrolled {
 	height: 60px;
-	background: #292c35;
+	background: #121212;
 }
 
 body.dark .section-title h2,
@@ -21,17 +20,6 @@ body.dark a.nav-link.scrollto.active,
 body.dark .navbar-mobile a.nav-link.scrollto,
 body.dark a {
 	color: white;
-}
-
-body.dark a,
-body.dark .navbar a,
-body.dark .navbar a:focus,
-body.dark .checkbox-label,
-body.dark .btn:not(:disabled):not(.disabled),
-body.dark .portfolio-modal .close-modal:hover,
-body.dark .container_carte_veille .carte .couverture.couverture1 button,
-body.dark .contact .php-email-form button[type=submit] {
-	cursor: url(../img/cursor_hover_black.svg), auto;
 }
 
 
@@ -58,7 +46,7 @@ body.dark .container_carte_veille .carte:hover .couverture.couverture2 h2 {
 }
 
 body.dark .container_carte_veille .carte .couverture.couverture1 {
-	background: #292C35;
+	background: #121212;
 	color: white
 }
 
@@ -69,7 +57,7 @@ body.dark .container_carte_veille .carte .couverture.couverture1 button {
 }
 
 body.dark .container_carte_veille .carte .couverture.couverture1 button:hover {
-	color: #292C35;
+	color: #121212;
 	background: #5f6264;
 }
 
@@ -88,9 +76,7 @@ body.dark .btn-check:focus+.btn-primary,
 	box-shadow: none;
 }
 
-body.dark span.typed-text {
-	color: #5f6264;
-}
+
 
 body.dark ::-webkit-scrollbar-track {
 	background: #FFF;
@@ -132,7 +118,7 @@ body.dark a:hover {
 }
 
 body.dark .navbar-mobile ul {
-	background: #292c35;
+	background: #121212;
 }
 
 body.dark .img-moi {
@@ -169,7 +155,7 @@ body.dark .contact .php-email-form button[type=submit]{
 }
 
 body.dark .clients{
-	background:#292c35 ;
+	background:#121212 ;
 }
 
 body.dark #footer .social-links a {
@@ -177,7 +163,7 @@ body.dark #footer .social-links a {
 	color:#fff;
 }
 body.dark #footer .social-links a:hover{
-	background:#292c35 ;
+	background:#121212 ;
 }
 
 body.dark .contact .social-links a:hover{
@@ -191,7 +177,7 @@ body.dark .portfolio .portfolio-item .portfolio-info .preview-link:hover{
 }
 
 body.dark .breadcrumbs{
-	background-color:#292c35;
+	background-color:#121212;
 }
 
 body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet{
@@ -213,9 +199,6 @@ body.dark .spinner:after{
 	background-image: url(../img/loader_sombre.svg);
 
 }
-
-
-
 
 body.dark .blog-slider {
 	background: #5f6264;
@@ -289,7 +272,7 @@ body.dark .blog-slider__button {
 }
 
 body.dark .loader_bg {
-	background: #292c35;
+	background: #121212;
 }
 
 body.dark .spinner {
@@ -315,3 +298,16 @@ body.dark .profile-card__img {
 body.dark .postcard {
 	color: #ffffff;
 }
+
+body.dark .tooltip{
+	background-color: #5f6264;
+}
+
+
+body.dark .tooltip::before{	
+	border-bottom: 15px solid #5f6264;
+  }
+
+  body.dark .line-1 {
+	  color:whitesmoke ;
+  }
