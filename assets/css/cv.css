@@ -31,7 +31,7 @@ li::marker {
 p {
   font-size: 2.48262rem;
   letter-spacing: 0.115103rem;
-  color: #003da5;
+  color: #880000;
   word-break: break-all;
   justify-content: center;
 }
@@ -41,7 +41,7 @@ p {
   top: 0px;
   left: 1rem;
   height: 11.9617rem;
-  background-color: #003da5;
+  background-color: #880000;
 }
 
 .header {
@@ -55,7 +55,7 @@ p {
   font-weight: lighter;
   text-transform: uppercase;
   word-break: break-all;
-  color: #003da5;
+  color: #880000;
   font-size: 6.65793rem;
   line-height: 1.68;
   letter-spacing: 3.89546rem;
@@ -69,7 +69,7 @@ p {
   text-transform: uppercase;
   word-break: break-all;
   padding-right: 5.64232rem;
-  color: #003da5;
+  color: #880000;
   line-height: 1.09;
   letter-spacing: 4.15952rem;
   direction: ltr;
@@ -78,7 +78,7 @@ p {
 .jobTitle {
   padding-right: 0px;
   margin-top: 4.51385rem;
-  color: #003da5;
+  color: #880000;
 }
 .jobTitle span {
   padding-left: 1rem;
@@ -86,7 +86,7 @@ p {
   text-transform: uppercase;
   word-break: break-all;
   direction: ltr;
-  color: #003da5;
+  color: #880000;
   font-size: 3.04685rem;
 }
 
@@ -95,8 +95,8 @@ p {
   height: 27.2rem;
   border-radius: 50%;
   border: 6px solid;
-  border-color: #003da5;
-  background-color: #003da5;
+  border-color: #880000;
+  background-color: #880000;
 }
 
 .middleLine {
@@ -104,7 +104,7 @@ p {
   bottom: 3.1597rem;
   left: 1rem;
   height: 5.64232rem;
-  background-color: #003da5;
+  background-color: #880000;
 }
 
 
@@ -117,7 +117,7 @@ p {
   height: 5rem;
   font-size: 2.5rem;
   color: rgb(255, 255, 255);
-  background-color: #003da5;
+  background-color: #880000;
   border-radius: 50%;
   padding: 0.7rem;
 }
@@ -125,7 +125,7 @@ p {
 
 a p {
   word-break: break-all;
-  color: #003da5;
+  color: #880000;
 }
 
 .list-item {
@@ -134,7 +134,7 @@ a p {
   margin-right: 1rem;
 }
 .list-item:not(:last-child) {
-  border-bottom: 0.225693rem solid #003da5;
+  border-bottom: 0.225693rem solid #880000;
 }
 
 .title {
@@ -143,10 +143,10 @@ a p {
   font-size: 3rem;
   text-transform: uppercase;
   line-height: 4.5rem;
-  border-bottom: 1px solid #003da5;
+  border-bottom: 1px solid #880000;
   padding-top: 0rem;
   padding-bottom: 3.8rem;
-  color: #003da5;
+  color: #880000;
   letter-spacing: 1.01562rem;
   margin-bottom: 1.8rem;
 }
@@ -160,7 +160,7 @@ a p {
 }
 .bullet i {
   font-size: 2.6rem;
-  color: #003da5;
+  color: #880000;
 }
 .bullet:before {
   content: "";
@@ -168,7 +168,7 @@ a p {
   left: 1.9rem;
   width: 0.3rem;
   height: 70%;
-  background-color: #003da5;
+  background-color: #880000;
   margin-top: 4.2rem;
 }
 
@@ -188,7 +188,7 @@ li {
   font-family: Raleway;
   line-height: 1.33;
   font-size: 2.8806rem;
-  color: #003da5;
+  color: #880000;
 }
 
 span {
@@ -224,7 +224,7 @@ span {
 }
 
 .pb-2 a{
-  color: #003da5;
+  color: #880000;
   font-weight: 900;
 }
 

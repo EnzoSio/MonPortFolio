@@ -8,6 +8,7 @@
 	src: url(fonts/UniviaPro-Medium.otf);
 }
 
+
 /*--------------------------------------------------------------
 # ScrollBar
 --------------------------------------------------------------*/
@@ -22,7 +23,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #003da5;
+	background: #880000;
 	border-radius: 10px;
 }
 
@@ -80,12 +81,12 @@ body {
 }
 
 a {
-	color: #003da5;
+	color: #880000;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #5894fb;
+	color: #d31f1f;
 	text-decoration: none;
 }
 
@@ -111,7 +112,7 @@ h6 {
 	right: 15px;
 	bottom: 15px;
 	z-index: 996;
-	background: #003da5;
+	background: #880000;
 	color: #FFF;
 	width: 40px;
 	height: 40px;
@@ -209,7 +210,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-	color: #003da5;
+	color: #880000;
 	font-size: 20px;
 }
 
@@ -249,7 +250,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-	color: #003da5;
+	color: #880000;
 }
 
 .navbar .dropdown:hover>ul {
@@ -387,7 +388,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-	color: #003da5;
+	color: #880000;
 }
 
 .navbar-mobile .getstarted,
@@ -422,7 +423,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-	color: #003da5;
+	color: #880000;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -485,7 +486,7 @@ h6 {
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);    
-	color: #003da5;
+	color: #880000;
 }
 
 /* Animation */
@@ -533,7 +534,7 @@ h6 {
 }
 
 #hero .btn-scroll:hover {
-	color: #003da5;
+	color: #880000;
 }
 
 @media (min-width: 1024px) {
@@ -754,9 +755,9 @@ section {
 	margin: 20px;
 	border-radius: 50%;
 	border: 0.2rem solid;
-	color: #003da5;
-	box-shadow: 0 5px 50px 0 #003da5, 0 0 0 7px #003da5;
-	background-color: #003da5;
+	color: #880000;
+	box-shadow: 0 5px 50px 0 #880000, 0 0 0 7px #880000;
+	background-color: #880000;
 }
 
 /* Cartes Options */
@@ -924,15 +925,15 @@ section {
 }
 
 .postcard .postcard__tagbox .blue.play:hover {
-	background: #0076bd
+	background: #880000
 }
 
 .blue .postcard__title:hover {
-	color: #0076bd
+	color: #880000
 }
 
 .blue .postcard__bar {
-	background-color: #0076bd
+	background-color: #880000
 }
 
 .blue::before {
@@ -986,7 +987,7 @@ section {
 .about .content ul i {
 	font-size: 16px;
 	margin-right: 5px;
-	color: #003da5;
+	color: #880000;
 	line-height: 0;
 }
 
@@ -1001,7 +1002,7 @@ section {
 .about .content .count-box i {
 	display: block;
 	font-size: 36px;
-	color: #003da5;
+	color: #880000;
 	float: left;
 	line-height: 0;
 }
@@ -1077,7 +1078,7 @@ section {
 	width: 1px;
 	height: 10px;
 	transition: 0.9s;
-	background-color: #003da5;
+	background-color: #880000;
 }
 
 
@@ -1097,7 +1098,7 @@ section {
 .resume .resume-item {
 	padding: 0 0 20px 20px;
 	margin-top: -2px;
-	border-left: 2px solid #003da5;
+	border-left: 2px solid #880000;
 	position: relative;
 }
 
@@ -1106,7 +1107,7 @@ section {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #003da5;
+	color: #880000;
 	margin-bottom: 10px;
 }
 
@@ -1140,11 +1141,11 @@ section {
 	left: -9px;
 	top: 0;
 	background: #fff;
-	border: 2px solid #003da5;
+	border: 2px solid #880000;
 }
 
 .section-title p {
-	color: #003da5;
+	color: #880000;
 	font-size: 17px;
 }
 
@@ -1160,17 +1161,17 @@ section {
 .btn-primary {
 	margin-left: 30px;
 	color: #fff;
-	background: #003da5;
-	border-color: #003da5;
+	background: #880000;
+	border-color: #880000;
 	transition: 0.3s;
 	font-family: 'univiapro', sans-serif;
 }
 
 .btn-primary:hover {
 	color: #fff;
-	background-color: #003da5;
+	background-color: #880000;
 	transform: scale(1.2);
-	border-color: #003da5;
+	border-color: #880000;
 	animation-duration: 0.3s;
 }
 
@@ -1209,7 +1210,7 @@ section {
 	line-height: 1;
 	padding: 7px 10px;
 	text-transform: uppercase;
-	color: #444444;
+	color: #5e6163;
 	transition: all 0.3s ease-in-out;
 	border: 2px solid #fff;
 	border-radius: 20px;
@@ -1218,8 +1219,8 @@ section {
 .stage #stage-flters li:hover,
 .stage #stage-flters li.filter-active {
 	color: #FFF;
-	border-color: #003da5;
-	background: #003da5;
+	border-color: #880000;
+	background: #880000;
 }
 
 .stage #stage-flters li:last-child {
@@ -1231,6 +1232,7 @@ section {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
+	border-radius:20px;
 }
 
 .stage .stage-wrap::before {
@@ -1244,6 +1246,8 @@ section {
 	transition: all ease-in-out 0.3s;
 	z-index: 2;
 	opacity: 0;
+	border-radius:20px;
+
 }
 
 .stage .stage-wrap .stage-info {
@@ -1290,7 +1294,7 @@ section {
 }
 
 .stage .stage-wrap .stage-links a:hover {
-	color: #003da5;
+	color: #880000;
 }
 
 .stage .stage-wrap:hover::before {
@@ -1398,7 +1402,7 @@ section {
 	line-height: 1;
 	padding: 7px 10px;
 	text-transform: uppercase;
-	color: #444444;
+	color: #5e6163;
 	transition: all 0.3s ease-in-out;
 	border: 2px solid #fff;
 	border-radius: 20px;
@@ -1407,8 +1411,8 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
 	color: #FFF;
-	border-color: #003da5;
-	background: #003da5;
+	border-color: #880000;
+	background: #880000;
 }
 
 .portfolio .portfolio-item {
@@ -1465,7 +1469,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-	color: #003da5;
+	color: #880000;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -1523,7 +1527,7 @@ section {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #003da596;
+	background: #88000096;
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
@@ -1672,7 +1676,7 @@ lottie-player {
   /* Tab Links */
   .tablinks {
 	background: transparent;
-	background-image: linear-gradient(90deg, transparent 70%, rgba(255, 255, 255, 0.2) 100%);
+	background-image: linear-gradient(90deg, transparent 70%, #ffffff33 100%);
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -1696,7 +1700,7 @@ lottie-player {
   }
   
   .tablinks:before {
-	background-image: linear-gradient(135deg, #003da5 0%, rgba(88, 90, 206, 0.712) 100%);
+	background-image: linear-gradient(135deg, #880000 0%, #f7a5a5a9 100%);
 	content: "";
 	width: 100%;
 	height: 0px;
@@ -1747,7 +1751,7 @@ lottie-player {
   .tablinks.active p,
   .tablinks.active:hover p {
 	opacity: 1;
-	background: -webkit-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background: -webkit-linear-gradient(135deg, #880000 0%, #ca0e0e 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   }
@@ -1767,7 +1771,7 @@ lottie-player {
   }
   
   .tablinks:hover p {
-	color: white;
+	color: #880000;
 	opacity: 1;
   }
   @media screen and (max-width: 512px) {
@@ -1843,7 +1847,7 @@ lottie-player {
 	height: 5px;
 	width: 100%;
 	position: absolute;
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background-image: linear-gradient(135deg, #880000 0%, #f7a5a5a9 100%);
 	left: 0;
 	bottom: 0;
 	z-index: -2;
@@ -2116,7 +2120,7 @@ lottie-player {
 
 .blog-slider__button {
 	display: inline-flex;
-    background-image: linear-gradient(234deg, #003da5 0%, #0076bd7d 90%);
+    background-image: linear-gradient(234deg, #880000 0%, #f7a5a5a9 90%);
     padding: 15px 35px;
     border-radius: 50px;
     color: #fff;
@@ -2195,9 +2199,9 @@ lottie-player {
 
 .blog-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #003da5;
+  background: #880000;
   height: 30px;
-  box-shadow: 0px 0px 20px #1e6ef8;
+  box-shadow: 0px 0px 20px #f7a5a5a9;
 }
 
 @media screen and (max-width: 768px) {
@@ -2235,7 +2239,8 @@ lottie-player {
 .service-wrapper {
 	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
-	background-image: linear-gradient(-80deg, rgba(0, 118, 189, .1), transparent 50%);
+	background-image: linear-gradient(-80deg, #f7a5a5a9, transparent 10%);
+	border-radius: 20px;
 
 }
 
@@ -2252,12 +2257,13 @@ lottie-player {
 	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
 	font-weight: 500;
+	color:#880000;
 	text-align: center;
 }
 
 .service-wrapper .big-icon {
 	position: absolute;
-	right: 0;
+	align-self: center;
 	bottom: 0;
 	opacity: .05;
 	-webkit-transition: all .5s ease;
@@ -2266,17 +2272,17 @@ lottie-player {
 
 .service-wrapper:hover {
 	-webkit-box-shadow: 0 50px 35px rgba(47, 60, 78, .15) !important;
-	box-shadow: 0 15px 35px rgba(0, 61, 165) !important;
+	box-shadow: 0 15px 35px #880000 !important;
 	background: #fff;
 	-webkit-transform: translateY(-8px);
 	transform: translateY(-8px);
 	border-color: transparent !important;
-	border-radius: 20px;
 }
+
 
 .service-wrapper:hover .icon {
 	background: #0062ff !important;
-	color: #fff !important
+	color: rgba(255, 255, 255, 0) !important
 }
 
 .service-wrapper:hover .big-icon {
@@ -2286,7 +2292,7 @@ lottie-player {
 }
 
 .text-custom {
-	color: #003da5 !important
+	color: #880000 !important
 }
 
 .uim-svg {
@@ -2320,11 +2326,11 @@ lottie-player {
 	height: 12px;
 	background-color: #fff;
 	opacity: 1;
-	border: 1px solid #003da5;
+	border: 1px solid #880000;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-	background-color: #003da5;
+	background-color: #880000;
 }
 
 .portfolio-details .portfolio-info {
@@ -2457,7 +2463,7 @@ li #collabLeo:hover {
 
 .contact .info-box i.bx {
 	font-size: 24px;
-	color: #003da5;
+	color: #880000;
 	border-radius: 50%;
 	padding: 15px;
 	background: #ffaa00;
@@ -2497,8 +2503,8 @@ li #collabLeo:hover {
 
 .contact .social-links a:hover {
 	color: #fff;
-	border-color: #003da5;
-	background: #003da5;
+	border-color: #880000;
+	background: #880000;
 }
 
 .contact .php-email-form {
@@ -2567,7 +2573,7 @@ li #collabLeo:hover {
 
 .contact .php-email-form input::focus,
 .contact .php-email-form textarea::focus {
-	background-color: #003da5;
+	background-color: #880000;
 }
 
 .contact .php-email-form input {
@@ -2579,7 +2585,7 @@ li #collabLeo:hover {
 }
 
 .contact .php-email-form button[type=submit] {
-	background: #003da5;
+	background: #880000;
 	border: 0;
 	padding: 10px 24px;
 	color: #fff;
@@ -2681,7 +2687,7 @@ li #collabLeo:hover {
 
 .tooltip{
 	padding: .7rem 1.7rem;
-	background-color: #003da5;
+	background-color: #880000;
 	color: #fff;
 	font-size: 10px;
 	font-family: "univiapro";
@@ -2702,7 +2708,7 @@ li #collabLeo:hover {
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 15px solid #003da5;
+	border-bottom: 15px solid #880000;
 	position:absolute;
 	top: -15px;
 	left: 47%;
@@ -2778,7 +2784,7 @@ li #collabLeo:hover {
 	font-size: 18px;
 	display: inline-block;
 	background: #ffffff;
-	color: #003da5;
+	color: #880000;
 	line-height: 1;
 	padding: 8px 0;
 	margin-right: 4px;
@@ -2790,7 +2796,7 @@ li #collabLeo:hover {
 }
 
 #footer .social-links a:hover {
-	background: #003da5;
+	background: #880000;
 	color: #fff;
 	text-decoration: none;
 	box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
@@ -2810,7 +2816,7 @@ li #collabLeo:hover {
 .bloc_404
 {
   background-color:#141019;
-  background: radial-gradient(at 50% -20%, #003da5, #02112a) fixed;
+  background: radial-gradient(at 50% -20%, #880000, #02112a) fixed;
 }
 
 

@@ -22,44 +22,15 @@ body.dark a {
 	color: white;
 }
 
-
-
 body.dark .stage #stage-flters,
 body.dark .portfolio #portfolio-flters {
 	background: none;
 }
 body.dark .stage #stage-flters li,
 body.dark .portfolio #portfolio-flters li {
-	background: #5f6264;
+	background: #3d444d;
 }
 
-body.dark .container_carte_veille .carte .couverture.couverture2 {
-	background: #5f6264;
-}
-
-body.dark .container_carte_veille .carte:hover .couverture.couverture2 {
-	border: 2px solid #5f6264;
-}
-
-body.dark .container_carte_veille .carte:hover .couverture.couverture2 h2 {
-	color: #FFF;
-}
-
-body.dark .container_carte_veille .carte .couverture.couverture1 {
-	background: #121212;
-	color: white
-}
-
-body.dark .container_carte_veille .carte .couverture.couverture1 button {
-	color: #fff;
-	border: 2px solid #5f6264;
-	background: #5f6264;
-}
-
-body.dark .container_carte_veille .carte .couverture.couverture1 button:hover {
-	color: #121212;
-	background: #5f6264;
-}
 
 body.dark .portfolio-modal .close-modal {
 	background-image: url(../img/cancel_sombre.svg);
@@ -67,30 +38,35 @@ body.dark .portfolio-modal .close-modal {
 
 body.dark .btn-primary {
 	color: #fff;
-	background: #5f6264;
+	background: #3d444d;
+	border-color: #cdd9e51a;
 }
 
 body.dark .btn-check:focus+.btn-primary,
 .btn-primary:focus {
-	border-color: #5f6264;
+	border-color: #3d444d;
 	box-shadow: none;
 }
 
 
+
+body.dark .service-wrapper .content .title {
+	color:#121212;
+}
 
 body.dark ::-webkit-scrollbar-track {
 	background: #FFF;
 }
 
 body.dark ::-webkit-scrollbar-thumb{
-	background: #5f6264;
+	background: #3d444d;
 }
 
 body.dark .certif_container,
 body.dark .back-to-top,
 body.dark .resume .resume-item h5,
 body.dark .option--current {
-	background: #5f6264;
+	background: #3d444d;
 }
 
 
@@ -99,17 +75,17 @@ body.dark .btn-primary:active:focus {
 }
 
 body.dark .btn-primary {
-	background: #5f6264;
-	border-color: #5f6264;
+	background: #3d444d;
+	border-color: #3d444d;
 }
 
 body.dark::-webkit-scrollbar-thumb {
-	background: #5f6264;
+	background: #3d444d;
 }
 
 body.dark .stage #stage-flters li,
 body.dark .portfolio #portfolio-flters li {
-	border: 2px solid #5f6264;
+	border: 2px solid #3d444d;
 }
 
 body.dark .section-title span,
@@ -122,19 +98,19 @@ body.dark .navbar-mobile ul {
 }
 
 body.dark .img-moi {
-	box-shadow: 0 5px 50px 0 #5f6264, 0 0 0 7px #5f6264;
-	background-color: #5f6264;
-	color: #5f6264;
+	box-shadow: 0 5px 50px 0 #3d444d, 0 0 0 7px #3d444d;
+	background-color: #3d444d;
+	color: #3d444d;
 }
 
 body.dark .service-wrapper {
-	background: #5f6264;
+	background: #3d444d;
 }
 
 body.dark .service-wrapper:hover {
 	-webkit-box-shadow: 0 50px 35px rgba(47, 60, 78, .15)!important;
 	box-shadow: 0 15px 35px rgb(255, 255, 255)!important;
-	background: #5f6264;
+	background: #3d444d;
 	-webkit-transform: translateY(-8px);
 	transform: translateY(-8px);
 	border-color: transparent;
@@ -151,7 +127,7 @@ body.dark .text-custom {
 }
 
 body.dark .contact .php-email-form button[type=submit]{
-	background:#5f6264 ;
+	background:#3d444d ;
 }
 
 body.dark .clients{
@@ -159,7 +135,7 @@ body.dark .clients{
 }
 
 body.dark #footer .social-links a {
-	background: #5f6264;
+	background: #3d444d;
 	color:#fff;
 }
 body.dark #footer .social-links a:hover{
@@ -167,13 +143,13 @@ body.dark #footer .social-links a:hover{
 }
 
 body.dark .contact .social-links a:hover{
-	border-color: #5f6264;
-    background: #5f6264;
+	border-color: #3d444d;
+    background: #3d444d;
 }
 
 body.dark .portfolio .portfolio-item .portfolio-info .details-link:hover,
 body.dark .portfolio .portfolio-item .portfolio-info .preview-link:hover{
-	color:#5f6264; 
+	color:#3d444d; 
 }
 
 body.dark .breadcrumbs{
@@ -183,15 +159,15 @@ body.dark .breadcrumbs{
 body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet{
 	color: #fff;
 	background: rgb(112, 100, 100);
-	border: 1px solid #5f6264
+	border: 1px solid #3d444d
 }
 
 body.dark .resume .resume-item{
-    border-left: 2px solid #5f6264;
+    border-left: 2px solid #3d444d;
 }
 
 body.dark .resume .resume-item::before{
-	border: 2px solid #5f6264;
+	border: 2px solid #3d444d;
 }
 
 body.dark .spinner:before,
@@ -201,7 +177,7 @@ body.dark .spinner:after{
 }
 
 body.dark .blog-slider {
-	background: #5f6264;
+	background: #3d444d;
 }
 
 body.dark .blog-slider__title, 
@@ -218,7 +194,7 @@ body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swipe
 	height: 12px;
 	background-color: #fff;
 	opacity: 1;
-	border: 1px solid #003da5;
+	border: 1px solid #880000;
 }
 
 body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
@@ -249,18 +225,9 @@ body.dark .portfolio-details .portfolio-info h3 {
 
 
 
-
-body.dark .blog-slider__img, 
-body.dark .blog-slider__img:after{
-	background-image: linear-gradient(100deg, #414344 20%, #fff 90%);
-	box-shadow: 4px 4px 4px 1px #767a7c;
-}
-
-
-
 body.dark .blog-slider__button {
 	display: inline-flex;
-	background-image: linear-gradient(147deg, #5f6264 0%, #a9bfce 74%);
+	background-image: linear-gradient(147deg, #3d444d 0%, #a9bfce 74%);
 	padding: 15px 35px;
 	border-radius: 50px;
 	color: #fff;
@@ -292,7 +259,7 @@ body.dark .profile-card__img {
 	overflow: hidden;
 	position: relative;
 	z-index: 4;
-	box-shadow: 0 5px 50px 0 #5f6264, 0 0 0 7px #414344;
+	box-shadow: 0 5px 50px 0 #3d444d, 0 0 0 7px #414344;
 }
 
 body.dark .postcard {
@@ -300,12 +267,12 @@ body.dark .postcard {
 }
 
 body.dark .tooltip{
-	background-color: #5f6264;
+	background-color: #3d444d;
 }
 
 
 body.dark .tooltip::before{	
-	border-bottom: 15px solid #5f6264;
+	border-bottom: 15px solid #3d444d;
   }
 
   body.dark .line-1 {
