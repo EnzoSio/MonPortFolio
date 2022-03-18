@@ -673,86 +673,45 @@
                               surtout sur leur mise à disposition commerciale.
                            </p>
                            <!-- Mise en place des cartes des différents -->
-                           <div class="container_carte_veille">
-                              <div class="carte">
-                                 <div class="couverture couverture1">
-                                    <div class="content">
-                                       <h2>Qu'est ce que la RFID ?</h2>
-                                       <p>L'abréviation RFID signifie «Radio Frequency IDentification», en français,
-                                          «Identification par Radio Fréquence». Il s'agit d'un dispositif électronique
-                                          permettant d’identifier un objet, d’en suivre le cheminement ou de vérifier sa
-                                          présence dans un local et d’en connaître les caractéristiques à distance car
-                                          celui-ci émet des ondes radio.
-                                       </p>
-                                       <button data-toggle="modal" href="#rfid">Lire plus</button>
+                           <div id="wrapper">
+                              <div class="content">
+                                 <!-- Tab links -->
+                                 <div class="tabs">
+                                    <button class="tablinks active" data-veille="RFID"><p data-title="RFID">RFID</p></button>
+                                    <button class="tablinks" data-veille="OC"><p data-title="OC">Objet Connecté</p></button>
+                                    <button class="tablinks" data-veille="Arduino"><p data-title="Arduino">Arduino</p></button>
+                                    <button class="tablinks" data-veille="ESP32"><p data-title="ESP32">ESP32</p></button>
+                                 </div>
+                           
+                                 <!-- Tab content -->
+                                 <div class="wrapper_tabcontent">
+                                    <div id="RFID" class="tabcontent active">
+                                       <h3>RFID</h3>
+                                       <p>L'abréviation RFID signifie «Radio Frequency IDentification», en français, «Identification par Radio Fréquence». Il s'agit d'un dispositif électronique permettant d’identifier un objet, d’en suivre le cheminement ou de vérifier sa présence dans un local et d’en connaître les caractéristiques à distance car celui-ci émet des ondes radio.</p>
+                                       <button class="btn btn-primary" data-toggle="modal" href="#rfid">Lire plus</button>
                                     </div>
-                                 </div>
-                                 <div class="couverture couverture2">
-                                    <h2>La RFID</h2>
-                                 </div>
-                              </div>
-                              <div class="carte">
-                                 <div class="couverture couverture1">
-                                    <div class="content">
-                                       <h2>Qu'est-ce qu'un objet connecté ?</h2>
-                                       <p>Il s'agit d'un matériel électronique qui peut communiquer avec un smartphone, une
-                                          tablette tactile, une montre, un ordinateur ou une télévision. Communiquer, cela
-                                          signifie qu'il peut envoyer et recevoir des informations, par le biais d'une
-                                          liaison sans fil, Bluetooth ou Wifi.
-                                       </p>
-                                       <button data-toggle="modal" href="#iot">Lire plus</button>
+                           
+                                    <div id="OC" class="tabcontent">
+                                       <h3>OC</h3>
+                                       <p>Il s'agit d'un matériel électronique qui peut communiquer avec un smartphone, une tablette tactile, une montre, un ordinateur ou une télévision. Communiquer, cela signifie qu'il peut envoyer et recevoir des informations, par le biais d'une liaison sans fil, Bluetooth ou Wifi.</p>
+                                       <button class="btn btn-primary" data-toggle="modal" href="#rfid">Lire plus</button>
                                     </div>
-                                 </div>
-                                 <div class="couverture couverture2">
-                                    <h2>Les objets connectés</h2>
-                                 </div>
-                              </div>
-                              <div class="carte">
-                                 <div class="couverture couverture1">
-                                    <div class="content">
-                                       <h2>Qu'est-ce que le Arduino</h2>
-                                       <p>Une carte Arduino est une petite (5,33 x 6,85 cm) carte électronique équipée d'un
-                                          micro-contrôleur. Le micro-contrôleur permet, à partir d'événements détectés par
-                                          des capteurs, de programmer et commander des actionneurs ; la carte Arduino est
-                                          donc une interface programmable.
-                                       </p>
-                                       <button data-toggle="modal" href="#arduino">Lire plus</button>
+      
+                                    <div id="Arduino" class="tabcontent">
+                                       <h3>Arduino</h3>
+                                       <p>Une carte Arduino est une petite (5,33 x 6,85 cm) carte électronique équipée d'un micro-contrôleur. Le micro-contrôleur permet, à partir d'événements détectés par des capteurs, de programmer et commander des actionneurs ; la carte Arduino est donc une interface programmable.</p>
+                                       <button class="btn btn-primary" data-toggle="modal" href="#rfid">Lire plus</button>
                                     </div>
-                                 </div>
-                                 <div class="couverture couverture2">
-                                    <h2>Le Arduino</h2>
-                                 </div>
-                              </div>
-                              <div class="carte">
-                                 <div class="couverture couverture1">
-                                    <div class="content">
-                                       <h2>Qu'est-ce que l'ESP32</h2>
-                                       <p>Le module ESP32 est une solution Wi-Fi/Bluetooth tout-en-un intégrée et
-                                          certifiée, qui fournit non seulement une radio sans fil, mais également un
-                                          processeur embarqué doté d'interfaces pour permettre la connexion à divers
-                                          périphériques.
+                           
+                                    <div id="ESP32" class="tabcontent">
+                                       <h3>ESP32</h3>
+                                       <p>Le module ESP32 est une solution Wi-Fi/Bluetooth tout-en-un intégrée et certifiée, qui fournit non seulement une radio sans fil, mais également un processeur embarqué doté d'interfaces pour permettre la connexion à divers périphériques. 
                                        </p>
-                                       <button data-toggle="modal" href="#esp32">Lire plus</button>
+                                       <button class="btn btn-primary" data-toggle="modal" href="#rfid">Lire plus</button>
                                     </div>
-                                 </div>
-                                 <div class="couverture couverture2">
-                                    <h2>Le module ESP32</h2>
                                  </div>
                               </div>
                            </div>
-                           <br>
-                           <br>
-                           <h3>Besoins, contraintes, outils</h3>
-                           <p>Afin de construire ma veille technologique efficacement, j'ai mis en place des alertes sur
-                              google et Talkwaker et d'autres sites similaires afin que chaque mois et semaine, je sois au
-                              courant des dernières actualités portant sur le sujet de la RFID.
-                           </p>
-                           <p>La difficulté fut mon manque d'expérience puisque cette veille fut mon premier site, cela m'a
-                              alors permis de progresser en HTML et en CSS.
-                           </p>
-                           <h3>Compétences</h3>
-                           <li>Travailler en mode projet</li>
-                           <li>Organiser son développement professionnel</li>
                            <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
                            Fermer la fenêtre</button>
                         </div>
