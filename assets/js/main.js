@@ -1862,6 +1862,9 @@ const srbottom = ScrollReveal({
 });
 
 
+ScrollReveal().reveal('.postcard');
+
+
 srbottom.reveal('.mon_cv',{});})()
 
 function Echap (){

@@ -797,10 +797,19 @@ section {
 }
 
 .postcard .postcard__img {
-	max-height: 180px;
 	width: 100%;
 	object-fit: cover;
 	position: relative
+}
+
+#animsisr {
+	align-self: center;
+}
+
+#animslam {
+	margin-left: 1.5rem;
+	align-self: center;
+
 }
 
 .postcard .postcard__img_link {
@@ -883,7 +892,9 @@ section {
 	.postcard .postcard__img {
 		max-width: 300px;
 		max-height: 100%;
-		transition: transform .3s ease
+		transition: transform .3s ease;
+		vertical-align: bottom;
+		
 	}
 	.postcard .postcard__text {
 		padding: 3rem;
@@ -971,6 +982,7 @@ section {
 		height: 295px;
 		width: 300px;
 		border-radius: 50%;
+		display: contents;
 	}
 	.col-lg-4 {
 		text-align: center;
