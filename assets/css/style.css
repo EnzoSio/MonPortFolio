@@ -1397,6 +1397,23 @@ section {
 	padding: 0;
 }
 
+.def {
+	font-size: 11px;
+}
+
+
+li #fmci {
+	transition: 0.5s;
+	color: #444444;
+}
+
+li #fmci:hover {
+	transition: 0.5s;
+	font-weight: bolder;
+	animation: .3s;
+	font-size: 18px;
+	color: #DD4814;
+}
 
 /*--------------------------------------------------------------
 # Section Projets

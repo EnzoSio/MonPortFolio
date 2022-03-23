@@ -146,12 +146,6 @@ body.dark .breadcrumbs {
 	background-color: #121212;
 }
 
-body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-	color: #fff;
-	background: rgb(112, 100, 100);
-	border: 1px solid #3d444d
-}
-
 body.dark .resume .resume-item {
 	border-left: 2px solid #3d444d;
 }
@@ -180,11 +174,9 @@ body.dark .blog-slider__text {
 # Projets PortFolio et Slider
 --------------------------------------------------------------*/
 body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-	width: 12px;
-	height: 12px;
-	background-color: #fff;
-	opacity: 1;
-	border: 1px solid #880000;
+	color: #fff;
+	background: rgb(112, 100, 100);
+	border: 1px solid #3d444d
 }
 
 body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
