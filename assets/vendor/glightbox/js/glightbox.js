@@ -2585,6 +2585,8 @@
         if (isNode(element)) {
           var gallery = element.getAttribute('data-gallery');
           var certif = element.getAttribute('data-certif');
+          var project = element.getAttribute('data-project');
+
 
 
           if (gallery) {
@@ -2595,6 +2597,11 @@
           if (certif) {
             this.fullElementsList = this.elements;
             this.elements = this.getGalleryElements(this.elements, certif);
+          }
+
+          if (project) {
+            this.fullElementsList = this.elements;
+            this.elements = this.getGalleryElements(this.elements, project);
           }
 
           if (isNil(index)) {
@@ -3239,6 +3246,7 @@
           slideInfo.slideConfig = elData;
           slideInfo.gallery = el.getAttribute('data-gallery');
           slideInfo.gallery = el.getAttribute('data-certif');
+          slideInfo.gallery = el.getAttribute('data-project');
 
           list.push(slideInfo);
         });

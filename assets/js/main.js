@@ -265,11 +265,18 @@
   });
 
   /**
-   * Initiate Stages lighbox
+   * Initiate Certif lighbox
    */
    const certifLightbox = GLightbox({
     selector: '.certif-lightbox'
   });
+
+   /**
+   * Initiate Projects lighbox
+   */
+	const projectLightbox = GLightbox({
+		selector: '.project-lightbox'
+	  });
 
   /**
    *  details slider
