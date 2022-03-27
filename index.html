@@ -92,11 +92,11 @@
                   </p>
                   <div id="row_cv">
                      <div class="col-lg-8">
-                        <p class="mon_cv"> <a href="./monCV.html" id="cv" target="_blank"><i class="fab fa-accusoft"></i> Clique sur moi
+                        <p class="mon_cv"> <a href="/docs/CV.pdf" id="cv" target="_blank"><i class="fab fa-accusoft"></i> Clique sur moi
                            pour voir mon CV ou scanne le QRCode</a>
                         </p>
                         <center>
-                           <img id="cv_qrcode" src="./docs/cv_qrcode.png">
+                           <img id="cv_qrcode" src="./docs/CV.png">
                         </center>
                      </div>
                   </div>
@@ -408,13 +408,13 @@
                         d'être
                         le meilleur dans son domaine.
                      </p>
-                     <h3 class="titre">Outils utilisés pour ma veille</h3>
+                     <h3 class="titre">Dispositif de veille technologique</h3>
                      <p class="texte">Afin de construire ma veille technologique efficacement, j'ai mis en place des alertes sur
-                        google et Talkwaker et d'autres sites similaires afin que chaque mois et semaine, je sois au courant des
-                        dernières actualités portant sur le sujet de la RFID.
+                        google et Talkwaker, ou Feedly et d'autres sites similaires afin que chaque mois et semaine, je sois au courant des
+                        dernières actualités portant sur le sujet de la RFID. Cette manière m'a alors permis de trier efficacement les informations que je collectais au fur et à mesure.
                      </p>
                      <h3 class="titre">Thème de veille</h3>
-                     <p class="texte">Ma veille Technologique porte sur le thème de la technologie RFID</p>
+                     <p class="texte">Ma veille Technologique porte sur le thème de la technologie RFID.</p>
                   </div>
                   <div class="col-lg-4"">
                      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_sqh0u5je.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>                  </div>
@@ -698,41 +698,44 @@
                               <div class="contenu">
                                  <!-- Tab links -->
                                  <div class="tabs">
-                                    <button class="tablinks active" data-veille="RFID">
-                                       <p data-title="RFID">Article 1</p>
+                                    <button class="tablinks active" data-veille="article1">
+                                       <p data-title="Article 1">Article 1</p>
                                     </button>
-                                    <button class="tablinks" data-veille="OC">
-                                       <p data-title="RFID">Article 2</p>
+                                    <button class="tablinks" data-veille="article2">
+                                       <p data-title="Article 2">Article 2</p>
                                     </button>
-                                    <button class="tablinks" data-veille="Arduino">
-                                       <p data-title="RFID">Article 3</p>
+                                    <button class="tablinks" data-veille="article3">
+                                       <p data-title="Article 3">Article 3</p>
                                     </button>
-                                    <button class="tablinks" data-veille="ESP32">
-                                       <p data-title="RFID">Article 4</p>
+                                    <button class="tablinks" data-veille="article4">
+                                       <p data-title="Article 4">Article 4</p>
                                     </button>
                                  </div>
                                  <!-- Tab content -->
                                  <div class="wrapper_tabcontent">
-                                    <div id="RFID" class="tabcontent active">
-                                       <h3>RFID</h3>
-                                       <p>L'abréviation RFID signifie «Radio Frequency IDentification», en français, «Identification par Radio Fréquence». Il s'agit d'un dispositif électronique permettant d’identifier un objet, d’en suivre le cheminement ou de vérifier sa présence dans un local et d’en connaître les caractéristiques à distance car celui-ci émet des ondes radio.</p>
-                                       <button class="btn btn-primary" data-toggle="modal" href="#rfid">Lire plus</button>
+                                    <div id="article1" class="tabcontent active">
+                                       <h3>Article 1</h3>
+                                       <p>Une puce électronique sous la peau pour ouvrir la porte de son bureau, payer au supermarché ou valider son pass sanitaire... C’est déjà une réalité. En Suède, une startup propose désormais des implants électroniques pour prouver qu’on est bien vacciné.</p>
+                                       <button class="btn btn-primary" data-toggle="modal" href="#art1">Lire plus</button>
                                     </div>
-                                    <div id="OC" class="tabcontent">
-                                       <h3>OC</h3>
-                                       <p>Il s'agit d'un matériel électronique qui peut communiquer avec un smartphone, une tablette tactile, une montre, un ordinateur ou une télévision. Communiquer, cela signifie qu'il peut envoyer et recevoir des informations, par le biais d'une liaison sans fil, Bluetooth ou Wifi.</p>
-                                       <button class="btn btn-primary" data-toggle="modal" href="#iot">Lire plus</button>
-                                    </div>
-                                    <div id="Arduino" class="tabcontent">
-                                       <h3>Arduino</h3>
-                                       <p>Une carte Arduino est une petite (5,33 x 6,85 cm) carte électronique équipée d'un micro-contrôleur. Le micro-contrôleur permet, à partir d'événements détectés par des capteurs, de programmer et commander des actionneurs ; la carte Arduino est donc une interface programmable.</p>
-                                       <button class="btn btn-primary" data-toggle="modal" href="#arduino">Lire plus</button>
-                                    </div>
-                                    <div id="ESP32" class="tabcontent">
-                                       <h3>ESP32</h3>
-                                       <p>Le module ESP32 est une solution Wi-Fi/Bluetooth tout-en-un intégrée et certifiée, qui fournit non seulement une radio sans fil, mais également un processeur embarqué doté d'interfaces pour permettre la connexion à divers périphériques. 
+                                    <div id="article2" class="tabcontent">
+                                       <h3>Article 2</h3>
+                                       <p>Alors que le nombre d'accidents de chariots élévateurs se maintient dans le BTP, certaines entreprises, comme Brigrade Electronics, tente de trouver une solution
+                                       pour éviter les accidents. Selon le fabricant, les dégâts viennent notamment d’un problème d’angle-mort, subi par les conducteurs. Le nouveau système ZoneSafe de Brigade Electronics, pourrait être la solution à ce problème.
                                        </p>
-                                       <button class="btn btn-primary" data-toggle="modal" href="#esp32">Lire plus</button>
+                                       <button class="btn btn-primary" data-toggle="modal" href="#art2">Lire plus</button>
+                                    </div>
+                                    <div id="article3" class="tabcontent">
+                                       <h3>Article 3</h3>
+                                       <p>BT Sport, un bouquet de chaînes sportives de télévision payante, s'est associé au fabricant de sports Gilbert, Premiership Rugby et Sportable pour tester un ballon de rugby intelligent ce vendredi lors du match Falcons vs Tigers Premiership Rugby Cup.
+                                          Le ballon contient un système technologique pour fournir des données qui profiteront à la fois aux joueurs et aux téléspectateurs.</p>
+                                       <button class="btn btn-primary" data-toggle="modal" href="#art3">Lire plus</button>
+                                    </div>
+                                    <div id="article4" class="tabcontent">
+                                       <h3>Article 4</h3>
+                                       <p>SmartGunz est une entreprise qui compte commercialiser des armes intelligentes au printemps. Dans la conception de ses armes, la société a choisi des puces RFID mises en place dans des anneaux. Ces puces sont similaires aux émetteurs que de nombreuses personnes ont adoptés dans leur véhicule pour régler les péages. 
+                                       </p>
+                                       <button class="btn btn-primary" data-toggle="modal" href="#art4">Lire plus</button>
                                     </div>
                                  </div>
                               </div>
@@ -746,8 +749,8 @@
             </div>
          </div>
       </div>
-      <!-- MODAL RFID-->
-      <div class="portfolio-modal modal fade" id="rfid" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- MODAL ARTICLE 1-->
+      <div class="portfolio-modal modal fade" id="art1" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
                <div class="close-modal" data-dismiss="modal"></div>
@@ -756,34 +759,23 @@
                      <div class="col-lg-8">
                         <div class="modal-body">
                            <!-- Project Details Go Here-->
-                           <h2 class="text-uppercase">Qu'est ce que la RFID ?</h2>
-                           <p class="item-introduction text-muted">Article n°1 : Le marché de l’identification par
-                              radiofréquence sans puce
+                           <h2 class="text-uppercase">Des implantations sous peau</h2>
+                           <p class="item-introduction text-muted">Article n°1 : Une puce sous la peau pour payer ou pour valider son pass sanitaire ? Ca existe déjà en Suède
                            </p>
-                           <img class="img-fluid d-block mx-auto" src="assets/img/veille/RFID/couvertureRfid.jpg"
-                              alt="..." />
-                           <h3>Introduction</h3>
-                           <p>Le marché mondial de la RFID sans puce était évalué à 903,3 millions de dollars en 2019, et
-                              devrait atteindre 4 744,0 millions de dollars d’ici 2027, enregistrant un TCAC de 23,1% de
-                              2020 à 2027. Un système RFID sans puce est équipé d’un encodeur planaire (caractéristiquement
-                              un motif imprimé contenant le code d’identification) & d’une antenne pour la communication
-                              avec le lecteur. Grâce à des encres conductrices peu coûteuses, le coût de l’étiquette peut
-                              être considérablement réduit. Le système RFID sans puce présente des avantages par rapport
-                              aux capteurs classiques en raison de sa faible puissance rayonnée, de son coût réduit, de sa
-                              robustesse et de sa durée de vie plus longue. Par ailleurs, les systèmes RFID sans puce
-                              fournissent des données d’identification et surveillent plusieurs paramètres physiques des
-                              articles étiquetés sans avoir de capteur actif dans le circuit.
+                           <img class="img-fluid d-block mx-auto" src="assets/img/veille/article1/article1.jfif"
+                              alt="article1" />
+                           <h3>Résumé</h3>
+                           <p>Avoir une puce sous la peau, le but est de posséder son pass sanitaire directement dans le poignet. Cette puce minuscule faisant la taille d'un grain de riz à déjà été testé par plusieurs  milliers de personnes avant le Covid. Cet implant, permettrai de ne pas avoir à sortir une carte ou un smartphone, badger à son club de gym,payer un verre au café, ou encore valider son titre de transport la compagnie ferroviaire SNCF qui accepte les implants électroniques comme billet. L'achat du billet se fait par internet,   il suffit de présenter sa main quand on se fait contrôler. Certaines entreprises ont pour objectifs de mettre en place des implants à la place de badge d'accès. Puce qui aurait d'autres fonctionnalités comme déverrouiller des portes, photocopier des documents, déverrouiller un ordinateur avec un capteur. Certaines personnes sont réticente à se faire implanter des puces parce qu'ils ont l'impression d'être espionnés. 
                            </p>
-                           <p></p>
                            <ul class="list-inline">
-                              <li>Date: Septembre 2021</li>
-                              <li>Tags : Technologie, IOT, Etiquette</li>
+                              <li>Date: Janvier 2022</li>
+                              <li>Sources: RMC</li>
                            </ul>
                            <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
                            Fermer la fenêtre</button>
                            <button class="btn btn-primary"
-                              onclick="window.location.href='https://androidfun.fr/le-marche-de-lidentification-par-radiofrequence-sans-puce-taille-part-rapport-de-croissance-tendances-et-analyse-de-lindustrie-en-2027/';"><i
-                              class="fas fa-newspaper"></i> Voir l'article</button>
+                              onclick="window.location.href='https://rmc.bfmtv.com/replay-emissions/estelle-midi/une-puce-sous-la-peau-pour-payer-ou-pour-valider-son-pass-sanitaire-ca-existe-deja-en-suede_AV-202201170617.html';"> 
+                              <i class="fas fa-newspaper"></i> Voir l'article</button>
                         </div>
                      </div>
                   </div>
@@ -791,8 +783,8 @@
             </div>
          </div>
       </div>
-      <!-- MODAL IOT-->
-      <div class="portfolio-modal modal fade" id="iot" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- MODAL ARTICLE 2-->
+      <div class="portfolio-modal modal fade" id="art2" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
                <div class="close-modal" data-dismiss="modal"></div>
@@ -801,26 +793,24 @@
                      <div class="col-lg-8">
                         <div class="modal-body">
                            <!-- Project Details Go Here-->
-                           <h2 class="text-uppercase">Qu'est ce qu'un objet connecté ?</h2>
-                           <p class="item-introduction text-muted">Dossier personnel dans lequel les acquis de formation et
-                              les acquis de l'expérience d'une personne sont définis.
+                           <h2 class="text-uppercase">La RFID s'invite sur les chantiers</h2>
+                           <p class="item-introduction text-muted">Article 2 : Sécuriser les chariots élévateurs avec la technologie RFID
                            </p>
-                           <img class="img-fluid d-block mx-auto" src="assets/img/veille/IOT/couvertureIot.jpeg"
+                           <img class="img-fluid d-block mx-auto" src="assets/img/veille/article2/article2.jpg"
                               alt="..." />
-                           <h3>Introduction</h3>
-                           <p>L’ouverture de l’Internet et l’accessibilité du réseau permettent d’y connecter une multitude
-                              d’objets pour une multitude d’usages, permettant à l’ensemble de communiquer. Infrastructure
-                              mondiale pour la société de l'information, qui permet de disposer de services évolués en
-                              interconnectant des objets (physiques ou virtuels) grâce aux technologies de l'information.
+                           <h3>Résumé</h3>
+                           <p>
+                              De nombreux accidents sont causés par les chariots élevateurs. Les accidents mettent en peril la sécurité des employés sur les chantiers, et sur d'autre zone de travail, comme par exemple les aéroports, les ports maritimes, et les entrepôts. Le conducteur de chariot ne perçoit pas toujours les obstacles compte-tenu de la forme, de la taille et de la charge d’un véhicule, ce qui créer des angles morts causant alors des accidents. ZoneSafe est une entreprise qui a pour mission de répondre à ces problèmes en proposant des solutions de sécurité. Cette entreprise à créer un nouveau système permettant de créer des zones de détections autour des véhicules mais aussi autour du chantier.
+                              Lorsque le véhicule est à proximité d'un piéton, ou d'un autre conducteur, il y'a un signal provoqué par des antennes qui sont placées sur le véhicule, elles communiquent entre elles et signal l'approche d'un piéton sur la zone de manutention.
                            </p>
-                           <p></p>
                            <ul class="list-inline">
-                              <li>Tags : Réseau, Information, Infrastructure </li>
+                              <li>Date: Janvier 2022</li>
+                              <li>Sources: Batiweb</li>
                            </ul>
                            <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
                            Fermer la fenêtre</button>
                            <button class="btn btn-primary"
-                              onclick="window.location.href='https://www.oracle.com/fr/internet-of-things/what-is-iot/';"><i
+                              onclick="window.location.href='https://www.batiweb.com/actualites/nouveaux-produits-du-btp/securiser-les-chariots-elevateurs-avec-la-technologie-rfid-39307';"><i
                               class="fas fa-newspaper"></i> Voir l'article</button>
                         </div>
                      </div>
@@ -829,8 +819,8 @@
             </div>
          </div>
       </div>
-      <!-- MODAL IOT-->
-      <div class="portfolio-modal modal fade" id="arduino" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- MODAL ARTICLE 3-->
+      <div class="portfolio-modal modal fade" id="art3" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
                <div class="close-modal" data-dismiss="modal"></div>
@@ -839,24 +829,24 @@
                      <div class="col-lg-8">
                         <div class="modal-body">
                            <!-- Project Details Go Here-->
-                           <h2 class="text-uppercase">Qu'est ce que l'arduino ?</h2>
-                           <p class="item-introduction text-muted">Dossier personnel dans lequel les acquis de formation et
-                              les acquis de l'expérience d'une personne sont définis.
+                           <h2 class="text-uppercase">De la RFID au rugby</h2>
+                           <p class="item-introduction text-muted">Article 3 : BT Sport va tester le ballon intelligent au Premiership Rugby Cup (Championnat d'Angleterre de rugby) pour donner aux téléspectateurs des statistiques supplémentaires.
                            </p>
-                           <img class="img-fluid d-block mx-auto" src="assets/img/veille/ARDUINO/couvertureArduino.jpg"
+                           <img class="img-fluid d-block mx-auto" src="assets/img/veille/article3/article3.jpg"
                               alt="..." />
-                           <h3>Besoins, contraintes, outils</h3>
-                           <p>Arduino est un acteur important dans le monde des micro-contrôleur et le montre en annonçant avoir vendu pas moins de 10 millions de son modèle phare. Pour l'occasion il propose une édition limitée d'une version miniature de cette carte... mais à un peu moins de 60 euros livraison incluse.
-                              Si l'on parle régulièrement des Raspberry Pi, les bidouilleurs en herbe sont aussi nombreux à être accrocs aux micro-contrôleurs, notamment ceux proposés via les cartes Arduino. L'entreprise profite de la période des fêtes de fin d'années, et de son Black Friday, pour annoncer que 10 millions de modèles UNO (lancé en 2010) ont été vendus.
-                           </p>
-                           <p></p>
+                              <h3>Résumé</h3>
+                              <p>
+                                 Pour la première fois le ballon de rugby intelligent, va être testé lors de la compétition d'Angleterre de Rugby.
+                                 Cette invention à pu voir le jour grâce au partenariat entre Sportable(développeur de capteurs et de logiciel), BT Sport(chaînes sportives) et Gilbert(producteur de ballon), Premiership Rugby.
+                                 Celui-ci à pour objectif de fournir de nouvelles informations en temps réel basées sur des données aux équipes, aux entraîneurs, aux fans des matchs, ainsi qu'aux téléspectateurs. à la maison. Les données récoltées à haute vitesse permettront d'améliorer les performances des athlètes sur le terrain. Des données comme la vitesse, la distance et le temps de suspension du ballon. Le ballon contient des puces RFID qui communiquent avec des capteurs dispersés dans le stade. Les données renvoyées par les capteurs sont traduite par des outils d'intelligence artificielle de Sportable.         
+                              </p>
                            <ul class="list-inline">
-                              <li>Date: Novembre 2021</li>
-                              <li>Tags : Réseau, Information, Infrastructure </li>
+                              <li>Date: Mars 2022</li>
+                              <li>Sources: PocketLint</li>
                            </ul>
                            <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
                            Fermer la fenêtre</button>
-                           <button class="btn btn-primary" onclick="window.location.href='https://www.inpact-hardware.com/article/2803/10-millions-darduino-uno-vendus-mini-limited-edition-en-precommande';"><i
+                           <button class="btn btn-primary" onclick="window.location.href='https://www.pocket-lint.com/fr-fr/televiseur/actualites/bt/160428-bt-sport-testera-une-balle-intelligente-dans-la-coupe-de-rugby-du-premier-ministre-pour-donner-aux-telespectateurs-des-statistiques-supplementaires';"><i
                               class="fas fa-newspaper"></i> Voir l'article</button>
                         </div>
                      </div>
@@ -865,8 +855,8 @@
             </div>
          </div>
       </div>
-      <!-- MODAL IOT-->
-      <div class="portfolio-modal modal fade" id="esp32" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- MODAL ARTICLE 4-->
+      <div class="portfolio-modal modal fade" id="art4" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
                <div class="close-modal" data-dismiss="modal"></div>
@@ -875,18 +865,26 @@
                      <div class="col-lg-8">
                         <div class="modal-body">
                            <!-- Project Details Go Here-->
-                           <h2 class="text-uppercase">Qu'est ce que le module ESP32 ?</h2>
-                           <p class="item-introduction text-muted">Dossier personnel dans lequel les acquis de formation et
-                              les acquis de l'expérience d'une personne sont définis.
+                           <h2 class="text-uppercase">De la RFID dans les armes</h2>
+                           <p class="item-introduction text-muted">
+                              Armes intelligentes : bientôt disponibles sur le marché américain
                            </p>
-                           <img class="img-fluid d-block mx-auto" src="assets/img/veille/ESP32/couvertureEsp32.jpg"
+                           <img class="img-fluid d-block mx-auto" src="assets/img/veille/article4/article4.jpg"
                               alt="..." />
-                           <h3>Besoins, contraintes, outils</h3>
-                           <p>Dans le monde moderne, nous sommes de plus en plus connectés. Si vous souhaitez passer à l'étape suivante de la programmation, l'Internet des objets (IoT) est un bon point de départ. Les puces ESP sont devenues extrêmement populaires ces dernières années en raison de leur prix bon marché et de la possibilité de les connecter à Internet. Le ESP32 of ESP8266 peuvent être contrôlés avec l'IDE Arduino, ce qui les rend faciles à utiliser. C'est une option parfaite pour tout ce qui concerne Internet.
+                              <h3>Résumé</h3>
+                           <p>
+                              Aux Etats-Unis, le droit de posséder une arme à feu est garanti par le Deuxième amendement de la Constitution des États-Unis.
+                              D'après le centre de recherche américain Pew Research Center, 40 % des adultes possèdent une arme à feu dans leur domicile. 
+                              Des fusillades sont nombreuses et parfois, les enfants sans en savoir l'utilité, jouent avec et se blessent voir se tuent.
+                              Une entreprise nommé SmartGunz à alors décidé d'agir en mettant en place des armes intelligentes dans l'objectif de réduire les fusillades, et les accidents. L'entreprise à décider de mettre en place des puces RFID dans un anneau (bague). Cet anneau au contact de l'arme va permettre au tireur d'effectuer son tire. L'anneau va déverrouiller l'arme en fonction de sa proximité à celle-ci. D'après Thomas Holland, le patron de l'entreprise SmartGunz, cette technologie peut être exploité dans le domaine des forces de l'ordre, comme par exemple les agents de police, dont les armes peuvent être utilisées contre eux-même.
                            </p>
+                           <ul class="list-inline">
+                              <li>Date: Janvier 2022</li>
+                              <li>Sources: BuzzWebZine</li>
+                           </ul>
                            <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
                            Fermer la fenêtre</button>
-                           <button class="btn btn-primary" onclick="window.location.href='https://elektronicavoorjou.nl/fr/tout-sur-l%27esp8266-esp32/';"><i
+                           <button class="btn btn-primary" onclick="window.location.href='https://www.buzzwebzine.fr/armes-intelligentes-marche-americain/';"><i
                               class="fas fa-newspaper"></i> Voir l'article</button>
                         </div>
                      </div>

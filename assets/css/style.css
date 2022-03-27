@@ -1826,7 +1826,7 @@ button.btn.btn-primary.btn-xl.text-uppercase {
 	align-items: center;
 	justify-content: center;
 	opacity: 0.1;
-	font-size: 40px;
+	font-size: 20px;
 	transition: 1s ease-out;
 	z-index: -1;
 	font-weight: 600;
@@ -1840,7 +1840,7 @@ button.btn.btn-primary.btn-xl.text-uppercase {
   
   .tablinks:hover p:before {
 	opacity: 0.1;
-	font-size: 40px;
+	font-size: 30px;
 	top: -80%;
   }
   

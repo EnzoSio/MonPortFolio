@@ -2,13 +2,21 @@
 const checkbox = document.getElementById("checkbox")
 checkbox.addEventListener("change", () => {
   if(document.body.classList.toggle("dark")){
-    document.getElementById("cv").href="./monCV_sombre.html";
-    document.getElementById("cv_qrcode").src="./docs/cv_qrcode_sombre.png";
+    //Pour voir le pdf sombre
+    document.getElementById("cv").href="./docs/CV_Sombre.pdf";
+    //Pour voir le QRCode rouge
+    document.getElementById("cv_qrcode").src="./docs/CV_Sombre.png";
+    // Background Clair
+    document.getElementById("hero").style.backgroundImage = "url('assets/img/hero-bg-light.jpg')";
+
 
   }
   else if(document.body.classList.toggle!=("dark")){
-    document.getElementById("cv").href="./monCV.html";
-    document.getElementById("cv_qrcode").src="./docs/cv_qrcode.png";
+    //Pour voir le pdf rouge
+    document.getElementById("cv").href="./docs/CV.pdf";
+    //Pour voir le QRCode rouge
+    document.getElementById("cv_qrcode").src="./docs/CV.png";
+    // Background Sombre
     document.getElementById("hero").style.backgroundImage = "url('assets/img/hero-bg.jpg')";
   }
 })
@@ -21,14 +29,20 @@ if (hours > 18 || hours < 8 ) // entre 8h et 18 heures
 {
   document.getElementById("checkbox")
   document.body.classList.toggle("dark")
-  document.getElementById("cv_qrcode").src="./docs/cv_qrcode_sombre.png";
-  document.getElementById("cv").href="./monCV_sombre.html";
-  document.getElementById("hero").style.backgroundImage = "url('assets/img/hero-bg-light.jpg')";
+   //Pour voir le pdf sombre
+   document.getElementById("cv").href="./docs/CV_Sombre.pdf";
+   //Pour voir le QRCode rouge
+   document.getElementById("cv_qrcode").src="./docs/CV_Sombre.png";
+   // Background Clair
+   document.getElementById("hero").style.backgroundImage = "url('assets/img/hero-bg-light.jpg')";
 }
 else {
   document.getElementById("checkbox")
   document.body.classList.toggle!=("dark")
-  document.getElementById("cv_qrcode").src="./docs/cv_qrcode.png";
-  document.getElementById("cv").href="./monCV.html";
-  document.getElementById("hero").style.backgroundImage = "url('assets/img/hero-bg.jpg')";
+   //Pour voir le pdf rouge
+   document.getElementById("cv").href="./docs/CV.pdf";
+   //Pour voir le QRCode rouge
+   document.getElementById("cv_qrcode").src="./docs/CV.png";
+   // Background Sombre
+   document.getElementById("hero").style.backgroundImage = "url('assets/img/hero-bg.jpg')";
 }
