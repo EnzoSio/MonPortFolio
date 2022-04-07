@@ -25,7 +25,7 @@ checkbox.addEventListener("change", () => {
 var myDate = new Date();
 var hours = myDate.getHours();
 
-if (hours > 18 || hours < 8 ) // entre 8h et 18 heures
+if (hours > 18 || hours < 7 ) // entre 8h et 18 heures
 {
   document.getElementById("checkbox")
   document.body.classList.toggle("dark")
