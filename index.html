@@ -667,8 +667,8 @@
                   </div>
                   <div class="my-3">
                      <div class="loading">Loading</div>
-                     <div class="error-message"></div>
-                     <div class="sent-message">Your message has been sent. Thank you!</div>
+                     <div class="error-message" id="erreur">Votre message n'a pas pu être envoyé !</div>
+                     <div class="sent-message" id="send">Votre message a été envoyé. Merci !</div>
                   </div>
                   <div class="text-center">
                      <button id="button" type="submit">Envoyer un message</button></div>
@@ -952,7 +952,6 @@
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
       <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-      <script src="assets/vendor/php-email-form/validate.js"></script>
       <script src="assets/vendor/purecounter/purecounter.js"></script>
       <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
       <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>

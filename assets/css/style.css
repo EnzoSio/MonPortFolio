@@ -2665,7 +2665,7 @@ li #collabLeo:hover {
 
 .contact .info-box i.bx {
 	font-size: 24px;
-	color: #003da5;
+	color: #880000;
 	border-radius: 50%;
 	padding: 15px;
 	background: #ffaa00;
@@ -2705,8 +2705,8 @@ li #collabLeo:hover {
 
 .contact .social-links a:hover {
 	color: #fff;
-	border-color: #003da5;
-	background: #003da5;
+	border-color: #880000;
+	background: #880000;
 }
 
 .contact .php-email-form {
@@ -2775,7 +2775,7 @@ li #collabLeo:hover {
 
 .contact .php-email-form input::focus,
 .contact .php-email-form textarea::focus {
-	background-color: #003da5;
+	background-color: #880000;
 }
 
 .contact .php-email-form input {
@@ -2787,7 +2787,7 @@ li #collabLeo:hover {
 }
 
 .contact .php-email-form button[type=submit] {
-	background: #003da5;
+	background: #880000;
 	border: 0;
 	padding: 10px 24px;
 	color: #fff;
