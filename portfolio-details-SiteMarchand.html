@@ -34,10 +34,10 @@
                <li><a class="nav-link scrollto" href="index.html#loisirs">Loisirs</a></li>
                <li>
                   <div class="themes">
-                     <input type="checkbox" class="checkbox" id="checkbox">
-                     <label for="checkbox" class="checkbox-label"> <i class="fas fa-moon" alt="mode sombre"></i>
-                     <i class="fas fa-sun"></i> <span class="ball"></span>
-                     </label>
+                     <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                    </label>
                   </div>
                </li>
             </ul>
