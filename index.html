@@ -51,16 +51,6 @@
                <li><a class="nav-link scrollto" href="#veille">Veille</a></li>
                <li><a class="nav-link scrollto" href="#loisirs">Loisirs</a></li>
                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-
-               <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-               <li>
-                  <div class="themes">
-                     <label id="switch" class="switch">
-                        <input type="checkbox" onchange="toggleTheme()" id="slider">
-                        <span class="slider round"></span>
-                    </label>
-                  </div>
-               </li>
             </ul>
             <i class="bi bi-menu-down  mobile-nav-toggle"></i>
          </nav>
@@ -945,8 +935,16 @@
             </div>
          </div>
       </div>
-      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-home" aria-hidden="true"></i>
-      </a>
+      
+            <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-home" aria-hidden="true"></i>
+            <a href="#" class="positionCheckbox d-flex align-items-center justify-content-center">
+               <label id="switch" class="switch">
+                  <input type="checkbox" onchange="toggleTheme()" id="slider">
+                  <span class="slider round"></span>
+              </label>
+            </a>
+
+      
       <!-- Vendor JS Files -->
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

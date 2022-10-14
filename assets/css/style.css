@@ -110,18 +110,18 @@ h6 {
 	position: fixed;
 	visibility: hidden;
 	opacity: 0;
-	right: 15px;
+	left: 50px;
 	bottom: 15px;
 	z-index: 996;
-	background: #880000;
 	color: #FFF;
+	background: #880000;
 	width: 40px;
 	height: 40px;
 	border-radius: 30px;
 	transition: all 0.4s;
 }
 
-.back-to-top i {
+/* .back-to-top i {
 	font-size: 20px;
 	color: #fff;
 	line-height: 0;
@@ -130,13 +130,31 @@ h6 {
 .back-to-top:hover {
 	background: #003ca55e;
 	color: #fff;
-}
+} */
 
 .back-to-top.active {
 	visibility: visible;
 	opacity: 1;
 }
 
+.positionCheckbox {
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	right: 50px;
+	bottom: 15px;
+	z-index: 996;
+	color: #FFF;
+	width: 40px;
+	height: 40px;
+	border-radius: 30px;
+	transition: all 0.4s;
+}
+
+.positionCheckbox.active {
+	visibility: visible;
+	opacity: 1;
+}
 
 /*--------------------------------------------------------------
 # Header
@@ -286,7 +304,7 @@ h6 {
 .switch {
 	position: relative;
 	display: flex;
-	width: 40px;
+	width: 60px;
 	height: 14px;
    }
    
@@ -305,7 +323,7 @@ h6 {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	background:transparent;
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
    }
@@ -323,25 +341,24 @@ h6 {
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 	box-shadow: 0 0px 15px #2020203d;
-	background: white url('https://i.ibb.co/FxzBYR9/night.png');
+	background: transparent url('../img/moon.png');
 	background-repeat: no-repeat;
+
 	background-position: center;
    }
    
    input:checked + .slider {
-	background-color: #2196f3;
+	background-color: #880000;
    }
    
-   input:focus + .slider {
-	box-shadow: 0 0 1px #2196f3;
-   }
    
    input:checked + .slider:before {
 	-webkit-transform: translateX(24px);
 	-ms-transform: translateX(24px);
 	transform: translateX(24px);
-	background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+	background: url('../img/sun.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 	background-position: center;
    }
    
@@ -867,7 +884,7 @@ section {
 
 .postcard .postcard__bar {
 	width: 50px;
-	height: 10px;
+	height: 15px;
 	margin: 10px 0;
 	border-radius: 5px;
 	background-color: #424242;
@@ -928,7 +945,7 @@ section {
 	width: 100px
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:992px) {
 	.postcard {
 		flex-wrap: inherit
 	}

@@ -43,12 +43,9 @@ body.dark .btn-primary {
 	border-color: #cdd9e51a;
 }
 
-body.dark .btn-check:focus+.btn-primary,
-.btn-primary:focus {
-	border-color: #3d444d;
-	box-shadow: none;
+body.dark input:checked + .slider {
+	background-color: #3d444d;
 }
-
 
 
 body.dark .service-wrapper .content .title {
@@ -103,6 +100,7 @@ body.dark .img-moi {
 	background-color: #3d444d;
 	color: #3d444d;
 }
+
 
 
 body.dark .section-title p {

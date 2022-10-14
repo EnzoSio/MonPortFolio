@@ -2607,6 +2607,9 @@ textarea.form-control-lg {
 	justify-content: center !important
 }
 
+.justify-content-between {
+	justify-content: space-between!important;
+ }
 .align-items-end {
 	align-items: flex-end !important
 }

@@ -111,6 +111,16 @@
   }
 
   /**
+   * Checkbox button
+   */
+  let checkbox = select('.positionCheckbox')
+  if (checkbox) {
+	checkbox.classList.add('active')
+   	window.addEventListener('load', toggleBacktotop)
+    	onscroll(document, toggleBacktotop)
+  }
+
+  /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
