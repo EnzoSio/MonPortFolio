@@ -1,5 +1,5 @@
 :root {
-	--bs-blue: #880000;
+	--bs-blue: #80564cc00;
 	--bs-indigo: #6610f2;
 	--bs-purple: #6f42c1;
 	--bs-pink: #d63384;
@@ -19,9 +19,9 @@
 	--bs-gray-500: #adb5bd;
 	--bs-gray-600: #6c757d;
 	--bs-gray-700: #495057;
-	--bs-gray-800: #343a40;
+	--bs-gray-0564cc: #343a40;
 	--bs-gray-900: #212529;
-	--bs-primary: #880000;
+	--bs-primary: #80564cc00;
 	--bs-secondary: #6c757d;
 	--bs-success: #198754;
 	--bs-info: #0dcaf0;
@@ -192,7 +192,7 @@ sup {
 }
 
 a {
-	color: #800;
+	color: #0564cc;
 	text-decoration: underline
 }
 
@@ -1358,21 +1358,21 @@ textarea.form-control-lg {
 
 .btn-primary {
 	color: #fff;
-	background-color: #800;
-	border-color: #800
+	background-color: #0564cc;
+	border-color: #0564cc
 }
 
 .btn-primary:hover {
 	color: #fff;
-	background-color: #800;
-	border-color: #800
+	background-color: #0564cc;
+	border-color: #0564cc
 }
 
 .btn-primary:focus {
 	color: #fff;
-	background-color: #800;
-	border-color: #800;
-	box-shadow: 0 0 0 .25rem #800
+	background-color: #0564cc;
+	border-color: #0564cc;
+	box-shadow: 0 0 0 .25rem #0564cc
 }
 
 .btn-primary.active,
@@ -1384,13 +1384,13 @@ textarea.form-control-lg {
 
 .btn-primary.active:focus,
 .btn-primary:active:focus {
-	box-shadow: 0 0 0 .25rem #800
+	box-shadow: 0 0 0 .25rem #0564cc
 }
 
 .btn-primary:disabled {
 	color: #fff;
-	background-color: #800;
-	border-color: #800
+	background-color: #0564cc;
+	border-color: #0564cc
 }
 
 .btn-info {
@@ -1506,7 +1506,7 @@ textarea.form-control-lg {
 
 .btn-link {
 	font-weight: 400;
-	color: #800;
+	color: #0564cc;
 	text-decoration: underline
 }
 
@@ -1593,7 +1593,7 @@ textarea.form-control-lg {
 .nav-link {
 	display: block;
 	padding: .5rem 1rem;
-	color: #800;
+	color: #0564cc;
 	text-decoration: none;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
@@ -1881,7 +1881,7 @@ textarea.form-control-lg {
 .page-link {
 	position: relative;
 	display: block;
-	color: #800;
+	color: #0564cc;
 	text-decoration: none;
 	background-color: #fff;
 	border: 1px solid #dee2e6;
@@ -1916,8 +1916,8 @@ textarea.form-control-lg {
 .page-item.active .page-link {
 	z-index: 3;
 	color: #fff;
-	background-color: #800;
-	border-color: #800
+	background-color: #0564cc;
+	border-color: #0564cc
 }
 
 .page-link {
@@ -2035,8 +2035,8 @@ textarea.form-control-lg {
 .list-group-item.active {
 	z-index: 2;
 	color: #fff;
-	background-color: #800;
-	border-color: #800
+	background-color: #0564cc;
+	border-color: #0564cc
 }
 
 .list-group-item+.list-group-item {
@@ -2206,7 +2206,7 @@ textarea.form-control-lg {
 
 	.modal-lg,
 	.modal-xl {
-		max-width: 800px
+		max-width: 0564ccpx
 	}
 }
 
@@ -2400,7 +2400,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-	color: #800
+	color: #0564cc
 }
 
 .link-primary:focus,
@@ -2532,7 +2532,7 @@ textarea.form-control-lg {
 }
 
 .border-primary {
-	border-color: #800 !important
+	border-color: #0564cc !important
 }
 
 .border-info {

@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Portfolio | Enzo AIME</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-      
-      <meta content="Portfolio de Enzo AIME - Etudiant en BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Application Métier)" name="description">
-      <meta content="AIME,Enzo,Portfolio,BTS,SIO,SLAM,Lycée Parc des Loges,Webmaster" name="keywords">
-      <meta content="Ihab BOUDALIA" name="author">
-      <meta name="theme-color" content="#880000">
+<html lang="en">
+
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>MonPortFolio</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+      <meta name="theme-color" content="#0564cc">
       <link rel="shortcut icon" id="logo_page" href="assets/img/book-solid.svg">
       <!-- Font Awesome icons (free version)-->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.css">
+      <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <!-- Google Fonts -->
       <link
@@ -31,6 +30,7 @@
       <!-- AOS -->
       <link href="./assets/css/aos.css" rel="stylesheet">
    </head>
+
    <body>
       <!-- LOADER -->
       <div class="loader_bg">
@@ -48,7 +48,7 @@
                <li><a class="nav-link scrollto" href="#resume">Parcours</a></li>
                <li><a class="nav-link scrollto" href="#stages">Stages</a></li>
                <li><a class="nav-link scrollto " href="#projets">Projets</a></li>
-               <li><a class="nav-link scrollto" href="#veille">Veille</a></li>
+               <li><a class="nav-link scrollto" href="#entreprise">Entreprise</a></li>
                <li><a class="nav-link scrollto" href="#loisirs">Loisirs</a></li>
                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             </ul>
@@ -71,98 +71,100 @@
          <!-- SECTION A PROPOS -->
          <section id="about" class="about" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="400">
             <div class="container">
-            <div data-aos="zoom-in" data-aos-delay="500">
-               <div class="section-title">
-                  <span>A propos</span>
-                  <h2>A propos</h2>
+               <div data-aos="zoom-in" data-aos-delay="500">
+                  <div class="section-title">
+                     <span>A propos</span>
+                     <h2>A propos</h2>
+                  </div>
                </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-8 pt-4 pt-lg-0 content">
-                  <p class="texte">Salut ! Je m’appelle Enzo AIME, j'ai 19 ans, actuellement en deuxième année de
-                     <b>BTS SIO (Services Informatiques aux Organisations)</b>, Option SLAM (Solutions Logicielles et
-                     Application
-                     Métier) l'option spécialisée pour le développement, au <b>lycée Parc des Loges</b> à Evry (91000).
-                  </p>
-                  <div id="row_cv">
-                     <div class="col-lg-8">
-                        <p class="mon_cv"> <a href="/docs/CV.pdf" id="cv" target="_blank"><i class="fab fa-accusoft"></i> Clique sur moi
-                           pour voir mon CV ou scanne le QRCode</a>
-                        </p>
-                        <center>
-                           <img id="cv_qrcode" src="./docs/CV.png" alt="QRCode CV">
-                        </center>
+               <div class="row">
+                  <div class="col-lg-8 pt-4 pt-lg-0 content">
+                     <p>Salut ! Je m’appelle Enzo AIME, j'ai 20 ans, je suis actuellement étudiant chez <a
+                           href="https://cloud-campus.fr/cloud-campus-ecole-de-programmation/">Cloud
+                           Campus</Canvas></a>, et alternant en
+                        tant que développeur Full Stack Junior dans l'entreprise<a class="m-2"
+                           href="https://www.prezevent.com/">Prezevent.</p>
+                     <div id="row_cv">
+                           <a href="./assets/docs/CV.pdf" id="cv_qrcode" class="btn btn-primary" target="_blank"><i
+                                 class="ti-import"></i>Télécharge mon CV</a>
                      </div>
+                     <br>
+                     <h3 class="titre">Ma filière, le BTS SIO</h3>
+                     <p class="sous-titre">Le Brevet de Technicien Supérieur aux Services Informatiques aux
+                        Organisations
+                        (BTS
+                        SIO), s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau
+                        ou
+                        de développeur, pour par la suite intégrer directement le marché du travail ou continuer des
+                        études, dans le
+                        domaine de l'informatique.
+                     </p>
                   </div>
-                  <br>
-                  <h3 class="titre">Projet Professionnel</h3>
-                  <p class="sous-titre">Mon projet professionnel est de devenir <b>Webmaster / Web développeur</b>
-                     (concepteur de site internet), après mes 2 ans d'études en <b>BTS SIO</b>, je compte ensuite faire
-                     une licence pro ou alors intégrer une grande école d'informatique.
-                  </p>
-                  <h3 class="titre">Description du BTS SIO</h3>
-                  <p class="sous-titre">Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations
-                     (BTS
-                     SIO), s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou
-                     de développeur, pour par la suite intégrer directement le marché du travail ou continuer des études, dans le
-                     domaine de l'informatique.
-                  </p>
+                  <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+                     <img src="assets/img/moi-circle.png" class="img-moi" alt="Enzo">
+                  </div>
                </div>
-               <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="500">
-                  <img src="assets/img/moi_circle.jpg" class="img-moi" alt="Enzo">
+               <div class="text-center">
+                  <div class="section-mini-title">
+                     <h2>Les Options</h2>
+                  </div>
                </div>
-            </div>
-            <div class="text-center">
-               <div class="section-mini-title">
-                  <h2>Les Options</h2>
-               </div>
-            </div>
-            <div class="container py-1">
-               <article class="postcard light red">
-                  <img class="postcard__img_link">
-                     <lottie-player id="animslam" class="postcard__img" src="https://assets6.lottiefiles.com/private_files/lf30_obidsi0t.json"  background="transparent" style="width: 300px" speed="1" loop autoplay></lottie-player>
-                  <div class="postcard__text">
-                     <h1 class="postcard__title red">
-                        <p>Option SLAM</p>
-                     </h1>
-                     <div class="postcard__bar"></div>
-                     <div class="postcard__preview-txt">L’option Solutions logicielles et applications métiers forme des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications,
-                        développement, intégration au sein de la société). Cette filière leur permettra d'accéder aux différents métiers tels que :
+               <div class="container py-1">
+                  <article class="postcard light blue">
+                     <a class="postcard__img_link">
+                        <lottie-player id="animslam" class="postcard__img"
+                           src="https://assets6.lottiefiles.com/private_files/lf30_obidsi0t.json"
+                           background="transparent" style="width: 300px" speed="1" loop autoplay></lottie-player>
+                     </a>
+                     <div class="postcard__text">
+                        <h1 class="postcard__title blue"><a>Option SLAM</a></h1>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">L’option Solutions logicielles et applications métiers forme
+                           des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et
+                           spécifications,
+                           développement, intégration au sein de la société). Cette filière leur permettra d'accéder aux
+                           différents métiers tels que :
+                        </div>
+                        <ul>
+                           <li>Développeur d’applications informatiques</li>
+                           <li>Développeur informatique</li>
+                           <li>Analyste d’applications ou d’études</li>
+                           <li>Programmeur analyste</li>
+                           <li>Programmeur d’applications</li>
+                           <li>Responsable des services applicatifs</li>
+                           <li>Technicien d’études informatiques</li>
+                        </ul>
                      </div>
-                     <ul>
-                        <li>Développeur d’applications informatiques</li>
-                        <li>Développeur informatique</li>
-                        <li>Analyste d’applications ou d’études</li>
-                        <li>Programmeur analyste</li>
-                        <li>Programmeur d’applications</li>
-                        <li>Responsable des services applicatifs</li>
-                        <li>Technicien d’études informatiques</li>
-                     </ul>
-                  </div>
-               </article>
-            </div>
-            <div class="container py-2">
-               <div class="h1 text-center text-dark" id="pageHeaderTitle"></div>
-               <article class="postcard light red">
-                  <img class="postcard__img_link">
-                     <lottie-player id="animsisr" class="postcard__img" src="https://assets1.lottiefiles.com/packages/lf20_lx9kf7oc.json"  background="transparent" style="width: 1000px" speed="1" loop autoplay></lottie-player>
-                  </a>
-                  <div class="postcard__text t-dark">
-                     <h1 class="postcard__title red"><p>Option SISR</p></h1>
-                     <div class="postcard__bar"></div>
-                     <div class="postcard__preview-txt">L’option Solution d’infrastructure, systèmes et réseaux forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité). En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance. Cette filière leur permettra d'accéder aux différents métiers tels que :</div>
-                     <ul>
-                        <li>Technicien d’infrastructure</li>
-                        <li>Technicien de production</li>
-                        <li>Technicien micro et réseaux</li>
-                        <li>Informaticien support et déploiement</li>
-                        <li>Pilote d’exploitation</li>
-                        <li>Support systèmes et réseaux</li>
-                        <li>Administrateur systèmes et réseaux</li>
-                     </ul>
-                  </div>
-               </article>
-            </div>
+                  </article>
+               </div>
+               <div class="container py-2">
+                  <div class="h1 text-center text-dark" id="pageHeaderTitle"></div>
+                  <article class="postcard light blue">
+                     <a class="postcard__img_link">
+                        <lottie-player id="animsisr" class="postcard__img"
+                           src="https://assets1.lottiefiles.com/packages/lf20_lx9kf7oc.json" background="transparent"
+                           style="width: 1000px" speed="1" loop autoplay></lottie-player>
+                     </a>
+                     <div class="postcard__text t-dark">
+                        <h1 class="postcard__title blue"><a>Option SISR</a></h1>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">L’option Solution d’infrastructure, systèmes et réseaux forme
+                           des professionnels des réseaux et équipements informatiques (installation, maintenance,
+                           sécurité). En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le
+                           réseau d’une société et d’assurer sa sécurité et sa maintenance. Cette filière leur permettra
+                           d'accéder aux différents métiers tels que :</div>
+                        <ul>
+                           <li>Technicien d’infrastructure</li>
+                           <li>Technicien de production</li>
+                           <li>Technicien micro et réseaux</li>
+                           <li>Informaticien support et déploiement</li>
+                           <li>Pilote d’exploitation</li>
+                           <li>Support systèmes et réseaux</li>
+                           <li>Administrateur systèmes et réseaux</li>
+                        </ul>
+                     </div>
+                  </article>
+               </div>
          </section>
          <!-- FIN SECTION A PROPOS  -->
          <!-- ======= SECTION PARCOURS ======= -->
@@ -178,13 +180,30 @@
                   <div class="col-lg-6">
                      <h3 class="resume-title">Expériences Professionnelles</h3>
                      <div class="resume-item pb-0">
+                        <h4>| Alternance chez Prezevent</h4>
+                        <h5>Septembre 2022 - Septembre 2024</h5>
+                        <p><em>Paris</em></p> 
+                        <h6>89 Rue de l'église, 15<sup>ème</sup> arrondissement de Paris</h6>
+                        <p>Coworking Cleante</p>
+                        <p>
+                        <ul>
+                           <li>Apprentissage et découverte de l'environnement Android Studio, permettant ainsi la
+                              modification d'une application existante, elle assure le suivi de gestion de matériel
+                              présent dans un parc informatique.
+                           </li>
+                        </ul>
+                        </p>
+                     </div>
+                     <div class="resume-item">
                         <h4>| Stage en entreprise</h4>
                         <h5>Janvier - Février 2022</h5>
                         <p><em>THALES DMS</em></p>
                         <h6>2 av Gay Lussac, 78990 ELANCOURT</h6>
                         <p>
                         <ul>
-                           <li>Apprentissage et découverte de l'environnement Android Studio, permettant ainsi la modification d'une application existante, elle assure le suivi de gestion de matériel présent dans un parc informatique.  
+                           <li>Apprentissage et découverte de l'environnement Android Studio, permettant ainsi la
+                              modification d'une application existante, elle assure le suivi de gestion de matériel
+                              présent dans un parc informatique.
                            </li>
                         </ul>
                         </p>
@@ -197,8 +216,8 @@
                         <p>
                         <ul>
                            <li>Découverte du monde du travail dans l'industrie des équipements militaire et
-                              particulièrement autour de l’electronique embarquée. Découverte du langage C++, 
-                              mise en pratique avec l'implémentation d'un plugin sur un logiciel déjà existant. 
+                              particulièrement autour de l’electronique embarquée. Découverte du langage C++,
+                              mise en pratique avec l'implémentation d'un plugin sur un logiciel déjà existant.
                            </li>
                         </ul>
                         </p>
@@ -260,8 +279,9 @@
                            <p>Stage n°2</p>
                         </div>
                         <div class="stage-links">
-                           <a href="assets/img/stages/Thales2.png" data-gallery="stageGallery" aria-label="stage2" class="stage-lightbox"><i class="fas fa-search-plus"></i></i></a>
-                           <a href="stage-details-ThalesAn2.html" aria-label="stage2" ><i class="fas fa-door-open"></i></a>
+                           <a href="assets/img/stages/Thales2.png" data-gallery="stageGallery" class="stage-lightbox"><i
+                                 class="fas fa-search-plus"></i></a>
+                           <a href="stage-details-ThalesAn2.html"><i class="fas fa-door-open"></i></a>
                         </div>
                      </div>
                   </div>
@@ -273,8 +293,9 @@
                            <p>Stage n°1</p>
                         </div>
                         <div class="stage-links">
-                           <a href="assets/img/stages/Thales.png" data-gallery="stageGallery" aria-label="stage1" class="stage-lightbox"><i class="fas fa-search-plus"></i></i></a>
-                           <a href="stage-details-ThalesAn1.html" aria-label="stage1" ><i class="fas fa-door-open"></i></a>
+                           <a href="assets/img/stages/Thales.png" data-gallery="stageGallery" class="stage-lightbox"><i
+                                 class="fas fa-search-plus"></i></i></a>
+                           <a href="stage-details-ThalesAn1.html"><i class="fas fa-door-open"></i></a>
                         </div>
                      </div>
                   </div>
@@ -289,38 +310,35 @@
                   <div class="section-title">
                      <span>Mes Projets</span>
                      <h2>Mes Projets</h2>
-                     <p>Voici les projets réalisés au cours de mon BTS Informatique</p>
+                     <p>Voici les TP réalisés lors de mes deux années au sein de l'école Cloud Campus</p>
                   </div>
                </div>
                <div class="row" data-aos="fade-up">
                   <div class="col-lg-12 d-flex justify-content-center">
                      <ul id="portfolio-flters">
                         <li data-filter="*" class="filter-active">Tout Afficher</li>
-                        <li data-filter=".filter-sv">Site Vitrine</li>
-                        <li data-filter=".filter-sm">Site Marchand</li>
-                        <li data-filter=".filter-aj">Application Java</li>
-                        <li data-filter=".filter-aw">Application Web</li>
-                        <li data-filter=".filter-ot">Réseaux</li>
-
+                        <li data-filter=".filter-pa">Première année</li>
+                        <li data-filter=".filter-da">Deuxième année</li>
                      </ul>
                   </div>
                </div>
                <div class="row portfolio-container">
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-aw">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-pa">
                      <div class="portfolio-img">
                         <img src="assets/img/portfolio/GsbConference.jpg" class="img-fluid" alt="">
                      </div>
                      <div class="portfolio-info">
-                        <h4>GSB Conférences</h4>
-                        <p>Application Web</p>
                         <a href="assets/img/portfolio/GsbConference.jpg" data-gallery="portfolioGallery"
-                        aria-label="gsbConf" class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-GsbConf.html" aria-label="gsbConf"  class="details-link"><i
-                           class="fas fa-door-open"></i></a>
+                           class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
+                        <h4>TP Catsting</h4>
+                        <p>Application Web</p>
+
+                        <a href="portfolio-details-GsbConf.html" class="details-link"><i
+                              class="fas fa-door-open"></i></a>
                      </div>
                   </div>
                   <!-- APPLICATION JAVA -->
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-aj">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-pa">
                      <div class="portfolio-img">
                         <img src="assets/img/portfolio/GsbMateriel.jpg" class="img-fluid" alt="">
                      </div>
@@ -328,21 +346,21 @@
                         <h4>GSB Matériel</h4>
                         <p>Application Java</p>
                         <a href="assets/img/portfolio/GsbMateriel.jpg" data-gallery="portfolioGallery"
-                        aria-label="gsbMat" class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-GsbMat.html" aria-label="gsbMat" class="details-link"><i
-                           class="fas fa-door-open"></i></a>
+                           class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
+                        <a href="portfolio-details-GsbMat.html" class="details-link"><i
+                              class="fas fa-door-open"></i></a>
                      </div>
                   </div>
                   <!-- APPLICATION JAVA -->
                   <div class="col-lg-4 col-md-6 portfolio-item filter-aj">
-                     <div class="portfolio-img"><img src="assets/img/portfolio/raSio.jpg" class="img-fluid" alt=""></div>
+                     <div class="portfolio-img"><img src="assets/img/portfolio/raSio.jpg" class="img-fluid" alt="">
+                     </div>
                      <div class="portfolio-info">
                         <h4>RaSIO</h4>
                         <p>Application Java</p>
                         <a href="assets/img/portfolio/raSio.jpg" data-gallery="portfolioGallery"
-                        aria-label="raSio" class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-raSio.html" aria-label="raSio" class="details-link"><i
-                           class="fas fa-door-open"></i></a>
+                           class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
+                        <a href="portfolio-details-raSio.html" class="details-link"><i class="fas fa-door-open"></i></a>
                      </div>
                   </div>
                   <!-- APPLICATION WEB -->
@@ -352,22 +370,22 @@
                         <h4>GSB</h4>
                         <p>Application Web</p>
                         <a href="assets/img/portfolio/Gsb.JPG" data-gallery="portfolioGallery"
-                        aria-label="gsb" class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-Gsb.html" aria-label="gsb" class="details-link"><i
-                           class="fas fa-door-open"></i></a>
+                           class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
+                        <a href="portfolio-details-Gsb.html" class="details-link"><i class="fas fa-door-open"></i></a>
                      </div>
                   </div>
                   <!-- SITE MARCHAND -->
                   <div class="col-lg-4 col-md-6 portfolio-item filter-sm">
-                     <div class="portfolio-img"><img src="assets/img/portfolio/SiteMarchand.JPG" class="img-fluid" alt="">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/SiteMarchand.JPG" class="img-fluid"
+                           alt="">
                      </div>
                      <div class="portfolio-info">
                         <h4>Site Marchand</h4>
                         <p>Web</p>
                         <a href="assets/img/portfolio/SiteMarchand.JPG" data-gallery="portfolioGallery"
-                        aria-label="ecommerce" class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-SiteMarchand.html" aria-label="ecommerce" class="details-link"><i
-                           class="fas fa-door-open"></i></a>
+                           class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
+                        <a href="portfolio-details-SiteMarchand.html" class="details-link"><i
+                              class="fas fa-door-open"></i></a>
                      </div>
                   </div>
                   <!-- SITE VITRINE N°1 -->
@@ -378,9 +396,9 @@
                         <h4>Devialet</h4>
                         <p>Web</p>
                         <a href="assets/img/portfolio/Devialet.JPG" data-gallery="portfolioGallery"
-                        aria-label="devialet" class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-Devialet.html"  aria-label="devialet" class="details-link">
-                        <i class="fas fa-door-open"></i></a>
+                           class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
+                        <a href="portfolio-details-Devialet.html" class="details-link">
+                           <i class="fas fa-door-open"></i></a>
                      </div>
                   </div>
                   <!-- Réseaux  -->
@@ -391,42 +409,34 @@
                         <h4>Réseaux</h4>
                         <p></p>
                         <a href="assets/img/portfolio/reseaux.jpg" data-gallery="portfolioGallery"
-                        aria-label="reseaux" class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
-                        <a href="portfolio-details-Reseaux.html" aria-label="reseaux" class="details-link">
-                        <i class="fas fa-door-open"></i></a>
+                           class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
+                        <a href="portfolio-details-Reseaux.html" class="details-link">
+                           <i class="fas fa-door-open"></i></a>
                      </div>
                   </div>
                </div>
             </div>
          </section>
          <!-- ======= SECTION VEILLE ======= -->
-         <section id="veille" class="veille">
+         <section id="entreprise" class="entreprise">
             <div class="container">
                <div data-aos="zoom-in" data-aos-delay="500">
                   <div class="section-title">
-                     <span>Veille</span>
-                     <h2>Veille</h2>
+                     <span>Entreprise</span>
+                     <h2>Entreprise </h2>
                   </div>
                </div>
-               <div class="row">
-                  <div class="col-lg-8 pt-4 pt-lg-0 content">
-                     <h3 class="titre">Qu'est-ce que la veille technologique ?</h3>
-                     <p class="texte">La veille technologique consiste à s'informer en continu sur les nouveautés du secteur
-                        informatique, les inventions des concurrents ainsi que les nouvelles technologies et ce dans le but
-                        d'être
-                        le meilleur dans son domaine.
+               <div class="row d-flex align-items-center">
+                  <div class="col-lg-8 pt-4 pt-lg-0 content ">
+                     <h3 class="titre">Que fait Prezevent ?</h3>
+                     <p class="texte">Prezevent est un outil métier a destination des organisateurs d'événements d'entreprise tels que des conférences, séminaires, congrès, colloques, assemblées générales, symposium, soirées d'entreprise ou autres formations qui réunis en présentiel plusieurs dizaines, plusieurs centaines, d'invités et de participants.
+                        Les fonctionnalités sont riches afin de pouvoir répondre aux particularités de chaque projet événementiel, et néanmoins simples pour être utilisables rapidement et efficacement par les organisateurs, qu'ils soient à la direction de la communication, aux RH, responsable de production, chef de projet ou secrétaire de direction.
                      </p>
-                     <h3 class="titre">Qu'est ce que la RFID ?</h3>
-                     <p class="texte">L'abréviation RFID signifie «Radio Frequency IDentification», en français, «Identification par Radio Fréquence». Il s'agit d'un dispositif électronique permettant d’identifier un objet, d’en suivre le cheminement ou de vérifier sa présence dans un local et d’en connaître les caractéristiques à distance car celui-ci émet des ondes radio. La RFID a la capacité de traverser de fines couches de matériaux (peinture, neige, bois, carton, etc.).</p>
-                     <h3 class="titre">Comment je construis ma veille technologique ?</h3>
-                     <p class="texte">Afin de construire ma veille technologique efficacement, j'ai mis en place des alertes sur
-                        google et Talkwaker, ou Feedly et d'autres sites similaires afin que chaque mois et semaine, je sois au courant des
-                        dernières actualités portant sur le sujet de la RFID. Cette manière m'a alors permis de trier efficacement les informations que je collectais au fur et à mesure. 
-                     </p>
-                     
                   </div>
-                  <div class="col-lg-4"">
-                     <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_sqh0u5je.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>                  </div>
+                  <div class="col-lg-4">
+                     <lottie-player src=" https://lottie.host/ae7ddff3-411b-4b8a-a270-234d746d1c50/mKaWIT5vTQ.json"
+                     background="transparent" speed="1" style="width: 350px; height: 350px;" loop autoplay>
+                     </lottie-player> </div>
                </div>
                <div class="text-center">
                   <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" href="#veilletechnologique"
@@ -462,7 +472,7 @@
                      <div class="blog-slider__title">CSS</div>
                      <span class="blog-slider__code">23 Août 2021</span>
                      <a href="assets/img/certificat/cert_CSS.jpg" data-gallery="portfolioGallery"
-                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
                </div>
                <div class="blog-slider__item swiper-slide">
@@ -473,107 +483,107 @@
                      <div class="blog-slider__title">SQL</div>
                      <span class="blog-slider__code">23 Août 2021</span>
                      <a href="assets/img/certificat/cert_SQL.jpg" data-gallery="portfolioGallery"
-                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
                </div>
                <div class="blog-slider__item swiper-slide">
                   <div class="blog-slider__img">
-                     <img src="./assets/img/certificat/cert_JAVA.jpg" alt="c_java">
+                     <img src="./assets/img/certificat/cert_JAVA.jpg">
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">JAVA</div>
                      <span class="blog-slider__code">23 Septembre 2021</span>
                      <a href="assets/img/certificat/cert_JAVA.jpg" data-gallery="portfolioGallery"
-                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
                </div>
                <div class="blog-slider__item swiper-slide">
                   <div class="blog-slider__img">
-                     <img src="./assets/img/certificat/cert_PHP.jpg" alt="c_php">
+                     <img src="./assets/img/certificat/cert_PHP.jpg">
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">PHP</div>
                      <span class="blog-slider__code">24 Septembre 2021</span>
                      <a href="assets/img/certificat/cert_PHP.jpg" data-gallery="portfolioGallery"
-                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
                </div>
                <div class="blog-slider__item swiper-slide">
                   <div class="blog-slider__img">
-                     <img src="./assets/img/certificat/cert_PYTHON.jpg" alt="c_python">
+                     <img src="./assets/img/certificat/cert_PYTHON.jpg">
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">PYTHON</div>
                      <span class="blog-slider__code">28 Septembre 2021</span>
                      <a href="assets/img/certificat/cert_PYTHON.jpg" data-gallery="portfolioGallery"
-                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
                </div>
                <div class="blog-slider__item swiper-slide">
                   <div class="blog-slider__img">
-                     <img src="./assets/img/certificat/cert_JS.jpg" alt="c_javascript">
+                     <img src="./assets/img/certificat/cert_JS.jpg">
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">JavaScript</div>
                      <span class="blog-slider__code">9 Mars 2022</span>
                      <a href="assets/img/certificat/cert_JS.jpg" data-gallery="portfolioGallery"
-                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
                </div>
                <div class="blog-slider__item swiper-slide">
                   <div class="blog-slider__img">
-                     <img src="./assets/img/certificat/cert_WDF.jpg" alt="c_wdf">
+                     <img src="./assets/img/certificat/cert_WDF.jpg">
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">Web Developpement Fundamentals Courses</div>
                      <span class="blog-slider__code">16 Mars 2022</span>
                      <a href="assets/img/certificat/cert_WDF.jpg" data-gallery="portfolioGallery"
-                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
                </div>
                <div class="blog-slider__item swiper-slide">
                   <div class="blog-slider__img">
-                     <img src="./assets/img/certificat/IntroCyb.jpg" alt="c_cyblvl1">
+                     <img src="./assets/img/certificat/IntroCyb.jpg">
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">Cybersécurité Niv1</div>
                      <span class="blog-slider__code">15 Décembre 2021</span>
                      <div class="blog-slider__text"></div>
                      <a href="assets/img/certificat/IntroCyb.jpg" data-gallery="portfolioGallery"
-                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
                </div>
                <div class="blog-slider__item swiper-slide">
                   <div class="blog-slider__img">
-                     <img src="./assets/img/certificat/CybEss.jpg" alt="c_cyblvl2">
+                     <img src="./assets/img/certificat/CybEss.jpg">
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">Cybersécurité Niv2</div>
                      <span class="blog-slider__code">8 Mars 2022</span>
                      <div class="blog-slider__text"></div>
                      <a href="assets/img/certificat/CybEss.jpg" data-gallery="portfolioGallery"
-                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
                </div>
                <div class="blog-slider__item swiper-slide">
                   <div class="blog-slider__img">
-                     <img src="./assets/img/certificat/pix.jpg" alt="c_pix">
+                     <img src="./assets/img/certificat/pix.jpg">
                   </div>
                   <div class="blog-slider__content">
                      <div class="blog-slider__title">Pix</div>
                      <span class="blog-slider__code">7 Janvier 2022</span>
                      <div class="blog-slider__text"></div>
-                     <a href="assets/img/certificat/pix.jpg"  data-gallery="portfolioGallery"
-                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>                  
+                     <a href="assets/img/certificat/pix.jpg" data-gallery="portfolioGallery"
+                        class="blog-slider__button certif-lightbox preview-link">VOIR CERTIFICAT</a>
                   </div>
                </div>
                <div class="blog-slider__pagination"></div>
             </div>
          </div>
       </main>
-         <!-- SECTION INTÉRÊT -->
-         <section id="loisirs" class="loisirs">
-            <div class="container">
+      <!-- SECTION INTÉRÊT -->
+      <section id="loisirs" class="loisirs">
+         <div class="container">
             <div data-aos="zoom-in" data-aos-delay="500">
                <div class="section-title">
                   <span>Loisirs</span>
@@ -614,7 +624,8 @@
                   </div>
                </div>
                <!-- Developpement Web -->
-               <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="fade-up" data-aos-duration = "400" data-aos-delay="1100">
+               <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="fade-up" data-aos-duration="400"
+                  data-aos-delay="1100">
                   <div class="card service-wrapper  border-0 shadow p-4">
                      <div class="icon text-center text-custom h1 shadow rounded bg-white">
                         <span class="uim-svg" style=""><i class="fas fa-globe"></i></span>
@@ -631,11 +642,11 @@
                   </div>
                </div>
             </div>
-         </section>
-         <!-- FIN SECTION INTÉRÊT -->
-          <!-- ======= SECTION CONTACT ======= -->
-         <section id="contact" class="contact">
-            <div class="container">
+      </section>
+      <!-- FIN SECTION INTÉRÊT -->
+      <!-- ======= SECTION CONTACT ======= -->
+      <section id="contact" class="contact">
+         <div class="container">
             <div data-aos="zoom-in" data-aos-delay="500">
                <div class="section-title">
                   <span>Contactez Moi</span>
@@ -646,14 +657,15 @@
                <form id="form" class="php-email-form mt-4">
                   <div class="row">
                      <div class="col-md-6 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
                      </div>
                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email"
+                           required>
                      </div>
                   </div>
                   <div class="form-group mt-3">
-                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
                   </div>
                   <div class="form-group mt-3">
                      <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
@@ -661,43 +673,60 @@
                   <div class="my-3">
                      <div class="loading">Loading</div>
                      <div class="error-message" id="erreur">Votre message n'a pas pu être envoyé !</div>
-                     <div class="sent-message" id="send">Votre message a été envoyé. Merci !</div>
+                     <div class="sent-message"  data-aos="zoom-in" data-aos-delay="200" id="send">Votre message a été envoyé. Merci !</div>
                   </div>
                   <div class="text-center">
-                     <button id="button" type="submit">Envoyer un message</button></div>
+                     <button id="button" type="submit">Envoyer un message</button>
+                  </div>
                </form>
             </div>
-         </section>
-         <!-- FIN SECTION CONTACT -->
+      </section>
+      <!-- FIN SECTION CONTACT -->
+
 
       <!-- ======= OUTILS ET LANGAGES ======= -->
       <section id="clients" class="clients">
          <div class="container justify-content-center">
             <div class="row">
-               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
-                  <img src="assets/img/logos/html.png" class="img-fluid logos" alt="">
-                  <div class="tooltip">L'HTML est un langage informatique utilisé sur l'internet. Ce langage est utilisé pour créer des pages web.</div>
-               </div>
                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                  <img src="assets/img/logos/html.png" class="img-fluid logos" alt="">
+                  <div class="tooltip">L'HTML est un langage informatique utilisé sur l'internet. Ce langage est utilisé
+                     pour créer des pages web.</div>
+               </div>
+               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
                   <img src="assets/img/logos/css.png" class="img-fluid logos" alt="">
-                  <div class="tooltip">Le CSS pour Cascading Style Sheets, est un langage informatique utilisé sur Internet pour la mise en forme de fichiers et de pages HTML. </div>
+                  <div class="tooltip">Le CSS pour Cascading Style Sheets, est un langage informatique utilisé sur
+                     Internet pour la mise en forme de fichiers et de pages HTML. </div>
                </div>
-               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
                   <img src="assets/img/logos/js.png" class="img-fluid logos" alt="">
-                  <div class="tooltip">JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. </div>
+                  <div class="tooltip">JavaScript est un langage de programmation de scripts principalement employé dans
+                     les pages web interactives et à ce titre est une partie essentielle des applications web. </div>
                </div>
-               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
-                  <img src="assets/img/logos/mysql.png" class="img-fluid logos" alt="">
-                  <div class="tooltip">MySQL est un système de gestion de bases de données relationnelles (SGBDR). </div>
+               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="800">
+                  <img src="assets/img/logos/angular.png" class="img-fluid logos" alt="">
+                  <div class="tooltip">
+                     Angular est un framework JavaScript pour développer des applications web avec une architecture
+                     orientée composant pour une modularité et une maintenance facile. Il aide à créer des applications
+                     interactives et performantes avec une syntaxe simplifiée.
+                  </div>
                </div>
-               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="1000">
+                  <img src="assets/img/logos/nodejs.png" class="img-fluid logos" alt="">
+                  <div class="tooltip">
+                     Node.js est un environnement open-source pour construire des applications back-end en JavaScript
+                     avec V8 de Google Chrome. Il a une architecture événementielle pour gérer les connexions réseau et
+                     les opérations asynchrones, idéal pour les applications web en temps réel et la gestion de données
+                     massives.
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="1200">
                   <img src="assets/img/logos/git.png" class="img-fluid logos" alt="">
-                  <div class="tooltip">Git est un logiciel de versioning qui permet de conserver un historique des modifications.</div>
+                  <div class="tooltip">Git est un logiciel de versioning qui permet de conserver un historique des
+                     modifications.</div>
                </div>
-               <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
-                  <img src="assets/img/logos/PHP-logo.svg" class="img-fluid logos" alt="">
-                  <div class="tooltip">PHP: Hypertext Preprocessor, plus connu sous son sigle PHP, est un langage de programmation utilisé pour produire des pages Web dynamiques via un serveur HTTP. </div>
-               </div>
+
+
             </div>
          </div>
       </section>
@@ -706,12 +735,18 @@
       <footer id="footer">
          <div class="container">
             <h3>Enzo AIME</h3>
-            <p>La révolution informatique fait gagner un temps fou aux hommes, mais ils le passent avec leur ordinateur !
+            <p>La révolution informatique fait gagner un temps fou aux hommes, mais ils le passent avec leur ordinateur
+               !
             </p>
             <div class="social-links">
-               <a href="https://www.linkedin.com/in/enzo-aime-291ba11b9" aria-label="Linkedin" class="linkedin"><i class="bi bi-linkedin"></i></a>
-               <a href="https://github.com/enzosio" aria-label="Github" class="github"><i class="bi bi-github"></i></a>
-               <a href="https://codepen.io/enzo-aime91"  aria-label="Codepen" class="codepen"><i class="fab fa-codepen"></i></a>
+               <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+               <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+               <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+               <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+               <a href="https://www.linkedin.com/in/enzo-aime-291ba11b9" class="linkedin"><i
+                     class="bi bi-linkedin"></i></a>
+               <a href="https://github.com/enzosio" class="github"><i class="bi bi-github"></i></a>
+               <a href="https://codepen.io/enzo-aime91" class="codepen"><i class="fab fa-codepen"></i></a>
             </div>
             <div class="copyright">
                &copy;
@@ -722,74 +757,87 @@
       <!-- FIN FOOTER -->
       <!--  MODAL VEILLE -->
       <div class="portfolio-modal modal fade" id="veilletechnologique" tabindex="-1" role="dialog" aria-hidden="true" ">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <div class="close-modal" id="close-btn" data-dismiss="modal"></div>
-               <div class="container">
-                  <div class="row justify-content-center">
-                     <div class="col-lg-8">
-                        <div class="modal-body">
-                           <!-- Project Details Go Here-->
-                           <h2 class="text-uppercase">Dossier de Veille Technologique</h2>
-                           <p class="item-introduction text-muted">La veille technologique ou veille scientifique et
-                              technique consiste à s’informer de façon systématique sur les techniques les plus récentes et
-                              surtout sur leur mise à disposition commerciale.
-                           </p>
-                           <!-- Mise en place des cartes des différents -->
-                           <div id="wrapper">
-                              <div class="contenu">
-                                 <!-- Tab links -->
-                                 <div class="tabs">
-                                    <button class="tablinks active" data-veille="article1">
-                                       <p data-title="Article 1">Article 1</p>
-                                    </button>
-                                    <button class="tablinks" data-veille="article2">
-                                       <p data-title="Article 2">Article 2</p>
-                                    </button>
-                                    <button class="tablinks" data-veille="article3">
-                                       <p data-title="Article 3">Article 3</p>
-                                    </button>
-                                    <button class="tablinks" data-veille="article4">
-                                       <p data-title="Article 4">Article 4</p>
-                                    </button>
+         <div class=" modal-dialog">
+         <div class="modal-content">
+            <div class="close-modal" id="close-btn" data-dismiss="modal"></div>
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                     <div class="modal-body">
+                        <!-- Project Details Go Here-->
+                        <h2 class="text-uppercase">Dossier de Veille Technologique</h2>
+                        <p class="item-introduction text-muted">La veille technologique ou veille scientifique et
+                           technique consiste à s’informer de façon systématique sur les techniques les plus récentes et
+                           surtout sur leur mise à disposition commerciale.
+                        </p>
+                        <!-- Mise en place des cartes des différents -->
+                        <div id="wrapper">
+                           <div class="contenu">
+                              <!-- Tab links -->
+                              <div class="tabs">
+                                 <button class="tablinks active" data-veille="article1">
+                                    <p data-title="Article 1">Article 1</p>
+                                 </button>
+                                 <button class="tablinks" data-veille="article2">
+                                    <p data-title="Article 2">Article 2</p>
+                                 </button>
+                                 <button class="tablinks" data-veille="article3">
+                                    <p data-title="Article 3">Article 3</p>
+                                 </button>
+                                 <button class="tablinks" data-veille="article4">
+                                    <p data-title="Article 4">Article 4</p>
+                                 </button>
+                              </div>
+                              <!-- Tab content -->
+                              <div class="wrapper_tabcontent">
+                                 <div id="article1" class="tabcontent active">
+                                    <h3>Article 1</h3>
+                                    <p>Une puce électronique sous la peau pour ouvrir la porte de son bureau, payer au
+                                       supermarché ou valider son pass sanitaire... C’est déjà une réalité. En Suède,
+                                       une startup nommée DSruptive Subdermals propose désormais des implants
+                                       électroniques pour prouver qu’on est bien vacciné.</p>
+                                    <button class="btn btn-primary" data-toggle="modal" href="#art1">Lire plus</button>
                                  </div>
-                                 <!-- Tab content -->
-                                 <div class="wrapper_tabcontent">
-                                    <div id="article1" class="tabcontent active">
-                                       <h3>Article 1</h3>
-                                       <p>Une puce électronique sous la peau pour ouvrir la porte de son bureau, payer au supermarché ou valider son pass sanitaire... C’est déjà une réalité. En Suède, une startup nommée DSruptive Subdermals propose désormais des implants électroniques pour prouver qu’on est bien vacciné.</p>
-                                       <button class="btn btn-primary" data-toggle="modal" href="#art1">Lire plus</button>
-                                    </div>
-                                    <div id="article2" class="tabcontent">
-                                       <h3>Article 2</h3>
-                                       <p>Alors que le nombre d'accidents de chariots élévateurs se maintient dans le BTP, certaines entreprises, comme Brigrade Electronics, tente de trouver une solution
-                                       pour éviter les accidents. Selon le fabricant, les dégâts viennent notamment d’un problème d’angle-mort, subi par les conducteurs. Le nouveau système ZoneSafe de Brigade Electronics, pourrait être la solution à ce problème.
-                                       </p>
-                                       <button class="btn btn-primary" data-toggle="modal" href="#art2">Lire plus</button>
-                                    </div>
-                                    <div id="article3" class="tabcontent">
-                                       <h3>Article 3</h3>
-                                       <p>BT Sport, un bouquet de chaînes sportives de télévision payante, s'est associé au fabricant de sports Gilbert, Premiership Rugby et Sportable pour tester un ballon de rugby intelligent ce vendredi lors du match Falcons vs Tigers Premiership Rugby Cup.
-                                          Le ballon contient un système technologique pour fournir des données qui profiteront à la fois aux joueurs et aux téléspectateurs.</p>
-                                       <button class="btn btn-primary" data-toggle="modal" href="#art3">Lire plus</button>
-                                    </div>
-                                    <div id="article4" class="tabcontent">
-                                       <h3>Article 4</h3>
-                                       <p>SmartGunz est une entreprise qui compte commercialiser des armes intelligentes au printemps. Dans la conception de ses armes, la société a choisi des puces RFID mises en place dans des anneaux. Ces puces sont similaires aux émetteurs que de nombreuses personnes ont adoptés dans leur véhicule pour régler les péages. 
-                                       </p>
-                                       <button class="btn btn-primary" data-toggle="modal" href="#art4">Lire plus</button>
-                                    </div>
+                                 <div id="article2" class="tabcontent">
+                                    <h3>Article 2</h3>
+                                    <p>Alors que le nombre d'accidents de chariots élévateurs se maintient dans le BTP,
+                                       certaines entreprises, comme Brigrade Electronics, tente de trouver une solution
+                                       pour éviter les accidents. Selon le fabricant, les dégâts viennent notamment d’un
+                                       problème d’angle-mort, subi par les conducteurs. Le nouveau système ZoneSafe de
+                                       Brigade Electronics, pourrait être la solution à ce problème.
+                                    </p>
+                                    <button class="btn btn-primary" data-toggle="modal" href="#art2">Lire plus</button>
+                                 </div>
+                                 <div id="article3" class="tabcontent">
+                                    <h3>Article 3</h3>
+                                    <p>BT Sport, un bouquet de chaînes sportives de télévision payante, s'est associé au
+                                       fabricant de sports Gilbert, Premiership Rugby et Sportable pour tester un ballon
+                                       de rugby intelligent ce vendredi lors du match Falcons vs Tigers Premiership
+                                       Rugby Cup.
+                                       Le ballon contient un système technologique pour fournir des données qui
+                                       profiteront à la fois aux joueurs et aux téléspectateurs.</p>
+                                    <button class="btn btn-primary" data-toggle="modal" href="#art3">Lire plus</button>
+                                 </div>
+                                 <div id="article4" class="tabcontent">
+                                    <h3>Article 4</h3>
+                                    <p>SmartGunz est une entreprise qui compte commercialiser des armes intelligentes au
+                                       printemps. Dans la conception de ses armes, la société a choisi des puces RFID
+                                       mises en place dans des anneaux. Ces puces sont similaires aux émetteurs que de
+                                       nombreuses personnes ont adoptés dans leur véhicule pour régler les péages.
+                                    </p>
+                                    <button class="btn btn-primary" data-toggle="modal" href="#art4">Lire plus</button>
                                  </div>
                               </div>
                            </div>
-                           <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
-                           Fermer la fenêtre</button>
                         </div>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
+                           Fermer la fenêtre</button>
                      </div>
                   </div>
                </div>
             </div>
          </div>
+      </div>
       </div>
       <!-- MODAL ARTICLE 1-->
       <div class="portfolio-modal modal fade" id="art1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -802,21 +850,34 @@
                         <div class="modal-body">
                            <!-- Project Details Go Here-->
                            <h2 class="text-uppercase">Des implantations sous peau</h2>
-                           <p class="item-introduction text-muted">Article n°1 : Une puce sous la peau pour payer ou pour valider son pass sanitaire ? Ca existe déjà en Suède
+                           <p class="item-introduction text-muted">Article n°1 : Une puce sous la peau pour payer ou
+                              pour valider son pass sanitaire ? Ca existe déjà en Suède
                            </p>
                            <img class="img-fluid d-block mx-auto" src="assets/img/veille/article1/article1.jfif"
                               alt="article1" />
                            <h3>Résumé</h3>
-                           <p>Avoir une puce sous la peau, le but est de posséder son pass sanitaire directement dans le poignet. L'implantation de cette puce dans le poignet ne nécessite pas d'anesthésie. Cette puce minuscule faisant la taille d'un grain de riz à déjà été testé par plusieurs  milliers de personnes avant le Covid. Cet implant, permettrai de ne pas avoir à sortir une carte ou un smartphone, badger à son club de gym,payer un verre au café, ou encore valider son titre de transport la compagnie ferroviaire SNCF qui accepte les implants électroniques comme billet. L'achat du billet se fait par internet,   il suffit de présenter sa main quand on se fait contrôler. Certaines entreprises ont pour objectifs de mettre en place des implants à la place de badge d'accès. Puce qui aurait d'autres fonctionnalités comme déverrouiller des portes, photocopier des documents, déverrouiller un ordinateur avec un capteur. Certaines personnes sont réticente à se faire implanter des puces parce qu'ils ont l'impression d'être espionnés. 
+                           <p>Avoir une puce sous la peau, le but est de posséder son pass sanitaire directement dans le
+                              poignet. L'implantation de cette puce dans le poignet ne nécessite pas d'anesthésie. Cette
+                              puce minuscule faisant la taille d'un grain de riz à déjà été testé par plusieurs milliers
+                              de personnes avant le Covid. Cet implant, permettrai de ne pas avoir à sortir une carte ou
+                              un smartphone, badger à son club de gym,payer un verre au café, ou encore valider son
+                              titre de transport la compagnie ferroviaire SNCF qui accepte les implants électroniques
+                              comme billet. L'achat du billet se fait par internet, il suffit de présenter sa main quand
+                              on se fait contrôler. Certaines entreprises ont pour objectifs de mettre en place des
+                              implants à la place de badge d'accès. Puce qui aurait d'autres fonctionnalités comme
+                              déverrouiller des portes, photocopier des documents, déverrouiller un ordinateur avec un
+                              capteur. Certaines personnes sont réticente à se faire implanter des puces parce qu'ils
+                              ont l'impression d'être espionnés.
                            </p>
                            <ul class="list-inline">
                               <li>Date: Janvier 2022</li>
                               <li>Sources: RMC</li>
                            </ul>
-                           <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
-                           Fermer la fenêtre</button>
+                           <button class="btn btn-primary" data-dismiss="modal" type="button"> <i
+                                 class="fas fa-reply"></i>
+                              Fermer la fenêtre</button>
                            <button class="btn btn-primary"
-                              onclick="window.location.href='https://rmc.bfmtv.com/replay-emissions/estelle-midi/une-puce-sous-la-peau-pour-payer-ou-pour-valider-son-pass-sanitaire-ca-existe-deja-en-suede_AV-202201170617.html';"> 
+                              onclick="window.location.href='https://rmc.bfmtv.com/replay-emissions/estelle-midi/une-puce-sous-la-peau-pour-payer-ou-pour-valider-son-pass-sanitaire-ca-existe-deja-en-suede_AV-202201170617.html';">
                               <i class="fas fa-newspaper"></i> Voir l'article</button>
                         </div>
                      </div>
@@ -836,24 +897,35 @@
                         <div class="modal-body">
                            <!-- Project Details Go Here-->
                            <h2 class="text-uppercase">La RFID s'invite sur les chantiers</h2>
-                           <p class="item-introduction text-muted">Article 2 : Sécuriser les chariots élévateurs avec la technologie RFID
+                           <p class="item-introduction text-muted">Article 2 : Sécuriser les chariots élévateurs avec la
+                              technologie RFID
                            </p>
                            <img class="img-fluid d-block mx-auto" src="assets/img/veille/article2/article2.jpg"
                               alt="..." />
                            <h3>Résumé</h3>
                            <p>
-                              De nombreux accidents sont causés par les chariots élevateurs. Les accidents mettent en peril la sécurité des employés sur les chantiers, et sur d'autre zone de travail, comme par exemple les aéroports, les ports maritimes, et les entrepôts. Le conducteur de chariot ne perçoit pas toujours les obstacles compte-tenu de la forme, de la taille et de la charge d’un véhicule, ce qui créer des angles morts causant alors des accidents. ZoneSafe est une entreprise qui a pour mission de répondre à ces problèmes en proposant des solutions de sécurité. Cette entreprise à créer un nouveau système permettant de créer des zones de détections autour des véhicules mais aussi autour du chantier.
-                              Lorsque le véhicule est à proximité d'un piéton, ou d'un autre conducteur, il y'a un signal provoqué par des antennes qui sont placées sur le véhicule, elles communiquent entre elles et signal l'approche d'un piéton sur la zone de manutention.
+                              De nombreux accidents sont causés par les chariots élevateurs. Les accidents mettent en
+                              peril la sécurité des employés sur les chantiers, et sur d'autre zone de travail, comme
+                              par exemple les aéroports, les ports maritimes, et les entrepôts. Le conducteur de chariot
+                              ne perçoit pas toujours les obstacles compte-tenu de la forme, de la taille et de la
+                              charge d’un véhicule, ce qui créer des angles morts causant alors des accidents. ZoneSafe
+                              est une entreprise qui a pour mission de répondre à ces problèmes en proposant des
+                              solutions de sécurité. Cette entreprise à créer un nouveau système permettant de créer des
+                              zones de détections autour des véhicules mais aussi autour du chantier.
+                              Lorsque le véhicule est à proximité d'un piéton, ou d'un autre conducteur, il y'a un
+                              signal provoqué par des antennes qui sont placées sur le véhicule, elles communiquent
+                              entre elles et signal l'approche d'un piéton sur la zone de manutention.
                            </p>
                            <ul class="list-inline">
                               <li>Date: Janvier 2022</li>
                               <li>Sources: Batiweb</li>
                            </ul>
-                           <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
-                           Fermer la fenêtre</button>
+                           <button class="btn btn-primary" data-dismiss="modal" type="button"> <i
+                                 class="fas fa-reply"></i>
+                              Fermer la fenêtre</button>
                            <button class="btn btn-primary"
                               onclick="window.location.href='https://www.batiweb.com/actualites/nouveaux-produits-du-btp/securiser-les-chariots-elevateurs-avec-la-technologie-rfid-39307';"><i
-                              class="fas fa-newspaper"></i> Voir l'article</button>
+                                 class="fas fa-newspaper"></i> Voir l'article</button>
                         </div>
                      </div>
                   </div>
@@ -872,24 +944,37 @@
                         <div class="modal-body">
                            <!-- Project Details Go Here-->
                            <h2 class="text-uppercase">De la RFID au rugby</h2>
-                           <p class="item-introduction text-muted">Article 3 : BT Sport va tester le ballon intelligent au Premiership Rugby Cup (Championnat d'Angleterre de rugby) pour donner aux téléspectateurs des statistiques supplémentaires.
+                           <p class="item-introduction text-muted">Article 3 : BT Sport va tester le ballon intelligent
+                              au Premiership Rugby Cup (Championnat d'Angleterre de rugby) pour donner aux
+                              téléspectateurs des statistiques supplémentaires.
                            </p>
                            <img class="img-fluid d-block mx-auto" src="assets/img/veille/article3/article3.jpg"
                               alt="..." />
-                              <h3>Résumé</h3>
-                              <p>
-                                 Pour la première fois le ballon de rugby intelligent, va être testé lors de la compétition d'Angleterre de Rugby.
-                                 Cette invention à pu voir le jour grâce au partenariat entre Sportable(développeur de capteurs et de logiciel), BT Sport(chaînes sportives) et Gilbert(producteur de ballon), Premiership Rugby.
-                                 Celui-ci à pour objectif de fournir de nouvelles informations en temps réel basées sur des données aux équipes, aux entraîneurs, aux fans des matchs, ainsi qu'aux téléspectateurs. à la maison. Les données récoltées à haute vitesse permettront d'améliorer les performances des athlètes sur le terrain. Des données comme la vitesse, la distance et le temps de suspension du ballon. Le ballon contient des puces RFID qui communiquent avec des capteurs dispersés dans le stade. Les données renvoyées par les capteurs sont traduite par des outils d'intelligence artificielle de Sportable.         
-                              </p>
+                           <h3>Résumé</h3>
+                           <p>
+                              Pour la première fois le ballon de rugby intelligent, va être testé lors de la compétition
+                              d'Angleterre de Rugby.
+                              Cette invention à pu voir le jour grâce au partenariat entre Sportable(développeur de
+                              capteurs et de logiciel), BT Sport(chaînes sportives) et Gilbert(producteur de ballon),
+                              Premiership Rugby.
+                              Celui-ci à pour objectif de fournir de nouvelles informations en temps réel basées sur des
+                              données aux équipes, aux entraîneurs, aux fans des matchs, ainsi qu'aux téléspectateurs. à
+                              la maison. Les données récoltées à haute vitesse permettront d'améliorer les performances
+                              des athlètes sur le terrain. Des données comme la vitesse, la distance et le temps de
+                              suspension du ballon. Le ballon contient des puces RFID qui communiquent avec des capteurs
+                              dispersés dans le stade. Les données renvoyées par les capteurs sont traduite par des
+                              outils d'intelligence artificielle de Sportable.
+                           </p>
                            <ul class="list-inline">
                               <li>Date: Mars 2022</li>
                               <li>Sources: PocketLint</li>
                            </ul>
-                           <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
-                           Fermer la fenêtre</button>
-                           <button class="btn btn-primary" onclick="window.location.href='https://www.pocket-lint.com/fr-fr/televiseur/actualites/bt/160428-bt-sport-testera-une-balle-intelligente-dans-la-coupe-de-rugby-du-premier-ministre-pour-donner-aux-telespectateurs-des-statistiques-supplementaires';"><i
-                              class="fas fa-newspaper"></i> Voir l'article</button>
+                           <button class="btn btn-primary" data-dismiss="modal" type="button"> <i
+                                 class="fas fa-reply"></i>
+                              Fermer la fenêtre</button>
+                           <button class="btn btn-primary"
+                              onclick="window.location.href='https://www.pocket-lint.com/fr-fr/televiseur/actualites/bt/160428-bt-sport-testera-une-balle-intelligente-dans-la-coupe-de-rugby-du-premier-ministre-pour-donner-aux-telespectateurs-des-statistiques-supplementaires';"><i
+                                 class="fas fa-newspaper"></i> Voir l'article</button>
                         </div>
                      </div>
                   </div>
@@ -913,21 +998,33 @@
                            </p>
                            <img class="img-fluid d-block mx-auto" src="assets/img/veille/article4/article4.jpg"
                               alt="..." />
-                              <h3>Résumé</h3>
+                           <h3>Résumé</h3>
                            <p>
-                              Aux Etats-Unis, le droit de posséder une arme à feu est garanti par le Deuxième amendement de la Constitution des États-Unis.
-                              D'après le centre de recherche américain Pew Research Center, 40 % des adultes possèdent une arme à feu dans leur domicile. 
-                              Des fusillades sont nombreuses et parfois, les enfants sans en savoir l'utilité, jouent avec et se blessent voir se tuent.
-                              Une entreprise nommé SmartGunz à alors décidé d'agir en mettant en place des armes intelligentes dans l'objectif de réduire les fusillades, et les accidents. L'entreprise à décider de mettre en place des puces RFID dans un anneau (bague). Cet anneau au contact de l'arme va permettre au tireur d'effectuer son tire. L'anneau va déverrouiller l'arme en fonction de sa proximité à celle-ci. D'après Thomas Holland, le patron de l'entreprise SmartGunz, cette technologie peut être exploité dans le domaine des forces de l'ordre, comme par exemple les agents de police, dont les armes peuvent être utilisées contre eux-même.
+                              Aux Etats-Unis, le droit de posséder une arme à feu est garanti par le Deuxième amendement
+                              de la Constitution des États-Unis.
+                              D'après le centre de recherche américain Pew Research Center, 40 % des adultes possèdent
+                              une arme à feu dans leur domicile.
+                              Des fusillades sont nombreuses et parfois, les enfants sans en savoir l'utilité, jouent
+                              avec et se blessent voir se tuent.
+                              Une entreprise nommé SmartGunz à alors décidé d'agir en mettant en place des armes
+                              intelligentes dans l'objectif de réduire les fusillades, et les accidents. L'entreprise à
+                              décider de mettre en place des puces RFID dans un anneau (bague). Cet anneau au contact de
+                              l'arme va permettre au tireur d'effectuer son tire. L'anneau va déverrouiller l'arme en
+                              fonction de sa proximité à celle-ci. D'après Thomas Holland, le patron de l'entreprise
+                              SmartGunz, cette technologie peut être exploité dans le domaine des forces de l'ordre,
+                              comme par exemple les agents de police, dont les armes peuvent être utilisées contre
+                              eux-même.
                            </p>
                            <ul class="list-inline">
                               <li>Date: Janvier 2022</li>
                               <li>Sources: BuzzWebZine</li>
                            </ul>
-                           <button class="btn btn-primary" data-dismiss="modal" type="button"> <i class="fas fa-reply"></i>
-                           Fermer la fenêtre</button>
-                           <button class="btn btn-primary" onclick="window.location.href='https://www.buzzwebzine.fr/armes-intelligentes-marche-americain/';"><i
-                              class="fas fa-newspaper"></i> Voir l'article</button>
+                           <button class="btn btn-primary" data-dismiss="modal" type="button"> <i
+                                 class="fas fa-reply"></i>
+                              Fermer la fenêtre</button>
+                           <button class="btn btn-primary"
+                              onclick="window.location.href='https://www.buzzwebzine.fr/armes-intelligentes-marche-americain/';"><i
+                                 class="fas fa-newspaper"></i> Voir l'article</button>
                         </div>
                      </div>
                   </div>
@@ -935,16 +1032,9 @@
             </div>
          </div>
       </div>
-      
-            <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-home" aria-hidden="true"></i>
-            <a href="#" class="positionCheckbox d-flex align-items-center justify-content-center">
-               <label id="switch" class="switch">
-                  <input type="checkbox" onchange="toggleTheme()" id="slider">
-                  <span class="slider round"></span>
-              </label>
-            </a>
-
-      
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-home"
+            aria-hidden="true"></i>
+      </a>
       <!-- Vendor JS Files -->
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -965,14 +1055,14 @@
       <script>
          AOS.init();
       </script>
-
+      <!-- TypeWritter -->
+      <script src="assets/js/typewriter.js"></script>
       <!-- Thèmes -->
-      <script src="assets/js/themes.js"></script>
       <!-- cartes -->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/cash/1.3.0/cash.min.js'></script>
-      <script  src="assets/js/cartes.js"></script>
+      <script src="assets/js/cartes.js"></script>
       <!-- Certificats -->
-      <script  src="assets/js/carousel.js"></script>
+      <script src="assets/js/carousel.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
       <!-- Modal -->
@@ -984,4 +1074,5 @@
          }, 1000);
       </script>
    </body>
+
 </html>
