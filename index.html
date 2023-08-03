@@ -48,7 +48,7 @@
                <li><a class="nav-link scrollto" href="#resume">Parcours</a></li>
                <li><a class="nav-link scrollto" href="#stages">Stages</a></li>
                <li><a class="nav-link scrollto " href="#projets">Projets</a></li>
-               <li><a class="nav-link scrollto" href="#entreprise">Entreprise</a></li>
+               <li><a class="nav-link scrollto" href="#veille">Veille</a></li>
                <li><a class="nav-link scrollto" href="#loisirs">Loisirs</a></li>
                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             </ul>
@@ -85,8 +85,8 @@
                         tant que développeur Full Stack Junior dans l'entreprise<a class="m-2"
                            href="https://www.prezevent.com/">Prezevent.</p>
                      <div id="row_cv">
-                           <a href="./assets/docs/CV.pdf" id="cv_qrcode" class="btn btn-primary" target="_blank"><i
-                                 class="ti-import"></i>Télécharge mon CV</a>
+                        <a href="./assets/docs/CV.pdf" id="cv_qrcode" class="btn btn-primary" target="_blank"><i
+                              class="ti-import"></i>Télécharge mon CV</a>
                      </div>
                      <br>
                      <h3 class="titre">Ma filière, le BTS SIO</h3>
@@ -100,71 +100,84 @@
                         domaine de l'informatique.
                      </p>
                   </div>
+
                   <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="500">
                      <img src="assets/img/moi-circle.png" class="img-moi" alt="Enzo">
                   </div>
-               </div>
-               <div class="text-center">
-                  <div class="section-mini-title">
-                     <h2>Les Options</h2>
+                  <div class="text-center">
+                     <button class="btn btn-primary btn-sm text-uppercase" id="show-options-btn" type="submit">Voir
+                        plus</button>
                   </div>
                </div>
-               <div class="container py-1">
-                  <article class="postcard light blue">
-                     <a class="postcard__img_link">
-                        <lottie-player id="animslam" class="postcard__img"
-                           src="https://assets6.lottiefiles.com/private_files/lf30_obidsi0t.json"
-                           background="transparent" style="width: 300px" speed="1" loop autoplay></lottie-player>
-                     </a>
-                     <div class="postcard__text">
-                        <h1 class="postcard__title blue"><a>Option SLAM</a></h1>
-                        <div class="postcard__bar"></div>
-                        <div class="postcard__preview-txt">L’option Solutions logicielles et applications métiers forme
-                           des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et
-                           spécifications,
-                           développement, intégration au sein de la société). Cette filière leur permettra d'accéder aux
-                           différents métiers tels que :
+               <div id="options-section" data-aos="zoom-in" data-aos-delay="500" style="display: none;">
+                  <div class="text-center">
+                     <div class="section-mini-title">
+                        <h2>Les Options</h2>
+                     </div>
+                  </div>
+                  <div class="container py-1">
+                     <article class="postcard light blue">
+                        <a class="postcard__img_link">
+                           <lottie-player id="animslam" class="postcard__img"
+                              src="https://assets6.lottiefiles.com/private_files/lf30_obidsi0t.json"
+                              background="transparent" style="width: 300px" speed="1" loop autoplay></lottie-player>
+                        </a>
+                        <div class="postcard__text">
+                           <h1 class="postcard__title blue"><a>Option SLAM</a></h1>
+                           <div class="postcard__bar"></div>
+                           <div class="postcard__preview-txt">L’option Solutions logicielles et applications métiers
+                              forme
+                              des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins
+                              et
+                              spécifications,
+                              développement, intégration au sein de la société). Cette filière leur permettra d'accéder
+                              aux
+                              différents métiers tels que :
+                           </div>
+                           <ul>
+                              <li>Développeur d’applications informatiques</li>
+                              <li>Développeur informatique</li>
+                              <li>Analyste d’applications ou d’études</li>
+                              <li>Programmeur analyste</li>
+                              <li>Programmeur d’applications</li>
+                              <li>Responsable des services applicatifs</li>
+                              <li>Technicien d’études informatiques</li>
+                           </ul>
                         </div>
-                        <ul>
-                           <li>Développeur d’applications informatiques</li>
-                           <li>Développeur informatique</li>
-                           <li>Analyste d’applications ou d’études</li>
-                           <li>Programmeur analyste</li>
-                           <li>Programmeur d’applications</li>
-                           <li>Responsable des services applicatifs</li>
-                           <li>Technicien d’études informatiques</li>
-                        </ul>
-                     </div>
-                  </article>
+                     </article>
+                  </div>
+                  <div class="container py-2">
+                     <div class="h1 text-center text-dark" id="pageHeaderTitle"></div>
+                     <article class="postcard light blue">
+                        <a class="postcard__img_link">
+                           <lottie-player id="animsisr" class="postcard__img"
+                              src="https://assets1.lottiefiles.com/packages/lf20_lx9kf7oc.json" background="transparent"
+                              style="width: 1000px" speed="1" loop autoplay></lottie-player>
+                        </a>
+                        <div class="postcard__text t-dark">
+                           <h1 class="postcard__title blue"><a>Option SISR</a></h1>
+                           <div class="postcard__bar"></div>
+                           <div class="postcard__preview-txt">L’option Solution d’infrastructure, systèmes et réseaux
+                              forme
+                              des professionnels des réseaux et équipements informatiques (installation, maintenance,
+                              sécurité). En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le
+                              réseau d’une société et d’assurer sa sécurité et sa maintenance. Cette filière leur
+                              permettra
+                              d'accéder aux différents métiers tels que :</div>
+                           <ul>
+                              <li>Technicien d’infrastructure</li>
+                              <li>Technicien de production</li>
+                              <li>Technicien micro et réseaux</li>
+                              <li>Informaticien support et déploiement</li>
+                              <li>Pilote d’exploitation</li>
+                              <li>Support systèmes et réseaux</li>
+                              <li>Administrateur systèmes et réseaux</li>
+                           </ul>
+                        </div>
+                     </article>
+                  </div>
                </div>
-               <div class="container py-2">
-                  <div class="h1 text-center text-dark" id="pageHeaderTitle"></div>
-                  <article class="postcard light blue">
-                     <a class="postcard__img_link">
-                        <lottie-player id="animsisr" class="postcard__img"
-                           src="https://assets1.lottiefiles.com/packages/lf20_lx9kf7oc.json" background="transparent"
-                           style="width: 1000px" speed="1" loop autoplay></lottie-player>
-                     </a>
-                     <div class="postcard__text t-dark">
-                        <h1 class="postcard__title blue"><a>Option SISR</a></h1>
-                        <div class="postcard__bar"></div>
-                        <div class="postcard__preview-txt">L’option Solution d’infrastructure, systèmes et réseaux forme
-                           des professionnels des réseaux et équipements informatiques (installation, maintenance,
-                           sécurité). En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le
-                           réseau d’une société et d’assurer sa sécurité et sa maintenance. Cette filière leur permettra
-                           d'accéder aux différents métiers tels que :</div>
-                        <ul>
-                           <li>Technicien d’infrastructure</li>
-                           <li>Technicien de production</li>
-                           <li>Technicien micro et réseaux</li>
-                           <li>Informaticien support et déploiement</li>
-                           <li>Pilote d’exploitation</li>
-                           <li>Support systèmes et réseaux</li>
-                           <li>Administrateur systèmes et réseaux</li>
-                        </ul>
-                     </div>
-                  </article>
-               </div>
+
          </section>
          <!-- FIN SECTION A PROPOS  -->
          <!-- ======= SECTION PARCOURS ======= -->
@@ -180,9 +193,9 @@
                   <div class="col-lg-6">
                      <h3 class="resume-title">Expériences Professionnelles</h3>
                      <div class="resume-item pb-0">
-                        <h4>| Alternance chez Prezevent</h4>
+                        <h4>Alternance chez Prezevent</h4>
                         <h5>Septembre 2022 - Septembre 2024</h5>
-                        <p><em>Paris</em></p> 
+                        <p><em>Paris</em></p>
                         <h6>89 Rue de l'église, 15<sup>ème</sup> arrondissement de Paris</h6>
                         <p>Coworking Cleante</p>
                         <p>
@@ -195,7 +208,7 @@
                         </p>
                      </div>
                      <div class="resume-item">
-                        <h4>| Stage en entreprise</h4>
+                        <h4>Stage en entreprise</h4>
                         <h5>Janvier - Février 2022</h5>
                         <p><em>THALES DMS</em></p>
                         <h6>2 av Gay Lussac, 78990 ELANCOURT</h6>
@@ -209,7 +222,7 @@
                         </p>
                      </div>
                      <div class="resume-item">
-                        <h4>| Stage en entreprise</h4>
+                        <h4>Stage en entreprise</h4>
                         <h5>Mai - Juin 2021</h5>
                         <p><em>THALES DMS</em></p>
                         <h6>2 av Gay Lussac, 78990 ELANCOURT</h6>
@@ -226,7 +239,18 @@
                   <div class="col-lg-6">
                      <h3 class="resume-title">Formations</h3>
                      <div class="resume-item pb-0">
-                        <h4>| Lycée Parc des Loges</h4>
+                        <h4>Cloud Campus</h4>
+                        <h5>2022 - Aujourd'hui</h5>
+                        <p><em>Full Remote</em></p>
+                        <!-- <h6>1 Bd des Champs Elysées, 91000</h6> -->
+                        <p>
+                        <ul>
+                           <li>Titre Professionnel Développeur Web Full Stack</li>
+                        </ul>
+                        </p>
+                     </div>
+                     <div class="resume-item pb-0">
+                        <h4>Lycée Parc des Loges</h4>
                         <h5>2020 - Aujourd'hui</h5>
                         <p><em>Evry</em></p>
                         <h6>1 Bd des Champs Elysées, 91000</h6>
@@ -237,7 +261,7 @@
                         </p>
                      </div>
                      <div class="resume-item">
-                        <h4>| Lycée François Truffaut</h4>
+                        <h4>Lycée François Truffaut</h4>
                         <h5>2017 - 2020</h5>
                         <p><em>Bondoufle</em></p>
                         <h6>Rue Georges Pompidou, 91070</h6>
@@ -304,7 +328,7 @@
          </section>
          <!-- End stage Section -->
          <!-- SECTION PROJETS -->
-         <section id="projets" class="portfolio">
+         <!-- <section id="projets" class="portfolio">
             <div class="container">
                <div data-aos="zoom-in" data-aos-delay="500">
                   <div class="section-title">
@@ -337,7 +361,7 @@
                               class="fas fa-door-open"></i></a>
                      </div>
                   </div>
-                  <!-- APPLICATION JAVA -->
+
                   <div class="col-lg-4 col-md-6 portfolio-item filter-pa">
                      <div class="portfolio-img">
                         <img src="assets/img/portfolio/GsbMateriel.jpg" class="img-fluid" alt="">
@@ -351,7 +375,7 @@
                               class="fas fa-door-open"></i></a>
                      </div>
                   </div>
-                  <!-- APPLICATION JAVA -->
+
                   <div class="col-lg-4 col-md-6 portfolio-item filter-aj">
                      <div class="portfolio-img"><img src="assets/img/portfolio/raSio.jpg" class="img-fluid" alt="">
                      </div>
@@ -363,7 +387,8 @@
                         <a href="portfolio-details-raSio.html" class="details-link"><i class="fas fa-door-open"></i></a>
                      </div>
                   </div>
-                  <!-- APPLICATION WEB -->
+
+
                   <div class="col-lg-4 col-md-6 portfolio-item filter-aw">
                      <div class="portfolio-img"><img src="assets/img/portfolio/Gsb.JPG" class="img-fluid" alt=""></div>
                      <div class="portfolio-info">
@@ -374,7 +399,7 @@
                         <a href="portfolio-details-Gsb.html" class="details-link"><i class="fas fa-door-open"></i></a>
                      </div>
                   </div>
-                  <!-- SITE MARCHAND -->
+
                   <div class="col-lg-4 col-md-6 portfolio-item filter-sm">
                      <div class="portfolio-img"><img src="assets/img/portfolio/SiteMarchand.JPG" class="img-fluid"
                            alt="">
@@ -388,7 +413,7 @@
                               class="fas fa-door-open"></i></a>
                      </div>
                   </div>
-                  <!-- SITE VITRINE N°1 -->
+
                   <div class="col-lg-4 col-md-6 portfolio-item filter-sv">
                      <div class="portfolio-img"><img src="assets/img/portfolio/Devialet.JPG" class="img-fluid" alt="">
                      </div>
@@ -401,7 +426,7 @@
                            <i class="fas fa-door-open"></i></a>
                      </div>
                   </div>
-                  <!-- Réseaux  -->
+
                   <div class="col-lg-4 col-md-6 portfolio-item filter-ot">
                      <div class="portfolio-img"><img src="assets/img/portfolio/reseaux.jpg" class="img-fluid" alt="">
                      </div>
@@ -416,7 +441,7 @@
                   </div>
                </div>
             </div>
-         </section>
+         </section> -->
          <!-- ======= SECTION VEILLE ======= -->
          <section id="entreprise" class="entreprise">
             <div class="container">
@@ -429,14 +454,21 @@
                <div class="row d-flex align-items-center">
                   <div class="col-lg-8 pt-4 pt-lg-0 content ">
                      <h3 class="titre">Que fait Prezevent ?</h3>
-                     <p class="texte">Prezevent est un outil métier a destination des organisateurs d'événements d'entreprise tels que des conférences, séminaires, congrès, colloques, assemblées générales, symposium, soirées d'entreprise ou autres formations qui réunis en présentiel plusieurs dizaines, plusieurs centaines, d'invités et de participants.
-                        Les fonctionnalités sont riches afin de pouvoir répondre aux particularités de chaque projet événementiel, et néanmoins simples pour être utilisables rapidement et efficacement par les organisateurs, qu'ils soient à la direction de la communication, aux RH, responsable de production, chef de projet ou secrétaire de direction.
+                     <p class="texte">Prezevent est un outil métier a destination des organisateurs d'événements
+                        d'entreprise tels que des conférences, séminaires, congrès, colloques, assemblées générales,
+                        symposium, soirées d'entreprise ou autres formations qui réunis en présentiel plusieurs
+                        dizaines, plusieurs centaines, d'invités et de participants.
+                        Les fonctionnalités sont riches afin de pouvoir répondre aux particularités de chaque projet
+                        événementiel, et néanmoins simples pour être utilisables rapidement et efficacement par les
+                        organisateurs, qu'ils soient à la direction de la communication, aux RH, responsable de
+                        production, chef de projet ou secrétaire de direction.
                      </p>
                   </div>
                   <div class="col-lg-4">
                      <lottie-player src=" https://lottie.host/ae7ddff3-411b-4b8a-a270-234d746d1c50/mKaWIT5vTQ.json"
-                     background="transparent" speed="1" style="width: 350px; height: 350px;" loop autoplay>
-                     </lottie-player> </div>
+                        background="transparent" speed="1" style="width: 350px; height: 350px;" loop autoplay>
+                     </lottie-player>
+                  </div>
                </div>
                <div class="text-center">
                   <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" href="#veilletechnologique"
@@ -673,7 +705,8 @@
                   <div class="my-3">
                      <div class="loading">Loading</div>
                      <div class="error-message" id="erreur">Votre message n'a pas pu être envoyé !</div>
-                     <div class="sent-message"  data-aos="zoom-in" data-aos-delay="200" id="send">Votre message a été envoyé. Merci !</div>
+                     <div class="sent-message" data-aos="zoom-in" data-aos-delay="200" id="send">Votre message a été
+                        envoyé. Merci !</div>
                   </div>
                   <div class="text-center">
                      <button id="button" type="submit">Envoyer un message</button>
@@ -1032,9 +1065,15 @@
             </div>
          </div>
       </div>
-      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-home"
-            aria-hidden="true"></i>
-      </a>
+
+      <div class="back-to-top themes">
+         <input type="checkbox" class="checkbox" id="checkbox">
+         <label for="checkbox" class="checkbox-label">
+            <i class="fas fa-moon" alt="mode sombre"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+         </label>
+      </div>
       <!-- Vendor JS Files -->
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -1058,6 +1097,7 @@
       <!-- TypeWritter -->
       <script src="assets/js/typewriter.js"></script>
       <!-- Thèmes -->
+      <script src="assets/js/themes.js"></script>
       <!-- cartes -->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/cash/1.3.0/cash.min.js'></script>
       <script src="assets/js/cartes.js"></script>

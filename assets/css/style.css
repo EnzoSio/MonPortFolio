@@ -110,10 +110,9 @@ h6 {
 	position: fixed;
 	visibility: hidden;
 	opacity: 0;
-	right: 15px;
+	right: 60px;
 	bottom: 15px;
 	z-index: 996;
-	background: #0564cc;
 	color: #FFF;
 	width: 40px;
 	height: 40px;
@@ -128,7 +127,7 @@ h6 {
 }
 
 .back-to-top:hover {
-	background: #003ca55e;
+	/* background: #003ca55e; */
 	color: #fff;
 }
 
@@ -187,14 +186,14 @@ h6 {
 .navbar a,
 .navbar a:focus {
 	display: flex;
-    justify-content: center;
-    white-space: nowrap;
-    transition: 0.3s;
-    font-family: 'univiapro', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	transition: 0.3s;
+	font-family: 'univiapro', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	align-items: center;
 	border-radius: 20px;
 	margin: 0 5px;
 
@@ -213,9 +212,16 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-	color: #ffffff;
-	border-radius: 20px;
-	background-color: #0564cc;
+	background: rgba(37, 10, 103, 0.1);
+	/* Couleur de fond avec transparence */
+	backdrop-filter: blur(10px);
+	/* Flou du filtre d'arrière-plan pour l'effet de verre */
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+	/* Ombre pour l'effet de profondeur */
+	border-radius: 10px;
+	/* Coins arrondis */
+	transition: all 0.3s ease;
+	/* Transition en douceur */
 }
 
 .navbar .dropdown ul {
@@ -286,6 +292,7 @@ h6 {
 	}
 }
 
+
 .checkbox {
 	opacity: 0;
 	position: absolute;
@@ -327,6 +334,8 @@ h6 {
 .checkbox:checked+.checkbox-label .ball {
 	transform: translateX(24px);
 }
+
+
 
 
 /**
@@ -525,7 +534,6 @@ h6 {
 #hero h1 {
 	margin: 0 0 10px 0;
 	font-size: 64px;
-	font-family: "Satisfy", serif;
 	color: #fff;
 }
 
@@ -747,9 +755,9 @@ section {
 	margin-top: 3px;
 }
 
-#row_cv{
+#row_cv {
 	justify-content: center;
-    display: flex;
+	display: flex;
 }
 
 #cv_qrcode {
@@ -783,6 +791,15 @@ section {
 	background-color: #0564cc;
 }
 
+
+.img-about {
+	width: 100px;
+	height: 100px;
+	animation: bounce 0.5s;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+	animation-iteration-count: infinite;
+}
 
 /* Cartes Options */
 .postcard {
@@ -898,12 +915,12 @@ section {
 	border-radius: 10px
 }
 
-.postcard:hover:nth-child(1) .postcard__bar{
-	width:197.68px;
+.postcard:hover:nth-child(1) .postcard__bar {
+	width: 197.68px;
 }
 
-.postcard:hover:nth-child(2) .postcard__bar{
-	width:176.45px;
+.postcard:hover:nth-child(2) .postcard__bar {
+	width: 176.45px;
 }
 
 
@@ -1099,7 +1116,6 @@ section {
 	margin-top: 20px;
 	color: #5d6a75;
 	font-size: 15px;
-	font-family: "Satisfy", serif;
 	transition: ease-in-out 0.3s;
 }
 
@@ -1166,38 +1182,56 @@ section {
 
 .resume .resume-item {
 	padding: 0 0 20px 20px;
-	margin-top: -2px;
 	border-left: 2px solid #0564cc;
 	position: relative;
+
 }
 
 .resume .resume-item h4 {
-	line-height: 18px;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #0564cc;
 	margin-bottom: 10px;
-}
+	position: relative;
+	display: inline-flex	;
+  }
+  
+  .resume .resume-item h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	width: 100%;
+	height: 4px;
+	background-color: #0564cc;
+	transform: scaleX(0);
+	transform-origin: bottom left;
+	transition: transform 0.3s ease-in-out;
+  }
+  
+  .resume .resume-item:hover h4::before {
+	transform: scaleX(1);
+  }
+
+  
 
 .resume .resume-item h5 {
 	font-size: 16px;
 	background: #eef0f2;
 	padding: 5px 15px;
-	display: inline-block;
 	font-weight: 600;
-	margin-bottom: 10px;
+	margin-top: 10px;
 	transition: 1s;
+	width: fit-content;
 }
 
-.resume .resume-item h5:hover {
+.resume .resume-item:hover h5 {
 	background: #0564cc;
 	color: white;
 	transform: scale(1.1);
 	animation: 1s;
 }
-
-
 
 .resume .resume-item ul {
 	padding-left: 20px;
@@ -1218,10 +1252,26 @@ section {
 	height: 16px;
 	border-radius: 50px;
 	left: -9px;
-	top: 0;
+	top: 2px;
 	background: #fff;
 	border: 2px solid #0564cc;
 }
+
+.resume .resume-item:hover::before {
+	background: #0564cc;
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+
+
 
 .section-title p {
 	color: #0564cc;
@@ -3161,5 +3211,38 @@ li #collabLeo:hover {
 
 	100% {
 		transform: rotate(-6deg);
+	}
+}
+
+/*  */
+@keyframes bounce {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+
+	to {
+		transform: translate3d(0, 20px, 0);
+	}
+}
+
+/* Prefix Support */
+
+img-about {
+	-webkit-animation-name: bounce;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+	from {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	to {
+		-webkit-transform: translate3d(0, 200px, 0);
+		transform: translate3d(0, 200px, 0);
 	}
 }
