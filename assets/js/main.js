@@ -2166,6 +2166,8 @@ const optionsSection = document.getElementById("options-section");
 showOptionsBtn.addEventListener("click", () => {
     // Si l'élément est actuellement caché, affichez-le et appliquez l'effet ScrollReveal
     if (optionsSection.style.display === "none") {
+        // modifier le texte du bouton
+        showOptionsBtn.textContent = "Masquer les options";
         optionsSection.style.display = "block";
 
         // Initialisez ScrollReveal
@@ -2181,6 +2183,7 @@ showOptionsBtn.addEventListener("click", () => {
         });
     } else {
         // Sinon, masquez-le
+        showOptionsBtn.textContent = "Voir plus";
         optionsSection.style.display = "none";
     }
 });
