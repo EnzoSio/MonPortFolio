@@ -101,7 +101,6 @@ h6 {
 	font-family: 'univiapro', sans-serif;
 }
 
-
 /*--------------------------------------------------------------
 # Flèche Ronde permettant le retour en haut de la page avec un scroll automatique
 --------------------------------------------------------------*/
@@ -114,10 +113,9 @@ h6 {
 	bottom: 15px;
 	z-index: 996;
 	color: #FFF;
-	width: 40px;
-	height: 40px;
 	border-radius: 30px;
 	transition: all 0.4s;
+	padding: 10px;
 }
 
 .back-to-top i {
@@ -132,6 +130,132 @@ h6 {
 }
 
 .back-to-top.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+/*--------------------------------------------------------------
+# Permet de changer le couleur du theme
+--------------------------------------------------------------*/
+.switch {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3.8em;
+	height: 3.8em;
+}
+
+.torch {
+	margin-top: 0.9em;
+	margin-left: 0.95em;
+	width: 30px;
+	height: 30px;
+	transform: rotate(-45deg);
+}
+
+.slider .b {
+	position: relative;
+	top: -3.3em;
+	transform: rotate(270deg);
+}
+
+.slider .bling_85 {
+	stroke: #fff;
+	stroke-width: 2.5;
+	stroke-linecap: round;
+	stroke-dasharray: 3;
+	stroke-dashoffset: 15;
+	transition: all 0.3s ease;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: .4s;
+	border-radius: 50%;
+	background-color: rgba(116, 115, 115, 0.2);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.chk_85:checked+.slider {
+	animation: tap 0.3s linear forwards;
+}
+
+.chk_85:checked+.slider .bling_85 {
+	animation: bling_8561328 0.3s linear forwards;
+	animation-delay: 0.2s;
+}
+
+.chk_85:checked+.slider {
+	background-color: #FFA133;
+}
+
+.chk_85:focus+.slider {
+	box-shadow: 0 0 1px #FFA133;
+}
+
+@keyframes bling_8561328 {
+	50% {
+		stroke-dasharray: 3;
+		stroke-dashoffset: 12;
+	}
+
+	100% {
+		stroke-dasharray: 3;
+		stroke-dashoffset: 9;
+	}
+}
+
+@keyframes tap {
+	50% {
+		scale: 0.9;
+	}
+
+	100% {
+		scale: 1;
+	}
+}
+
+.boxTheme {
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	right: 60px;
+	bottom: 15px;
+	z-index: 996;
+	color: #FFF;
+	border-radius: 30px;
+	transition: all 0.4s;
+	padding: 10px;
+}
+
+.boxTheme i {
+	font-size: 28px;
+	color: #fff;
+	line-height: 0;
+}
+
+.boxTheme:hover {
+	/* background: #003ca55e; */
+	color: #fff;
+}
+
+.boxTheme.active {
 	visibility: visible;
 	opacity: 1;
 }
@@ -155,6 +279,62 @@ h6 {
 #header.header-scrolled {
 	height: 60px;
 	background: #FFF;
+}
+
+/* BARRE DE RECHERCHE */
+/* Ajouter du style pour la barre de recherche et la div de défilement en douceur */
+
+/* Style pour la barre de recherche */
+#searchBar { 
+	/* ne pas afficher */
+	z-index: 997;
+	transition: all 0.5s;
+	height: 80px;
+}
+
+#searchBar.searchBar-transparent {
+	background: transparent;
+}
+
+#searchBar.searchBar-scrolled {
+	height: 60px;
+	background: #FFF;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+
+.search-navigation {
+    display: none;
+	gap:5px;
+}
+
+/* Style pour la barre de recherche (comme précédemment) */
+.search-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Aligner horizontalement au centre */
+	padding: 10px 20px;
+	/* Ajuster le padding selon vos besoins */
+}
+
+.search-bar input[type="text"] {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+
+.search-bar button {
+	background-color: #f0f0f0;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-left: 5px;
+	cursor: pointer;
 }
 
 
@@ -292,7 +472,7 @@ h6 {
 	}
 }
 
-
+/* 
 .checkbox {
 	opacity: 0;
 	position: absolute;
@@ -333,7 +513,8 @@ h6 {
 
 .checkbox:checked+.checkbox-label .ball {
 	transform: translateX(24px);
-}
+} */
+
 
 
 
@@ -450,6 +631,7 @@ h6 {
 	margin-left: 15px;
 	padding: 10px;
 }
+
 
 
 /*--------------------------------------------------------------
@@ -651,7 +833,7 @@ section {
 .section-title span {
 	position: absolute;
 	top: 30px;
-	color: #eef0f2;
+	color: #b9bbbd;
 	left: 0;
 	right: 0;
 	z-index: 1;
@@ -1194,10 +1376,10 @@ section {
 	color: #0564cc;
 	margin-bottom: 10px;
 	position: relative;
-	display: inline-flex	;
-  }
-  
-  .resume .resume-item h4::before {
+	display: inline-flex;
+}
+
+.resume .resume-item h4::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -1208,13 +1390,13 @@ section {
 	transform: scaleX(0);
 	transform-origin: bottom left;
 	transition: transform 0.3s ease-in-out;
-  }
-  
-  .resume .resume-item:hover h4::before {
-	transform: scaleX(1);
-  }
+}
 
-  
+.resume .resume-item:hover h4::before {
+	transform: scaleX(1);
+}
+
+
 
 .resume .resume-item h5 {
 	font-size: 16px;
@@ -1263,19 +1445,80 @@ section {
 }
 
 @keyframes pulse {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-  }
+
+	0%,
+	100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.5);
+	}
+}
 
 
 
 .section-title p {
 	color: #0564cc;
 	font-size: 17px;
+}
+
+.panel {
+	-webkit-box-shadow: 0 50px 35px rgba(47, 60, 78, .15) !important;
+	box-shadow: 0px 0px 2px #0564cc !important;
+	margin: 0px 0px 20px;
+	overflow: hidden;
+}
+
+.panel-header {
+	display: flex;
+	padding: 10px;
+	background-color: #f0f0f0;
+	cursor: pointer;
+	align-items: center;
+	gap: 10px;
+}
+
+.panel-header p {
+	margin: 0;
+
+}
+
+.arrow {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	border: solid #0564cc;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	transition: transform 0.3s ease;
+}
+
+.arrow::after {
+	border: solid #DD4814;
+
+}
+
+.panel-content {
+	padding: 0px 10px;
+
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease, padding 0.3s ease;
+	/* Ajout de la transition pour le padding */
+	animation: fadein 0.3s ease;
+}
+
+.panel.active .arrow {
+	transform: rotate(-135deg);
+}
+
+.panel.active .panel-content {
+	max-height: 500px;
+	padding: 10px;
+	/* Rétablir le padding lorsque le contenu est déplié */
+	transition: max-height 0.3s ease, padding 0.3s ease;
+	/* Ajout de la transition pour le padding */
 }
 
 
@@ -1297,6 +1540,7 @@ section {
 	border-color: #0564cc;
 	animation-duration: 0.3s;
 }
+
 
 .btn-xl {
 	padding: 1.25rem 2.5rem;

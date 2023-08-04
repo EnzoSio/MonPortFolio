@@ -300,3 +300,8 @@ body.dark .red .postcard__title:hover{
 body.dark .red .postcard__bar{
 	background-color: #3d444d;
 }
+
+body.dark #searchBar.searchBar-scrolled {
+	background: #121212;
+
+}

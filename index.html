@@ -31,7 +31,7 @@
       <link href="./assets/css/aos.css" rel="stylesheet">
    </head>
 
-   <body>
+   <body id="pageContent">
       <!-- LOADER -->
       <div class="loader_bg">
          <div class="circle">
@@ -54,8 +54,41 @@
             </ul>
             <i class="bi bi-menu-down  mobile-nav-toggle"></i>
          </nav>
+
+         <div id="searchBar" class="fixed-top d-flex justify-content-center align-items-center mt-5">
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-lg-6">
+                     
+                     <form class="input-group">
+                        <input id="searchInput" type="text" class="form-control rounded-pill"
+                           placeholder="Rechercher...">
+                        <div class="input-group-append">
+                           <button class="btn btn-primary rounded-pill" type="button" onclick="startSearch()"><i
+                                 class="bi bi-search"></i></button>
+                        </div>
+                        <div class="search-navigation">
+                           <button class="btn btn-link" id="prevButton" type="button"><i class="fas fa-chevron-down"></i></i></button>
+                           <button class="btn btn-link" id="nextButton" type="button"><i class="fas fa-chevron-up"></i></button>
+                           <button class="btn btn-link" onclick="deleteButtons()" type="button"><i class="fas fa-times"></i></button>
+
+                        </div>
+
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
          <!-- FIN DU MENU -->
       </header>
+
+
+
+
+
+
       <!-- FIN HEADER -->
       <!-- SECTION ACCUEIL -->
       <section id="hero">
@@ -81,7 +114,7 @@
                   <div class="col-lg-8 pt-4 pt-lg-0 content">
                      <p>Salut ! Je m’appelle Enzo AIME, j'ai 20 ans, je suis actuellement étudiant chez <a
                            href="https://cloud-campus.fr/cloud-campus-ecole-de-programmation/">Cloud
-                           Campus</Canvas></a>, et alternant en
+                           Campus</a>, et alternant en
                         tant que développeur Full Stack Junior dans l'entreprise<a class="m-2"
                            href="https://www.prezevent.com/">Prezevent.</p>
                      <div id="row_cv">
@@ -105,7 +138,8 @@
                      <img src="assets/img/moi-circle23.png" class="img-moi" alt="Enzo">
                   </div>
                   <div class="text-center">
-                     <button class="btn btn-primary btn-sm text-uppercase" id="show-options-btn" type="submit">Voir plus</button>
+                     <button class="btn btn-primary btn-sm text-uppercase" id="show-options-btn" type="submit">Voir
+                        plus</button>
                   </div>
                </div>
                <div id="options-section" data-aos="zoom-in" data-aos-delay="500" style="display: none;">
@@ -197,42 +231,57 @@
                         <p><em>Paris</em></p>
                         <h6>89 Rue de l'église, 15<sup>ème</sup> arrondissement de Paris</h6>
                         <p>Coworking Cleante</p>
-                        <p>
-                        <ul>
-                           <li>Apprentissage et découverte de l'environnement Android Studio, permettant ainsi la
-                              modification d'une application existante, elle assure le suivi de gestion de matériel
-                              présent dans un parc informatique.
-                           </li>
-                        </ul>
-                        </p>
+                        <div class="panel">
+                           <div class="panel-header">
+                              <span class="arrow"></span>
+                              &nbsp;
+                              <p>En savoir plus</p>
+                           </div>
+                           <div class="panel-content">
+                              <!-- Contenu du panneau -->
+                              <p>Apprentissage et découverte du Framework Angular, mise en pratique sur l'application
+                                 Prezevent.</p>
+                           </div>
+                        </div>
                      </div>
                      <div class="resume-item">
                         <h4>Stage en entreprise</h4>
                         <h5>Janvier - Février 2022</h5>
                         <p><em>THALES DMS</em></p>
                         <h6>2 av Gay Lussac, 78990 ELANCOURT</h6>
-                        <p>
-                        <ul>
-                           <li>Apprentissage et découverte de l'environnement Android Studio, permettant ainsi la
-                              modification d'une application existante, elle assure le suivi de gestion de matériel
-                              présent dans un parc informatique.
-                           </li>
-                        </ul>
-                        </p>
+                        <p>Coworking Cleante</p>
+                        <div class="panel">
+                           <div class="panel-header">
+                              <span class="arrow"></span>
+                              &nbsp;
+                              <p>En savoir plus</p>
+                           </div>
+                           <div class="panel-content">
+                              <!-- Contenu du panneau -->
+                              <p>Apprentissage et découverte de l'environnement Android Studio, permettant ainsi la
+                                 modification d'une application existante, elle assure le suivi de gestion de matériel
+                                 présent dans un parc informatique.</p>
+                           </div>
+                        </div>
                      </div>
                      <div class="resume-item">
                         <h4>Stage en entreprise</h4>
                         <h5>Mai - Juin 2021</h5>
                         <p><em>THALES DMS</em></p>
                         <h6>2 av Gay Lussac, 78990 ELANCOURT</h6>
-                        <p>
-                        <ul>
-                           <li>Découverte du monde du travail dans l'industrie des équipements militaire et
-                              particulièrement autour de l’electronique embarquée. Découverte du langage C++,
-                              mise en pratique avec l'implémentation d'un plugin sur un logiciel déjà existant.
-                           </li>
-                        </ul>
-                        </p>
+                        <div class="panel">
+                           <div class="panel-header">
+                              <span class="arrow"></span>
+                              &nbsp;
+                              <p>En savoir plus</p>
+                           </div>
+                           <div class="panel-content">
+                              <!-- Contenu du panneau -->
+                              <p>Découverte du monde du travail dans l'industrie des équipements militaire et
+                                 particulièrement autour de l’electronique embarquée. Découverte du langage C++,
+                                 mise en pratique avec l'implémentation d'un plugin sur un logiciel déjà existant.</p>
+                           </div>
+                        </div>
                      </div>
                   </div>
                   <div class="col-lg-6">
@@ -327,26 +376,26 @@
          </section>
          <!-- End stage Section -->
          <!-- SECTION PROJETS -->
-         <!-- <section id="projets" class="portfolio">
+         <section id="projets" class="portfolio">
             <div class="container">
                <div data-aos="zoom-in" data-aos-delay="500">
                   <div class="section-title">
                      <span>Mes Projets</span>
                      <h2>Mes Projets</h2>
-                     <p>Voici les TP réalisés lors de mes deux années au sein de l'école Cloud Campus</p>
+                     <p>Voici les TP réalisés depuis que je suis dans le développement</p>
                   </div>
                </div>
                <div class="row" data-aos="fade-up">
                   <div class="col-lg-12 d-flex justify-content-center">
                      <ul id="portfolio-flters">
                         <li data-filter="*" class="filter-active">Tout Afficher</li>
-                        <li data-filter=".filter-pa">Première année</li>
-                        <li data-filter=".filter-da">Deuxième année</li>
+                        <li data-filter=".filter-bts">BTS SIO</li>
+                        <li data-filter=".filter-cc">Cloud Campus</li>
                      </ul>
                   </div>
                </div>
                <div class="row portfolio-container">
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-pa">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-bts">
                      <div class="portfolio-img">
                         <img src="assets/img/portfolio/GsbConference.jpg" class="img-fluid" alt="">
                      </div>
@@ -361,7 +410,7 @@
                      </div>
                   </div>
 
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-pa">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-bts">
                      <div class="portfolio-img">
                         <img src="assets/img/portfolio/GsbMateriel.jpg" class="img-fluid" alt="">
                      </div>
@@ -375,7 +424,7 @@
                      </div>
                   </div>
 
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-aj">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-bts">
                      <div class="portfolio-img"><img src="assets/img/portfolio/raSio.jpg" class="img-fluid" alt="">
                      </div>
                      <div class="portfolio-info">
@@ -388,7 +437,7 @@
                   </div>
 
 
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-aw">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-bts">
                      <div class="portfolio-img"><img src="assets/img/portfolio/Gsb.JPG" class="img-fluid" alt=""></div>
                      <div class="portfolio-info">
                         <h4>GSB</h4>
@@ -399,7 +448,7 @@
                      </div>
                   </div>
 
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-sm">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-bts">
                      <div class="portfolio-img"><img src="assets/img/portfolio/SiteMarchand.JPG" class="img-fluid"
                            alt="">
                      </div>
@@ -413,7 +462,7 @@
                      </div>
                   </div>
 
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-sv">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-bts">
                      <div class="portfolio-img"><img src="assets/img/portfolio/Devialet.JPG" class="img-fluid" alt="">
                      </div>
                      <div class="portfolio-info">
@@ -426,7 +475,7 @@
                      </div>
                   </div>
 
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-ot">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-bts">
                      <div class="portfolio-img"><img src="assets/img/portfolio/reseaux.jpg" class="img-fluid" alt="">
                      </div>
                      <div class="portfolio-info">
@@ -438,9 +487,22 @@
                            <i class="fas fa-door-open"></i></a>
                      </div>
                   </div>
+                  <!-- CLOUD CAMPUS -->
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-cc">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/reseaux.jpg" class="img-fluid" alt="">
+                     </div>
+                     <div class="portfolio-info">
+                        <h4>En cours de réalisation...</h4>
+                        <p></p>
+                        <!-- <a href="assets/img/portfolio/reseaux.jpg" data-gallery="portfolioGallery"
+                           class="portfolio-lightbox preview-link"><i class="fas fa-search-plus"></i></a>
+                        <a href="portfolio-details-Reseaux.html" class="details-link">
+                           <i class="fas fa-door-open"></i></a> -->
+                     </div>
+                  </div>
                </div>
             </div>
-         </section> -->
+         </section>
          <!-- ======= SECTION VEILLE ======= -->
          <section id="entreprise" class="entreprise">
             <div class="container">
@@ -678,7 +740,7 @@
       <!-- ======= SECTION CONTACT ======= -->
       <section id="contact" class="contact">
          <div class="container">
-            <div data-aos="zoom-in" data-aos-delay="500">
+            <div>
                <div class="section-title">
                   <span>Contactez Moi</span>
                   <h2>Contactez Moi</h2>
@@ -1065,14 +1127,26 @@
          </div>
       </div>
 
-         <div class="back-to-top themes">
-            <input type="checkbox" class="checkbox" id="checkbox">
-            <label for="checkbox" class="checkbox-label">
-               <i class="fas fa-moon" alt="mode sombre"></i>
-               <i class="fas fa-sun"></i>
-               <span class="ball"></span>
-            </label>
-         </div>
+      <div class="back-to-top themes">
+         <label class="switch">
+            <input class="chk_85" type="checkbox">
+            <span class="slider">
+               <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="torch">
+                  <path
+                     d="M 63.85,54.65 Q 62.77,54.13 61.88,53.31 Q 54.13,46.12 46.31,37.69 Q 43.88,35.06 44.29,31.53 Q 44.51,29.56 46.54,25.87 Q 56.15,8.39 59.06,3.56 Q 60.59,1.03 63.83,2.41 Q 67.73,4.07 71.11,6.55 Q 72.85,7.82 77.51,11.86 Q 89.11,21.92 96.94,34.06 Q 100.09,38.95 95.24,41.73 Q 83.77,48.31 72.16,54.64 Q 68.24,56.77 63.85,54.65 Z"
+                     fill="#ffffff"></path>
+                  <path
+                     d="M 14.03,66.29 Q 27.40,51.66 40.57,37.33 A 0.54,0.54 52.1 0 1 41.44,37.44 Q 43.25,40.72 45.58,43.04 Q 47.66,45.11 47.71,45.17 Q 54.67,52.58 62.60,58.93 A 0.44,0.43 43.0 0 1 62.63,59.59 Q 42.87,77.87 22.77,95.78 Q 20.75,97.58 19.20,97.93 Q 16.72,98.49 14.81,96.94 Q 6.88,90.47 2.81,84.94 Q 1.47,83.11 2.03,80.84 Q 2.37,79.43 4.04,77.51 Q 8.97,71.84 14.03,66.29 ZM 42.9269,57.1766 A 3.76 3.76 0.0 0 0 37.6102,57.0930 L 33.1721,61.3938 A 3.76 3.76 0.0 0 0 33.0886,66.7106 L 33.3531,66.9834 A 3.76 3.76 0.0 0 0 38.6698,67.0670 L 43.1079,62.7662 A 3.76 3.76 0.0 0 0 43.1914,57.4494 L 42.9269,57.1766 Z"
+                     fill="#ffffff"></path>
+               </svg>
+               <svg class="b" width="100%" height="50%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29 20L31 22" class="bling_85"></path>
+                  <path d="M31.5 15H34.5" class="bling_85"></path>
+                  <path d="M29 10L31 8" class="bling_85"></path>
+               </svg>
+            </span>
+         </label>
+      </div>
       <!-- Vendor JS Files -->
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

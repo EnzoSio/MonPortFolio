@@ -1,9 +1,3 @@
-/**
- * Template Name: Laura - v4.5.0
- * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
 (function () {
     "use strict";
 
@@ -95,6 +89,45 @@
         };
         window.addEventListener("load", headerScrolled);
         onscroll(document, headerScrolled);
+    }
+
+    const searchScrollTo = (el) => {
+        let header = select("#header");
+        let offset = header.offsetHeight;
+
+        if (!header.classList.contains("header-scrolled")) {
+            offset -= 3;
+        }
+
+        let elementPos = select(el).offsetTop;
+        window.scrollTo({
+            top: elementPos - offset,
+            behavior: "smooth",
+        });
+    };
+
+    /**
+     * Ajouter le comportement de défilement en douceur pour la barre de recherche
+     */
+    let searchContainer = select("#searchBar");
+    if (searchContainer) {
+        const searchScrolled = () => {
+            if (window.scrollY > 100) {
+                searchContainer.classList.add("searchBar-scrolled");
+            } else {
+                searchContainer.classList.remove("searchBar-scrolled");
+            }
+        };
+        window.addEventListener("load", searchScrolled);
+        onscroll(document, searchScrolled);
+    }
+
+    // Ajouter un gestionnaire d'événement pour la barre de recherche
+    let searchBar = select(".search-bar");
+    if (searchBar) {
+        searchBar.addEventListener("click", () => {
+            searchScrollTo("#searchBar");
+        });
     }
 
     /**
@@ -2179,7 +2212,7 @@ showOptionsBtn.addEventListener("click", () => {
             origin: "bottom", // Point d'origine de l'animation
             distance: "20px", // Distance de déplacement
             delay: 200, // Délai avant l'animation
-            interval: 100 // Intervalle entre les éléments (si vous en avez plusieurs)
+            interval: 100, // Intervalle entre les éléments (si vous en avez plusieurs)
         });
     } else {
         // Sinon, masquez-le
@@ -2188,3 +2221,131 @@ showOptionsBtn.addEventListener("click", () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const panelHeaders = document.querySelectorAll(".panel-header");
+
+    panelHeaders.forEach((header) => {
+        header.addEventListener("click", () => {
+            const panel = header.parentElement;
+            panel.classList.toggle("active");
+        });
+    });
+});
+
+// Recherche sur la page
+let searchIndex = 0; // Index du résultat de recherche actuellement affiché
+let searchResults = []; // Tableau des résultats de recherche
+let searchTerm = ""; // Terme de recherche
+let timeoutId = null; // ID du délai d'attente pour supprimer le surlignage
+
+function startSearch() {
+    const searchInput = document.getElementById("searchInput");
+    searchTerm = searchInput.value.trim();
+
+    if (searchTerm !== "") {
+        searchResults = findOccurrences(searchTerm);
+        if (searchResults.length > 0) {
+            // afficher la classe search-navigation
+            const searchNavigation = document.querySelector(".search-navigation");
+            searchNavigation.style.display = "block";
+            searchIndex = 0;
+            highlightSearchResult(searchResults[0]);
+
+            // Si un délai d'attente est déjà en cours, l'annuler
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
+
+            // Définir un délai d'attente pour supprimer le surlignage après 5 secondes
+            timeoutId = setTimeout(removeHighlight, 3000, document.body);
+        } else {
+            alert(`Aucun résultat trouvé pour "${searchTerm}"`);
+        }
+    }
+}
+
+function deleteButtons() {
+    // cacher la classe search-navigation
+    const searchNavigation = document.querySelector(".search-navigation");
+    searchNavigation.style.display = "none";
+}
+
+function findOccurrences(term) {
+    const textNodes = getTextNodes(document.body);
+    const results = [];
+
+    textNodes.forEach((node) => {
+        const text = node.textContent;
+        let index = text.indexOf(term);
+        while (index !== -1) {
+            results.push({ node, index });
+            index = text.indexOf(term, index + 1);
+        }
+    });
+
+    return results;
+}
+
+
+function highlightSearchResult(result) {
+    removeHighlight(document.body);
+    const span = document.createElement("span");
+    const originalText = result.node.textContent;
+    const highlightedText =
+        originalText.substring(0, result.index) +
+        `<span class="highlight">${originalText.substr(
+            result.index,
+            searchTerm.length
+        )}</span>` +
+        originalText.substring(result.index + searchTerm.length);
+    span.innerHTML = highlightedText;
+
+    // Vérifier si le nœud parent existe avant de remplacer
+    if (result.node.parentNode) {
+        result.node.parentNode.replaceChild(span, result.node);
+    }
+
+    span.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+function getTextNodes(parentNode) {
+    const walker = document.createTreeWalker(
+        parentNode,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+    );
+    const textNodes = [];
+    while (walker.nextNode()) {
+        textNodes.push(walker.currentNode);
+    }
+    return textNodes;
+}
+
+function removeHighlight(parentNode) {
+    const highlightElements = parentNode.querySelectorAll(".highlight");
+    highlightElements.forEach((element) => {
+        const textNode = document.createTextNode(element.textContent);
+        if (element.parentNode) {
+            element.parentNode.replaceChild(textNode, element);
+        }
+    });
+}
+
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+
+prevButton.addEventListener("click", navigatePrevious);
+nextButton.addEventListener("click", navigateNext);
+
+function navigatePrevious() {
+    if (searchResults.length === 0) return;
+    searchIndex = (searchIndex - 1 + searchResults.length) % searchResults.length;
+    highlightSearchResult(searchResults[searchIndex]);
+}
+
+function navigateNext() {
+    if (searchResults.length === 0) return;
+    searchIndex = (searchIndex + 1) % searchResults.length;
+    highlightSearchResult(searchResults[searchIndex]);
+}
