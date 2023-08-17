@@ -2246,7 +2246,8 @@ function startSearch() {
         searchResults = findOccurrences(searchTerm);
         if (searchResults.length > 0) {
             // afficher la classe search-navigation
-            const searchNavigation = document.querySelector(".search-navigation");
+            const searchNavigation =
+                document.querySelector(".search-navigation");
             searchNavigation.style.display = "block";
             searchIndex = 0;
             highlightSearchResult(searchResults[0]);
@@ -2285,7 +2286,6 @@ function findOccurrences(term) {
 
     return results;
 }
-
 
 function highlightSearchResult(result) {
     removeHighlight(document.body);
@@ -2340,7 +2340,8 @@ nextButton.addEventListener("click", navigateNext);
 
 function navigatePrevious() {
     if (searchResults.length === 0) return;
-    searchIndex = (searchIndex - 1 + searchResults.length) % searchResults.length;
+    searchIndex =
+        (searchIndex - 1 + searchResults.length) % searchResults.length;
     highlightSearchResult(searchResults[searchIndex]);
 }
 
@@ -2349,3 +2350,7 @@ function navigateNext() {
     searchIndex = (searchIndex + 1) % searchResults.length;
     highlightSearchResult(searchResults[searchIndex]);
 }
+
+const currentYear = new Date().getFullYear();
+const currentYearElement = document.getElementById("currentYear");
+currentYearElement.textContent = currentYear;

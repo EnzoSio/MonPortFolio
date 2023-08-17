@@ -71,7 +71,6 @@
                            <button class="btn btn-link" id="prevButton" type="button"><i class="fas fa-chevron-down"></i></i></button>
                            <button class="btn btn-link" id="nextButton" type="button"><i class="fas fa-chevron-up"></i></button>
                            <button class="btn btn-link" onclick="deleteButtons()" type="button"><i class="fas fa-times"></i></button>
-
                         </div>
 
                      </form>
@@ -308,7 +307,7 @@
                         </ul>
                         </p>
                      </div>
-                     <div class="resume-item">
+                     <!-- <div class="resume-item">
                         <h4>Lycée François Truffaut</h4>
                         <h5>2017 - 2020</h5>
                         <p><em>Bondoufle</em></p>
@@ -318,7 +317,7 @@
                            <li>BAC ES (Économique et Social) <br>Mention Assez Bien</li>
                         </ul>
                         </p>
-                     </div>
+                     </div> -->
                   </div>
                </div>
             </div>
@@ -746,7 +745,32 @@
                   <h2>Contactez Moi</h2>
                </div>
             </div>
-            <div class="row mt-2">
+            
+            <div class="row justify-content-center mt-2">
+               <div class="col-lg-8 mb-5">
+                  <div class="d-flex justify-content-center row">
+                     <div class="col-md-4">
+                        <div class="dbox w-100 text-center">
+                       <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="fa fa-phone"></span>
+                       </div>
+                       <div class="text">
+                        <p><span>Téléphone:</span> <a href="tel:0630578950">06 30 57 89 50</a></p>
+                      </div>
+                   </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="dbox w-100 text-center">
+                       <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="fa fa-paper-plane"></span>
+                       </div>
+                       <div class="text">
+                        <p><span>Email:</span> <a href="mailto:enzo.aime91@gmail.com">enzo.aime91@gmail.com</a></p>
+                      </div>
+                   </div>
+                     </div>
+                  </div>
+               </div>
                <form id="form" class="php-email-form mt-4">
                   <div class="row">
                      <div class="col-md-6 form-group">
@@ -829,8 +853,7 @@
       <footer id="footer">
          <div class="container">
             <h3>Enzo AIME</h3>
-            <p>La révolution informatique fait gagner un temps fou aux hommes, mais ils le passent avec leur ordinateur
-               !
+            <p>"La programmation, c'est comme résoudre un puzzle où chaque pièce est une ligne de code, et chaque erreur est un indice pour trouver la solution."
             </p>
             <div class="social-links">
                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
@@ -844,8 +867,9 @@
             </div>
             <div class="copyright">
                &copy;
-               Copyright 2022 © <strong><span>Enzo</span></strong>
+               Copyright <span id="currentYear"></span> © <strong><span>Enzo</span></strong>
             </div>
+            
          </div>
       </footer>
       <!-- FIN FOOTER -->
