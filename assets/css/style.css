@@ -40,34 +40,247 @@
 	height: 100%;
 }
 
-
-/* Normal Usage */
-
-.spinner {
-	transform: scale(0.5);
-	animation: 0.8s scaleBefore linear reverse;
-	box-sizing: border-box;
-	content: '';
-	display: block;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	margin-top: -5em;
-	margin-left: -5em;
-	width: 10em;
-	height: 10em;
-	perspective: 340px;
-	background-size: 10em 10em;
-	background-image: url(../img/book-solid.svg);
+.pacmancontainer {
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-@keyframes scaleBefore {
-	from {
-		transform: scale(0.5);
+
+.pacman {
+	transform: translateZ(0);
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border-radius: 100%;
+	border: 30px solid #0564cc;
+	border-right: 30px solid transparent;
+	-webkit-animation: pacman 5s linear 0s infinite;
+	animation: pacman 5s linear 0s infinite;
+	-moz-animation: pacman 5s linear 0s infinite;
+
+}
+
+
+/* Just change the values of border and border-right to resize 
+    and/or change colour of the pacman */
+
+.pac2 {
+	-webkit-animation: pacman2 5s linear 0s infinite;
+	animation: pacman2 5s linear 0s infinite;
+	-moz-animation: pacman2 5s linear 0s infinite;
+}
+
+@keyframes pacman {
+
+	0%,
+	100% {
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+
 	}
 
-	to {
-		transform: scale(1.5);
+	5% {
+		-webkit-transform: translateX(50px) rotate(0deg);
+		transform: translateX(50px) rotate(0deg);
+	}
+
+	15% {
+		-webkit-transform: translateX(150px) rotate(0deg);
+		transform: translateX(150px) rotate(0deg);
+	}
+
+	25% {
+		-webkit-transform: translateX(250px) rotate(0deg);
+		transform: translateX(250px) rotate(0deg);
+	}
+
+	35% {
+		-webkit-transform: translateX(350px) rotate(0deg);
+		transform: translateX(350px) rotate(0deg);
+	}
+
+	45% {
+		-webkit-transform: translateX(450px) rotate(0deg);
+		transform: translateX(450px) rotate(0deg);
+	}
+
+	95% {
+		-webkit-transform: translateX(50px) rotate(0deg);
+		transform: translateX(50px) rotate(0deg) rotateZ(180deg);
+	}
+
+	85% {
+		-webkit-transform: translateX(150px) rotate(0deg);
+		transform: translateX(150px) rotate(0deg) rotateZ(180deg);
+	}
+
+	75% {
+		-webkit-transform: translateX(250px) rotate(0deg);
+		transform: translateX(250px) rotate(0deg) rotateZ(180deg);
+	}
+
+	65% {
+		-webkit-transform: translateX(350px) rotate(0deg);
+		transform: translateX(350px) rotate(0deg) rotateZ(180deg);
+	}
+
+	55% {
+		-webkit-transform: translateX(450px) rotate(0deg);
+		transform: translateX(450px) rotate(0deg) rotateZ(180deg);
+	}
+
+	10% {
+		-webkit-transform: translateX(100px) rotate(45deg);
+		transform: translateX(100px) rotate(45deg);
+	}
+
+	20% {
+		-webkit-transform: translateX(200px) rotate(45deg);
+		transform: translateX(200px) rotate(45deg);
+	}
+
+	30% {
+		-webkit-transform: translateX(300px) rotate(45deg);
+		transform: translateX(300px) rotate(45deg);
+	}
+
+	40% {
+		-webkit-transform: translateX(400px) rotate(45deg);
+		transform: translateX(400px) rotate(45deg);
+	}
+
+	50% {
+		-webkit-transform: translateX(500px) rotate(-180deg) rotateZ(180deg);
+		transform: translateX(500px) rotate(-180deg) rotateZ(180deg);
+	}
+
+	60% {
+		-webkit-transform: translateX(400px) rotate(45deg);
+		transform: translateX(400px) rotate(45deg) rotateZ(180deg);
+	}
+
+	70% {
+		-webkit-transform: translateX(300px) rotate(45deg);
+		transform: translateX(300px) rotate(45deg) rotateZ(180deg);
+	}
+
+	80% {
+		-webkit-transform: translateX(200px) rotate(45deg);
+		transform: translateX(200px) rotate(45deg) rotateZ(180deg);
+	}
+
+	90% {
+		-webkit-transform: translateX(100px) rotate(45deg);
+		transform: translateX(100px) rotate(45deg) rotateZ(180deg);
+	}
+}
+
+
+@keyframes pacman2 {
+
+	0%,
+	100% {
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+
+	5% {
+		-webkit-transform: translateX(50px) rotate(0deg);
+		transform: translateX(50px) rotate(0deg);
+	}
+
+	15% {
+		-webkit-transform: translateX(150px) rotate(0deg);
+		transform: translateX(150px) rotate(0deg);
+	}
+
+	25% {
+		-webkit-transform: translateX(250px) rotate(0deg);
+		transform: translateX(250px) rotate(0deg);
+	}
+
+	35% {
+		-webkit-transform: translateX(350px) rotate(0deg);
+		transform: translateX(350px) rotate(0deg);
+	}
+
+	45% {
+		-webkit-transform: translateX(450px) rotate(0deg);
+		transform: translateX(450px) rotate(0deg);
+	}
+
+	95% {
+		-webkit-transform: translateX(50px) rotate(0deg);
+		transform: translateX(50px) rotate(0deg) rotateZ(180deg);
+	}
+
+	85% {
+		-webkit-transform: translateX(150px) rotate(0deg);
+		transform: translateX(150px) rotate(0deg) rotateZ(180deg);
+	}
+
+	75% {
+		-webkit-transform: translateX(250px) rotate(0deg);
+		transform: translateX(250px) rotate(0deg) rotateZ(180deg);
+	}
+
+	65% {
+		-webkit-transform: translateX(350px) rotate(0deg);
+		transform: translateX(350px) rotate(0deg) rotateZ(180deg);
+	}
+
+	55% {
+		-webkit-transform: translateX(450px) rotate(0deg);
+		transform: translateX(450px) rotate(0deg) rotateZ(180deg);
+	}
+
+	10% {
+		-webkit-transform: translateX(100px) rotate(-45deg);
+		transform: translateX(100px) rotate(-45deg);
+	}
+
+	20% {
+		-webkit-transform: translateX(200px) rotate(-45deg);
+		transform: translateX(200px) rotate(-45deg);
+	}
+
+	30% {
+		-webkit-transform: translateX(300px) rotate(-45deg);
+		transform: translateX(300px) rotate(-45deg);
+	}
+
+	40% {
+		-webkit-transform: translateX(400px) rotate(-45deg);
+		transform: translateX(400px) rotate(-45deg);
+	}
+
+	50% {
+		-webkit-transform: translateX(500px) rotate(-90deg) rotateZ(180deg);
+		transform: translateX(500px) rotate(-90deg) rotateZ(180deg);
+	}
+
+	60% {
+		-webkit-transform: translateX(400px) rotate(-45deg);
+		transform: translateX(400px) rotate(-45deg) rotateZ(180deg);
+	}
+
+	70% {
+		-webkit-transform: translateX(300px) rotate(-45deg);
+		transform: translateX(300px) rotate(-45deg)rotateZ(180deg);
+	}
+
+	80% {
+		-webkit-transform: translateX(200px) rotate(-45deg);
+		transform: translateX(200px) rotate(-45deg) rotateZ(180deg);
+	}
+
+	90% {
+		-webkit-transform: translateX(100px) rotate(-45deg);
+		transform: translateX(100px) rotate(-45deg) rotateZ(180deg);
 	}
 }
 
@@ -285,7 +498,7 @@ h6 {
 /* Ajouter du style pour la barre de recherche et la div de défilement en douceur */
 
 /* Style pour la barre de recherche */
-#searchBar { 
+#searchBar {
 	/* ne pas afficher */
 	z-index: 997;
 	transition: all 0.5s;
@@ -307,8 +520,8 @@ h6 {
 
 
 .search-navigation {
-    display: none;
-	gap:5px;
+	display: none;
+	gap: 5px;
 }
 
 /* Style pour la barre de recherche (comme précédemment) */
@@ -3038,42 +3251,43 @@ li #collabLeo:hover {
 
 /* Style pour les boîtes d'informations */
 .dbox {
-    width: 100%;
-    margin-bottom: 25px;
-    padding:20px;
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 20px;
 	height: 10em;
 }
 
 
 @media (min-width: 768px) {
-    .dbox {
-        margin-bottom: 0;
-        padding: 0;
-    }
+	.dbox {
+		margin-bottom: 0;
+		padding: 0;
+	}
 }
 
 .dbox p {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .dbox p span {
-    font-weight: 500;
-    color: #0564cc;
-    display: block;
+	font-weight: 500;
+	color: #0564cc;
+	display: block;
 }
 
 .dbox p a {
-    color: rgba(0, 0, 0, 0.8);
+	color: rgba(0, 0, 0, 0.8);
 }
 
 .dbox .icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
- 	background: rgba(37, 10, 103, 0.1);;
-    margin: 0 auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: rgba(37, 10, 103, 0.1);
+	;
+	margin: 0 auto;
 	color: white;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 /* hover sur la carte change la couleur de l'icone */
@@ -3082,13 +3296,14 @@ li #collabLeo:hover {
 }
 
 .dbox .icon span {
-    font-size: 20px;
-    color: #000;
+	font-size: 20px;
+	color: #000;
 }
 
 .dbox .text {
-    width: 100%;
+	width: 100%;
 }
+
 /*--------------------------------------------------------------
 # Outils et Langages
 --------------------------------------------------------------*/
