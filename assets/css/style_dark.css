@@ -2,7 +2,7 @@
 
 body.dark,
 body.dark .modal-content {
-	background: #121212;
+	background: #000000;
 	color: white;
 }
 
@@ -29,7 +29,7 @@ body.dark .portfolio #portfolio-flters {
 
 body.dark .stage #stage-flters li,
 body.dark .portfolio #portfolio-flters li {
-	background: #3d444d;
+	background: #db0000;
 }
 
 
@@ -39,12 +39,12 @@ body.dark .portfolio-modal .close-modal {
 
 body.dark .btn-primary {
 	color: #fff;
-	background: #3d444d;
+	background: #db0000;
 	border-color: #cdd9e51a;
 }
 
 body.dark input:checked + .slider {
-	background-color: #3d444d;
+	background-color: #db0000;
 }
 
 
@@ -57,38 +57,75 @@ body.dark ::-webkit-scrollbar-track {
 }
 
 body.dark ::-webkit-scrollbar-thumb {
-	background: #3d444d;
+	background: #db0000;
 }
 
 body.dark .certif_container,
 /* body.dark .back-to-top, */
 body.dark .resume .resume-item h5,
 body.dark .option--current {
-	background: #3d444d;
+	background: #db0000;
 }
 
+body.dark .resume .resume-item:hover::before {
+	background: #db0000;
+}
+
+body.dark .resume .resume-item h4::before {
+	background: white;
+}
+
+body.dark .dbox:hover .icon{
+	background: #db0000;
+}
+
+body.dark .dbox p span {
+	color: white;
+}
+
+body.dark .pacman {
+	
+	border: 30px solid #db0000;
+	border-right: 30px solid transparent;
+
+
+}
+body.dark .panel {
+	box-shadow: 0px 0px 2px white !important;
+}
+
+body.dark .panel-header {
+	background: #db0000;
+}
+
+body.dark .arrow {
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
 
 body.dark .btn-primary:active:focus {
 	box-shadow: 0 0 0 0.25rem rgb(95 98 100);
 }
 
 body.dark .btn-primary {
-	background: #3d444d;
-	border-color: #3d444d;
+	background: #db0000;
+	border-color: #db0000;
 }
 
 body.dark::-webkit-scrollbar-thumb {
-	background: #3d444d;
+	background: #db0000;
 }
 
 body.dark .stage #stage-flters li,
 body.dark .portfolio #portfolio-flters li {
-	border: 2px solid #3d444d;
+	border: 2px solid #db0000;
 }
 
 body.dark .section-title span,
 body.dark a:hover {
-	color: #5e6163;
+	color: #831010;
 }
 
 body.dark .navbar-mobile ul {
@@ -96,9 +133,9 @@ body.dark .navbar-mobile ul {
 }
 
 body.dark .img-moi {
-	box-shadow: 0 5px 50px 0 #3d444d, 0 0 0 7px #3d444d;
-	background-color: #3d444d;
-	color: #3d444d;
+	box-shadow: 0 5px 50px 0 #db0000, 0 0 0 7px #db0000;
+	background-color: #db0000;
+	color: #db0000;
 }
 
 
@@ -113,7 +150,7 @@ body.dark .text-custom {
 }
 
 body.dark .contact .php-email-form button[type=submit] {
-	background: #3d444d;
+	background: #db0000;
 }
 
 body.dark .clients {
@@ -121,7 +158,7 @@ body.dark .clients {
 }
 
 body.dark #footer .social-links a {
-	background: #3d444d;
+	background: #db0000;
 	color: #fff;
 }
 
@@ -130,14 +167,14 @@ body.dark #footer .social-links a:hover {
 }
 
 body.dark .contact .social-links a:hover {
-	border-color: #3d444d;
-	background: #3d444d;
+	border-color: #db0000;
+	background: #db0000;
 }
 
 body.dark .stage .stage-wrap .stage-links a:hover,
 body.dark .portfolio .portfolio-item .portfolio-info .details-link:hover,
 body.dark .portfolio .portfolio-item .portfolio-info .preview-link:hover {
-	color: #3d444d;
+	color: #db0000;
 }
 
 body.dark .breadcrumbs {
@@ -145,11 +182,11 @@ body.dark .breadcrumbs {
 }
 
 body.dark .resume .resume-item {
-	border-left: 2px solid #3d444d;
+	border-left: 2px solid #db0000;
 }
 
 body.dark .resume .resume-item::before {
-	border: 2px solid #3d444d;
+	border: 2px solid #db0000;
 }
 
 body.dark .spinner:before,
@@ -159,7 +196,7 @@ body.dark .spinner:after {
 }
 
 body.dark .blog-slider {
-	background: #3d444d;
+	background: #db0000;
 }
 
 body.dark .blog-slider__title,
@@ -174,7 +211,7 @@ body.dark .blog-slider__text {
 body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
 	color: #fff;
 	background: rgb(112, 100, 100);
-	border: 1px solid #3d444d
+	border: 1px solid #db0000
 }
 
 body.dark .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
@@ -207,10 +244,10 @@ body.dark .portfolio-details .portfolio-info h3 {
 
 body.dark .blog-slider__button {
 	display: inline-flex;
-	background-image: linear-gradient(147deg, #3d444d 0%, #a9bfce 74%);
+	background: white;
+	color: #db0000;
 	padding: 15px 35px;
 	border-radius: 50px;
-	color: #fff;
 	text-decoration: none;
 	font-weight: 500;
 	justify-content: center;
@@ -239,7 +276,7 @@ body.dark .profile-card__img {
 	overflow: hidden;
 	position: relative;
 	z-index: 4;
-	box-shadow: 0 5px 50px 0 #3d444d, 0 0 0 7px #414344;
+	box-shadow: 0 5px 50px 0 #db0000, 0 0 0 7px #414344;
 }
 
 body.dark .postcard {
@@ -247,12 +284,12 @@ body.dark .postcard {
 }
 
 body.dark .tooltip {
-	background-color: #3d444d;
+	background-color: #db0000;
 }
 
 
 body.dark .tooltip::before {
-	border-bottom: 15px solid #3d444d;
+	border-bottom: 15px solid #db0000;
 }
 
 body.dark .line-1 {
@@ -260,12 +297,12 @@ body.dark .line-1 {
 }
 
 body.dark .tablinks:before{
-	background-image: linear-gradient(135deg, #3d444d 0%, #414344 100%);
+	background-image: linear-gradient(135deg, #db0000 0%, #414344 100%);
 }
 
 body.dark .tablinks.active p,
   .tablinks.active:hover p {
-	background: -webkit-linear-gradient(135deg, #3d444d 0%, #414344 100%);
+	background: -webkit-linear-gradient(135deg, #db0000 0%, #414344 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   }
@@ -275,18 +312,18 @@ body.dark .tablinks.active p,
   }
 
   body.dark .wrapper_tabcontent:after {
-	background-image: linear-gradient(135deg, #121212 0%, #3d444d 100%);  
+	background-image: linear-gradient(135deg, #121212 0%, #db0000 100%);  
   }
 
 
 body.dark .service-wrapper {
-	background: #3d444d;
+	background: #db0000;
 }
 
 body.dark .service-wrapper:hover {
 	-webkit-box-shadow: 0 50px 35px rgba(47, 60, 78, .15) !important;
 	box-shadow: 0 15px 35px rgb(255, 255, 255) !important;
-	background: #3d444d;
+	background: #db0000;
 	-webkit-transform: translateY(-8px);
 	transform: translateY(-8px);
 	border-color: transparent;
@@ -294,11 +331,11 @@ body.dark .service-wrapper:hover {
 }
 
 body.dark .red .postcard__title:hover{
-	color: #3d444d;	
+	color: #db0000;	
 }
 
 body.dark .red .postcard__bar{
-	background-color: #3d444d;
+	background-color: #db0000;
 }
 
 body.dark #searchBar.searchBar-scrolled {
